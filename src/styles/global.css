@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#00c853;
+    --primary-dark:#00a844;
+
+    --background:#0f1115;
+
+    --surface:#181b22;
+
+    --surface-light:#222733;
+
+    --text:#ffffff;
+
+    --text-secondary:#a8b0bf;
+
+    --border:#2c3443;
+
+    --shadow:0 15px 40px rgba(0,0,0,.35);
+
+    --radius:18px;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:Inter,Arial,sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+}
+
+button{
+
+    font-family:inherit;
+
+}
+
+input{
+
+    font-family:inherit;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+.cart-floating-button{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#00c853;
+
+    color:white;
+
+    font-size:26px;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    transition:.25s;
+
+    z-index:999;
+
+}
+
+.cart-floating-button:hover{
+
+    transform:scale(1.08);
+
+}
+
+.cart-badge{
+
+    position:absolute;
+
+    top:-8px;
+
+    right:-8px;
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    background:#ff3b30;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}

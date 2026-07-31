@@ -1,0 +1,54 @@
+.catalog-page{
+    min-height:100vh;
+    background:#0f1115;
+    padding:30px;
+}
+
+.back-button{
+    background:#00c853;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    margin-bottom:30px;
+    transition:.25s;
+}
+
+.back-button:hover{
+    transform:translateY(-2px);
+    background:#00a844;
+}
+
+.catalog-banner{
+    background:linear-gradient(135deg,#00c853,#009688);
+    border-radius:20px;
+    padding:45px;
+    text-align:center;
+    margin-bottom:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.catalog-banner h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.catalog-banner p{
+    font-size:18px;
+    opacity:.95;
+}
+
+.products-counter{
+    margin:25px 0;
+    color:#bfc8d4;
+    font-size:18px;
+    font-weight:600;
+}
+
+.catalog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+    gap:25px;
+}
