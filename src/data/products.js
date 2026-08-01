@@ -1366,6 +1366,24 @@ const products = [
     "status": "Activo",
     "featured": false,
     "image": "/products/AUT001.jpg"
+  },
+  {
+    "id": 77,
+    "code": "AUT002",
+    "name": "Esponja para auto",
+    "category": "Cosmetica Automotor",
+    "subcategory": "Esponja",
+    "brand": "bethel",
+    "fragrance": "",
+    "description": "1 unidad",
+    "cost": 800,
+    "margin": 1.7,
+    "price": "$2.160",
+    "stock": null,
+    "stockMinimo": 0,
+    "status": "Activo",
+    "featured": false,
+    "image": "/products/AUT002.jpg"
   }
 ];
 
