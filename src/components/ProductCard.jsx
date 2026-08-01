@@ -53,7 +53,7 @@ function ProductCard({ product, openCart }) {
 
                 <a
                     className="buy-button"
-                    href={`https://wa.me/549XXXXXXXXXX?text=Hola,%20quiero%20consultar%20por%20${product.name}`}
+                    href={`https://wa.me/5491125218692?text=Hola,%20quiero%20consultar%20por%20${product.name}`}
                     target="_blank"
                     rel="noreferrer"
                 >
