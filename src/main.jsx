@@ -9,6 +9,7 @@ import "./styles/search.css";
 import "./styles/categories.css";
 import "./styles/responsive.css";
 import "./styles/cart.css";
+import "./styles/featuredCard.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

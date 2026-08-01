@@ -270,4 +270,51 @@
 
     transform:translateX(8px);
 
+}/* ============================= */
+/* Carrusel Productos Destacados */
+/* ============================= */
+
+.featured-products{
+
+    width:100%;
+    max-width:1400px;
+    margin-top:70px;
+
+}
+
+.featured-title{
+
+    margin-bottom:30px;
+    font-size:34px;
+    font-weight:700;
+
+}
+
+.featured-slider{
+
+    width:100%;
+    overflow:hidden;
+
+}
+
+.featured-track{
+
+    display:flex;
+    gap:28px;
+
+    width:max-content;
+
+
+}
+
+.featured-item{
+
+    min-width:340px;
+
+}
+
+.featured-track:hover{
+
+    animation-play-state:paused;
+
 }
