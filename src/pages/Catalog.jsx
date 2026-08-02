@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import products from "../data/products";
 
@@ -8,12 +8,22 @@ import ProductGrid from "../components/ProductGrid";
 import CartButton from "../components/CartButton";
 import CartDrawer from "../components/CartDrawer";
 
-function Catalog({ goBack }) {
+function Catalog({ goBack, initialCategory }) {
 
     const [search, setSearch] = useState("");
     const [cartOpen, setCartOpen] = useState(true);
 
-    const [selectedCategory, setSelectedCategory] = useState("Todos");
+    const [selectedCategory, setSelectedCategory] = useState(
+    initialCategory || "Todos"
+);
+
+useEffect(() => {
+
+    if (initialCategory) {
+        setSelectedCategory(initialCategory);
+    }
+
+}, [initialCategory]);
 
     const categories = [
         "Todos",

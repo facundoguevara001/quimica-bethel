@@ -1,30 +1,23 @@
 import {
     FaWhatsapp,
     FaTimes,
-    FaMinus,
-    FaPlus,
-    FaTrash
 } from "react-icons/fa";
 
 import { useCart } from "../context/CartContext";
+import CartItem from "./CartItem";
 
 function CartDrawer({ open, onClose }) {
 
     const {
 
-        cart,
+    cart,
 
-        increaseQuantity,
+    clearCart,
 
-        decreaseQuantity,
+    totalPrice
 
-        removeFromCart,
+} = useCart();
 
-        clearCart,
-
-        totalPrice
-
-    } = useCart();
     function sendWhatsApp() {
 
     if (cart.length === 0) return;
@@ -98,74 +91,38 @@ Muchas gracias.
 
                         :
 
-                        cart.map(item => (
+                        <div className="cart-items">
 
-                            <div
-                                className="cart-item"
-                                key={item.id}
-                            >
+{
 
-                                <img
-                                    src={item.image}
-                                    alt={item.name}
-                                />
+    cart.length === 0
 
-                                <div className="cart-info">
+    ? (
 
-                                    <h4>
+        <p className="empty-cart">
 
-                                        {item.name}
+            Tu carrito está vacío.
 
-                                    </h4>
+        </p>
 
-                                    <span>
+    )
 
-                                        {item.price}
+    : (
 
-                                    </span>
+        cart.map(item => (
 
-                                    <div className="cart-quantity">
+            <CartItem
+                key={item.id}
+                item={item}
+            />
 
-                                        <button
-                                            onClick={() =>
-                                                decreaseQuantity(item.id)
-                                            }
-                                        >
-                                            <FaMinus />
-                                        </button>
+        ))
 
-                                        <span>
+    )
 
-                                            {item.quantity}
+}
 
-                                        </span>
-
-                                        <button
-                                            onClick={() =>
-                                                increaseQuantity(item.id)
-                                            }
-                                        >
-                                            <FaPlus />
-                                        </button>
-
-                                    </div>
-
-                                </div>
-
-                                <button
-                                    className="delete-item"
-                                    onClick={() =>
-                                        removeFromCart(item.id)
-                                    }
-                                >
-
-                                    <FaTrash />
-
-                                </button>
-
-                            </div>
-
-                        ))
+</div>
 
                     }
 

@@ -1743,7 +1743,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA001.png"
+    "image": "/products/SHA001.jpg"
   },
   {
     "id": 98,
@@ -1761,7 +1761,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA002.png"
+    "image": "/products/SHA002.jpg"
   },
   {
     "id": 99,
@@ -1779,7 +1779,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA003.png"
+    "image": "/products/SHA003.jpg"
   },
   {
     "id": 100,
@@ -1797,7 +1797,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA004.png"
+    "image": "/products/SHA004.jpg"
   },
   {
     "id": 101,
@@ -1815,7 +1815,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA005.png"
+    "image": "/products/SHA005.jpg"
   },
   {
     "id": 102,
@@ -1833,7 +1833,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA006.png"
+    "image": "/products/SHA006.jpg"
   },
   {
     "id": 103,

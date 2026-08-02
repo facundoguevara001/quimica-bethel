@@ -10,6 +10,7 @@ import "./App.css";
 function App() {
 
     const [showCatalog, setShowCatalog] = useState(false);
+const [initialCategory, setInitialCategory] = useState("");
 
     return (
 
@@ -19,9 +20,21 @@ function App() {
 
                 showCatalog
 
-                    ? <Catalog goBack={() => setShowCatalog(false)} />
+                    ? <Catalog
+    goBack={() => setShowCatalog(false)}
+    initialCategory={initialCategory}
+/>
 
-                    : <Home openCatalog={() => setShowCatalog(true)} />
+                    : <Home
+    openCatalog={() => {
+        setInitialCategory("");
+        setShowCatalog(true);
+    }}
+    openPromotions={() => {
+        setInitialCategory("Promociones");
+        setShowCatalog(true);
+    }}
+/>
 
             }
 
