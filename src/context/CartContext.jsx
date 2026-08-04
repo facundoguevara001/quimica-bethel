@@ -108,7 +108,12 @@ export function CartProvider({ children }) {
 
         );
 
-    }
+    }function clearCart() {
+
+    setCart([]);
+
+}
+    
 
     const totalItems = cart.reduce(
         (acc, item) => acc + item.quantity,
@@ -150,10 +155,5 @@ export function CartProvider({ children }) {
 export function useCart() {
 
     return useContext(CartContext);
-
-}
-function clearCart() {
-
-    setCart([]);
 
 }

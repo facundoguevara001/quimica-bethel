@@ -1,6 +1,6 @@
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 
 function ProductCard({ product, openCart }) {
     const { addToCart } = useCart();

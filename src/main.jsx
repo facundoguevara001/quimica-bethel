@@ -10,9 +10,17 @@ import "./styles/categories.css";
 import "./styles/responsive.css";
 import "./styles/cart.css";
 import "./styles/featuredCard.css";
+import "./styles/layout.css";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+
+    <BrowserRouter>
+
+      <App />
+
+    </BrowserRouter>
+
   </React.StrictMode>
 );

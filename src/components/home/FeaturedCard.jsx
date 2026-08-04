@@ -1,4 +1,4 @@
-import "./../styles/featuredCard.css";
+import "../../styles/FeaturedCard.css";
 
 function FeaturedCard({ product }) {
 

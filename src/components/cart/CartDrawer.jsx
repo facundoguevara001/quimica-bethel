@@ -3,7 +3,7 @@ import {
     FaTimes,
 } from "react-icons/fa";
 
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 import CartItem from "./CartItem";
 
 function CartDrawer({ open, onClose }) {

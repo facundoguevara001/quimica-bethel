@@ -4,7 +4,7 @@ import {
     FaTrash
 } from "react-icons/fa";
 
-import { useCart } from "../context/CartContext";
+import { useCart } from "../../context/CartContext";
 
 function CartItem({ item }) {
 

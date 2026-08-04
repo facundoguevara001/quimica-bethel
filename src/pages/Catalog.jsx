@@ -2,37 +2,38 @@ import { useEffect, useMemo, useState } from "react";
 
 import products from "../data/products";
 
-import SearchBar from "../components/SearchBar";
-import Categories from "../components/Categories";
-import ProductGrid from "../components/ProductGrid";
-import CartButton from "../components/CartButton";
-import CartDrawer from "../components/CartDrawer";
+import SearchBar from "../components/catalog/SearchBar";
+import Categories from "../components/catalog/Categories";
+import ProductGrid from "../components/catalog/ProductGrid";
+import CartButton from "../components/cart/CartButton";
+import CartDrawer from "../components/cart/CartDrawer";
+import MainLayout from "../layout/MainLayout";
+import { useNavigate } from "react-router-dom";
 
-function Catalog({ goBack, initialCategory }) {
 
+function Catalog({
+
+    customProducts,
+
+    title = "🧪 Catálogo"
+
+}) {
+    const navigate = useNavigate();
     const [search, setSearch] = useState("");
     const [cartOpen, setCartOpen] = useState(true);
+    const [selectedCategory, setSelectedCategory] = useState("Todos");
+    const sourceProducts = customProducts || products;
+    const categories = 
+    
+    [
+    "Todos",
+    ...new Set(sourceProducts.map(product => product.category))
+];
 
-    const [selectedCategory, setSelectedCategory] = useState(
-    initialCategory || "Todos"
-);
 
-useEffect(() => {
+     const filteredProducts = useMemo(() => {
 
-    if (initialCategory) {
-        setSelectedCategory(initialCategory);
-    }
-
-}, [initialCategory]);
-
-    const categories = [
-        "Todos",
-        ...new Set(products.map(product => product.category))
-    ];
-
-    const filteredProducts = useMemo(() => {
-
-        return products.filter(product => {
+       return sourceProducts.filter(product => {
 
             const coincideCategoria =
                 selectedCategory === "Todos" ||
@@ -47,18 +48,25 @@ useEffect(() => {
 
         });
 
-    }, [search, selectedCategory]);
+    }, [search, selectedCategory, sourceProducts]);
 
     return (
+
+    <MainLayout>
 
         <div className="catalog-page">
 
             <button
-                className="back-button"
-                onClick={goBack}
-            >
-                ← Volver
-            </button>
+    className="back-button"
+    onClick={() => navigate("/")}
+>
+    ← Volver
+    
+</button>
+
+<h1 className="catalog-title">
+    {title}
+</h1>
 
 
             <SearchBar
@@ -87,6 +95,8 @@ useEffect(() => {
 />
 
         </div>
+          
+     </MainLayout>
 
     );
 
