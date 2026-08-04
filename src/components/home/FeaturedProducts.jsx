@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import FeaturedCard from "./FeaturedCard";
+import "./FeaturedProducts.css";
 
 function FeaturedProducts({ cards, x }) {
 

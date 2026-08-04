@@ -1,0 +1,72 @@
+.about-us{
+
+    width:100%;
+    max-width:1100px;
+
+    margin:90px auto;
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.about-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:260px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.about-content h2{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.about-content p{
+
+    color:#c7d0dc;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+}
+
+.about-badge{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#0084ff22;
+
+    color:#6fc5ff;
+
+    font-weight:600;
+
+}

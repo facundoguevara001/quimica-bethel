@@ -1,0 +1,174 @@
+.home{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 25px;
+
+}
+
+.hero{
+
+    width:100%;
+
+    max-width:900px;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.logo-circle{
+
+    width:140px;
+
+    height:140px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:60px;
+
+    background:linear-gradient(
+        135deg,
+        #00c853,
+        #00e676
+    );
+
+    box-shadow:var(--shadow);
+
+}
+.logo-container{
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.logo-container::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:380px;
+    height:380px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0,132,255,.30) 0%,
+            rgba(0,132,255,.18) 35%,
+            transparent 75%
+        );
+
+    filter:blur(45px);
+
+    z-index:-1;
+
+    animation:logoGlow 5s ease-in-out infinite;
+
+}
+
+.logo-image{
+
+    width:320px;
+
+    max-width:85%;
+
+    border-radius:18px;
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.45),
+
+        0 0 40px rgba(0,200,83,.12);
+
+    transition:.45s;
+
+}
+
+.logo-image:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.55),
+        0 0 60px rgba(0,132,255,.35);
+
+}
+
+.hero-title{
+
+    font-size:56px;
+
+    font-weight:800;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+}
+
+.hero-description{
+
+    color:#b9c3cf;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+@keyframes logoGlow{
+
+    0%{
+
+        transform:scale(1);
+        opacity:.65;
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+        opacity:.65;
+
+    }
+
+}

@@ -1,56 +1,54 @@
-import { FaBoxOpen } from "react-icons/fa";
+import "./OrdersCounter.css";
+import { FaBoxOpen, FaCircle } from "react-icons/fa";
 
 function OrdersCounter({ ordersToday }) {
+
+    const now = new Date();
+
+    const lastUpdate = now.toLocaleTimeString("es-AR", {
+        hour: "2-digit",
+        minute: "2-digit"
+    });
 
     return (
 
         <section className="orders-counter">
 
-            <div className="orders-icon">
+            <div className="orders-left">
 
-                <FaBoxOpen />
+                <div className="orders-icon">
 
-            </div>
-
-            <div className="orders-info">
-
-                <h2>Pedidos del día</h2>
-
-                <p>
-
-                    Contador en tiempo real
-                    <br />
-                    de 8:00 AM a 5:00 PM
-                    <br />
-                    (Hora Argentina 🇦🇷)
-
-                </p>
-
-            </div>
-
-            <div>
-
-                <div className="orders-display">
-
-                    <div className="digit">
-                        {String(ordersToday).padStart(2, "0")[0]}
-                    </div>
-
-                    <div className="digit">
-                        {String(ordersToday).padStart(2, "0")[1]}
-                    </div>
-
-                    <span className="slash">/</span>
-
-                    <div className="digit">1</div>
-                    <div className="digit">0</div>
-                    <div className="digit">0</div>
+                    <FaBoxOpen />
 
                 </div>
 
-                <div className="orders-footer">
+                <div className="orders-info">
 
-                    unidades vendidas hoy
+                    <span className="orders-label">
+
+                        PEDIDOS DE HOY
+
+                    </span>
+
+                    <h2>
+
+                        {ordersToday}
+
+                    </h2>
+
+                    <div className="orders-status">
+
+                        <FaCircle />
+
+                        <span>Actualización automática</span>
+
+                    </div>
+
+                    <small>
+
+                        Última actualización {lastUpdate} hs
+
+                    </small>
 
                 </div>
 

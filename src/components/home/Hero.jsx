@@ -1,3 +1,5 @@
+import "./Hero.css";
+
 import { motion } from "framer-motion";
 
 function Hero() {

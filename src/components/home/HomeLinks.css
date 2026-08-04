@@ -1,0 +1,206 @@
+.home-links{
+
+    width:100%;
+
+    max-width:750px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}.home-button span{
+ 
+    font-size:22px;
+    font-weight:600;
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 25px;
+
+    border-radius:var(--radius);
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    transition:.25s;
+
+    cursor:pointer;
+
+}
+
+.home-button:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--surface-light);
+
+}
+
+.home-button div{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+    color:white;
+
+}.catalog-button{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:26px;
+
+    border:none;
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    color:white;
+
+    background:linear-gradient(135deg,#0077ff,#00b4ff);
+
+    box-shadow:0 18px 45px rgba(0,119,255,.35);
+
+    transition:.35s;
+
+}
+
+.catalog-button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 25px 60px rgba(0,119,255,.45);
+
+}
+
+.catalog-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.catalog-icon{
+
+    font-size:55px;
+
+}
+
+.catalog-text{
+
+    text-align:left;
+
+}
+
+.catalog-badge{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.18);
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    margin-bottom:8px;
+
+}
+
+.catalog-text h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.catalog-text p{
+
+    margin-top:6px;
+
+    opacity:.9;
+
+}
+
+.catalog-arrow{
+
+    font-size:34px;
+
+    transition:.3s;
+
+}
+
+.catalog-button:hover .catalog-arrow{
+
+    transform:translateX(8px);
+
+}.promo-button{
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,200,83,.10),
+            rgba(0,200,83,.03)
+        );
+
+    border:1px solid rgba(0,200,83,.35);
+
+}
+
+.promo-button:hover{
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,200,83,.18),
+            rgba(0,200,83,.06)
+        );
+
+    box-shadow:
+        0 0 35px rgba(0,200,83,.18);
+
+}.home-links a{
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,119,255,.08),
+            rgba(0,119,255,.02)
+        );
+
+    border:1px solid rgba(0,119,255,.28);
+
+}
+
+.home-links a:hover{
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,119,255,.16),
+            rgba(0,119,255,.05)
+        );
+
+    box-shadow:
+        0 0 35px rgba(0,119,255,.18);
+
+}

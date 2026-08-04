@@ -517,4 +517,14 @@
 
 }
 
+}@media(max-width:900px){
+
+    .about-us{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
 }

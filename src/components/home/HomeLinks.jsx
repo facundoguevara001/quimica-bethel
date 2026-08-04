@@ -1,3 +1,5 @@
+import "./HomeLinks.css";
+
 import {
     FaFacebookF,
     FaChevronRight,
