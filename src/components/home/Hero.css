@@ -18,9 +18,7 @@
 
     width:100%;
 
-    max-width:900px;
-
-    text-align:center;
+    max-width:1200px;
 
     margin-bottom:60px;
 
@@ -73,24 +71,25 @@
 
     position:absolute;
 
-    width:380px;
-    height:380px;
+    width:420px;
+    height:420px;
 
     border-radius:50%;
 
     background:
         radial-gradient(
             circle,
-            rgba(0,132,255,.30) 0%,
-            rgba(0,132,255,.18) 35%,
-            transparent 75%
+            rgba(0,200,83,.20) 0%,
+            rgba(0,132,255,.16) 35%,
+            rgba(0,132,255,.05) 60%,
+            transparent 80%
         );
 
-    filter:blur(45px);
+    filter:blur(55px);
 
-    z-index:-1;
+    animation:heroGlow 7s ease-in-out infinite;
 
-    animation:logoGlow 5s ease-in-out infinite;
+    z-index:-2;
 
 }
 
@@ -100,25 +99,35 @@
 
     max-width:85%;
 
-    border-radius:18px;
+    border-radius:20px;
+
+    transition:.5s;
 
     box-shadow:
 
-        0 20px 45px rgba(0,0,0,.45),
+        0 25px 60px rgba(0,0,0,.45),
 
-        0 0 40px rgba(0,200,83,.12);
+        0 0 25px rgba(0,200,83,.08),
 
-    transition:.45s;
+        0 0 60px rgba(0,132,255,.12);
 
 }
 
 .logo-image:hover{
 
-    transform:scale(1.05);
+    transform:
+
+        translateY(-6px)
+
+        scale(1.04);
 
     box-shadow:
-        0 25px 60px rgba(0,0,0,.55),
-        0 0 60px rgba(0,132,255,.35);
+
+        0 35px 70px rgba(0,0,0,.55),
+
+        0 0 45px rgba(0,200,83,.20),
+
+        0 0 80px rgba(0,132,255,.25);
 
 }
 
@@ -148,27 +157,153 @@
 
 }
 
-@keyframes logoGlow{
+@keyframes heroGlow{
 
     0%{
 
         transform:scale(1);
-        opacity:.65;
+
+        opacity:.55;
+
+    }
+
+    25%{
+
+        transform:scale(1.08);
+
+        opacity:.85;
 
     }
 
     50%{
 
         transform:scale(1.15);
+
         opacity:1;
+
+    }
+
+    75%{
+
+        transform:scale(1.08);
+
+        opacity:.80;
 
     }
 
     100%{
 
         transform:scale(1);
-        opacity:.65;
+
+        opacity:.55;
 
     }
+
+}.hero-content{
+
+    text-align:center;
+
+}/*======================================
+        HERO PREMIUM BACKGROUND
+======================================*/
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-300px;
+
+    background:
+        radial-gradient(circle at 25% 30%,
+            rgba(0,200,83,.10),
+            transparent 35%),
+
+        radial-gradient(circle at 80% 20%,
+            rgba(0,132,255,.12),
+            transparent 40%),
+
+        radial-gradient(circle at 50% 80%,
+            rgba(255,255,255,.04),
+            transparent 35%);
+
+    animation:heroBackground 18s ease-in-out infinite;
+
+    z-index:-3;
+
+}
+
+@keyframes heroBackground{
+
+    0%{
+
+        transform:translate(0px,0px) scale(1);
+
+    }
+
+    50%{
+
+        transform:translate(-40px,-25px) scale(1.08);
+
+    }
+
+    100%{
+
+        transform:translate(0px,0px) scale(1);
+
+    }
+
+}/*======================================
+        HERO PARTICLES
+======================================*/
+
+.hero-particles{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+.particle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(255,255,255,.95),
+
+            rgba(0,200,83,.65),
+
+            transparent
+
+        );
+
+    filter:blur(1px);
+
+    box-shadow:
+
+        0 0 12px rgba(0,200,83,.35);
 
 }

@@ -1,0 +1,111 @@
+/*======================================
+            NAVBAR
+======================================*/
+
+.navbar{
+
+    position:sticky;
+
+    top:15px;
+
+    z-index:999;
+
+    width:100%;
+    max-width:1400px;
+
+    margin:20px auto 50px;
+
+    padding:18px 35px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(18,20,23,.78);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.30);
+
+    transition:.35s;
+
+}.navbar:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 22px 55px rgba(0,0,0,.40);
+
+}.navbar:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 22px 55px rgba(0,0,0,.40);
+
+}.navbar-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:42px;
+
+}.navbar-links a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#b7c0cb;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.30s;
+
+}
+
+.navbar-links a:hover{
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}.navbar-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:2px;
+
+    border-radius:10px;
+
+    background:#00c853;
+
+    transition:.30s;
+
+}
+
+.navbar-links a:hover::after{
+
+    width:100%;
+
+}

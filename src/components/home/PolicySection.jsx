@@ -40,7 +40,10 @@ function PolicySection() {
 
     return (
 
-        <section className="policy-section">
+        <section 
+        
+        id="politica"
+        className="policy-section">
 
             <h2>
 

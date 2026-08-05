@@ -14,8 +14,9 @@ import FAQ from "../components/home/FAQ";
 import AboutUs from "../components/home/AboutUs";
 import PolicySection from "../components/home/PolicySection";
 import ContactSection from "../components/home/ContactSection";
-
-
+import TopNavigation from "../components/home/TopNavigation";
+import Navbar from "../components/layout/Navbar";
+import FadeInSection from "../components/common/FadeInSection";
 
 import { useState } from "react";
 import { useAnimationFrame } from "framer-motion";
@@ -55,25 +56,42 @@ function Home() {
 
         <MainLayout>
 
+            <Navbar />
+
             <div className="home">
 
                 <Hero />
 
                 <HomeLinks />
 
+                <FadeInSection delay={0.1}>
                 <FeaturedProducts
-                    cards={cards}
-                    x={x}
+                   cards={cards}
+                   x={x}
                 />
+                
+                 </FadeInSection>
 
+                
+                <FadeInSection delay={0.15}>
                 <OrdersCounter
-                    ordersToday={ordersToday}
+                   ordersToday={ordersToday}
                 />
+                </FadeInSection>
 
-                <ReviewsSection />
+                <FadeInSection delay={0.2}>
+    <ReviewsSection />
+</FadeInSection>
+
                 <FAQ />
-                <AboutUs />
-                <PolicySection />
+                <FadeInSection delay={0.3}>
+    <AboutUs />
+</FadeInSection>
+
+                <FadeInSection delay={0.35}>
+    <PolicySection />
+</FadeInSection>
+
                 <ContactSection />
 
 

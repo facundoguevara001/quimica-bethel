@@ -30,7 +30,10 @@ function FAQ() {
 
     return (
 
-        <section className="faq-section">
+        <section 
+        
+        id="faq"
+        className="faq-section">
 
             <h2>
 

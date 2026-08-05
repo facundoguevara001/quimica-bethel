@@ -20,7 +20,7 @@ function Catalog({
 }) {
     const navigate = useNavigate();
     const [search, setSearch] = useState("");
-    const [cartOpen, setCartOpen] = useState(true);
+    const [cartOpen, setCartOpen] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState("Todos");
     const sourceProducts = customProducts || products;
     const categories = 
@@ -86,7 +86,7 @@ function Catalog({
 />
 
 <CartButton
-    onClick={() => setCartOpen(true)}
+    onClick={() => setCartOpen(false)}
 />
 
 <CartDrawer

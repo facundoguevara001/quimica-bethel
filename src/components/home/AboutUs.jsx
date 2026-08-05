@@ -4,7 +4,10 @@ function AboutUs() {
 
     return (
 
-        <section className="about-us">
+        <section 
+        
+        id="nosotros"
+        className="about-us">
 
             <div className="about-image">
 

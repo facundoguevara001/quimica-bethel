@@ -1,6 +1,6 @@
 import "./Hero.css";
-
 import { motion } from "framer-motion";
+import HeroParticles from "./HeroParticles";
 
 function Hero() {
 
@@ -12,8 +12,11 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
         >
+<HeroParticles />
 
-            <div className="logo-container">
+             <div className="hero-content">
+
+             <div className="logo-container">
 
                 <img
                     src="/logo.png"
@@ -38,6 +41,8 @@ function Hero() {
                 para tu hogar y negocio 🌿
 
             </p>
+
+            </div>
 
         </motion.div>
 

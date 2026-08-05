@@ -1,23 +1,40 @@
 import "./ReviewsSection.css";
 
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 
 import reviews from "../../data/reviews";
 
 function ReviewsSection() {
 
-    const review = useMemo(() => {
+    const [current, setCurrent] = useState(
+    Math.floor(Math.random() * reviews.length)
+);
 
-        return reviews[
-            Math.floor(Math.random() * reviews.length)
-        ];
+useEffect(() => {
 
-    }, []);
+    const interval = setInterval(() => {
+
+        setCurrent(prev =>
+
+            (prev + 1) % reviews.length
+
+        );
+
+    }, 6000);
+
+    return () => clearInterval(interval);
+
+}, []);
+
+const review = reviews[current];
 
     return (
 
-        <section className="reviews-section">
+        <section
+    id="reviews"
+    className="reviews-section"
+>
 
             <h2 className="reviews-title">
 
@@ -54,6 +71,26 @@ function ReviewsSection() {
                     — {review.author}
 
                 </span>
+
+                <div className="review-dots">
+
+    {reviews.map((_, index) => (
+
+        <span
+
+            key={index}
+
+            className={
+                current === index
+                    ? "dot active"
+                    : "dot"
+            }
+
+        />
+
+    ))}
+
+</div>
 
             </div>
 

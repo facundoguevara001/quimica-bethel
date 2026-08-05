@@ -1,4 +1,5 @@
 import "./FeaturedCard.css";
+import { FaArrowRight } from "react-icons/fa";
 
 function FeaturedCard({ product }) {
 
@@ -20,8 +21,16 @@ function FeaturedCard({ product }) {
                 <h3>{product.name}</h3>
 
                 <span className="featured-price">
-    {product.price}
-</span>
+                    {product.price}
+                </span>
+
+                <div className="featured-button">
+
+                    Ver promoción
+
+                    <FaArrowRight />
+
+                </div>
 
             </div>
 

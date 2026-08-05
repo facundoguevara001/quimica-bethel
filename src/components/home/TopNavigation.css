@@ -1,0 +1,60 @@
+.top-navigation{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.top-navigation button{
+
+    background:none;
+
+    border:none;
+
+    color:#bfc8d3;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    position:relative;
+
+    padding:0;
+
+}
+
+.top-navigation button:hover{
+
+    color:white;
+
+}
+
+.top-navigation button::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+
+    height:2px;
+
+    background:#00c853;
+
+    transition:.30s;
+
+}
+
+.top-navigation button:hover::after{
+
+    width:100%;
+
+}

@@ -1,0 +1,161 @@
+/*======================================
+        FEATURED CARD PREMIUM
+======================================*/
+
+.featured-card{
+
+    width:320px;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    background:#181c22;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+.featured-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-60%;
+
+    width:45%;
+
+    height:300%;
+
+    background:
+
+        linear-gradient(
+
+            rgba(255,255,255,0),
+
+            rgba(255,255,255,.18),
+
+            rgba(255,255,255,0)
+
+        );
+
+    transform:rotate(25deg);
+
+    transition:.7s;
+
+}
+
+.featured-card:hover::before{
+
+    left:140%;
+
+}
+
+.featured-card:hover{
+
+    transform:
+
+        translateY(-10px)
+
+        scale(1.02);
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.45),
+
+        0 0 25px rgba(0,132,255,.18);
+
+}
+
+.featured-image{
+
+    overflow:hidden;
+
+    background:#0d1117;
+
+}
+
+.featured-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.45s;
+
+}
+
+.featured-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.featured-info{
+
+    padding:22px;
+
+}
+
+.featured-info h3{
+
+    margin:0;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.featured-price{
+
+    display:block;
+
+    margin-top:12px;
+
+    color:#00d35f;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.featured-button{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.04);
+
+    color:white;
+
+    transition:.30s;
+
+}
+
+.featured-card:hover .featured-button{
+
+    background:#0077ff;
+
+}
