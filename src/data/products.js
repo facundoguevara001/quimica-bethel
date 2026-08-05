@@ -8,9 +8,9 @@ const products = [
     "brand": "bethel",
     "fragrance": "",
     "description": "5 litros",
-    "cost": 2300,
-    "margin": 4,
-    "price": "$11.500",
+    "cost": 3300,
+    "margin": 0.5,
+    "price": "$4.950",
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
@@ -1743,7 +1743,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA001.jpg"
+    "image": "/products/SHA001.png"
   },
   {
     "id": 98,
@@ -1761,7 +1761,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA002.jpg"
+    "image": "/products/SHA002.png"
   },
   {
     "id": 99,
@@ -1779,7 +1779,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA003.jpg"
+    "image": "/products/SHA003.png"
   },
   {
     "id": 100,
@@ -1797,7 +1797,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA004.jpg"
+    "image": "/products/SHA004.png"
   },
   {
     "id": 101,
@@ -1815,7 +1815,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA005.jpg"
+    "image": "/products/SHA005.png"
   },
   {
     "id": 102,
@@ -1833,7 +1833,7 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA006.jpg"
+    "image": "/products/SHA006.png"
   },
   {
     "id": 103,
