@@ -1,6 +1,8 @@
+import "./ProductCard.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useCart } from "../../context/CartContext";
+import { Link } from "react-router-dom";
 
 function ProductCard({ product, openCart }) {
     const { addToCart } = useCart();
@@ -20,11 +22,29 @@ function ProductCard({ product, openCart }) {
             }}
         >
 
-            <img
-                src={product.image}
-                alt={product.name}
-                loading="lazy"
-            />
+            <div className="product-image">
+
+              <img
+                 src={product.image}
+                 alt={product.name}
+                 loading="lazy"
+                 />
+
+             <div className="image-overlay">
+
+             <Link
+              to={`/producto/${product.slug}`}
+              className="view-product-button"
+             
+        >
+
+
+            👁 Ver detalles
+        </Link>
+
+    </div>
+
+</div>
 
             <div className="product-info">
 

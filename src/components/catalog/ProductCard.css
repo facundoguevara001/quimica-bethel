@@ -1,0 +1,228 @@
+/*======================================
+        PRODUCT CARD PREMIUM
+======================================*/
+
+.product-card{
+
+    background:#181c22;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.product-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#101418;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    aspect-ratio:1;
+
+    object-fit:contain;
+
+    display:block;
+
+    transition:.45s;
+
+}
+
+.product-card:hover .product-image img{
+
+    transform:scale(1.08);
+
+}
+
+/* Overlay */
+
+.image-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    transition:.35s;
+
+    backdrop-filter:blur(4px);
+
+}
+
+.product-card:hover .image-overlay{
+
+    opacity:1;
+
+}
+
+.view-product-button{
+
+    padding:14px 24px;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    font-size:16px;
+
+    transition:.30s;
+
+}
+
+.view-product-button:hover{
+
+    transform:scale(1.08);
+
+    background:#00c853;
+
+    color:white;
+
+}
+
+.product-info{
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.product-info h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    color:white;
+
+}
+
+.product-info p{
+
+    margin:0;
+
+    color:#b5bcc6;
+
+    line-height:1.5;
+
+}
+
+.price{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#00d35f;
+
+}
+
+.stock{
+
+    font-weight:600;
+
+}
+
+.stock.disponible{
+
+    color:#00d35f;
+
+}
+
+.stock.agotado{
+
+    color:#ff5252;
+
+}
+
+.buy-button,
+.cart-button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.buy-button{
+
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.buy-button:hover{
+
+    background:#1ebe5d;
+
+}
+
+.cart-button{
+
+    background:#0077ff;
+
+    color:white;
+
+}
+
+.cart-button:hover{
+
+    background:#1484ff;
+
+}

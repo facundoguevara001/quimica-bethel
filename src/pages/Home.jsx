@@ -18,9 +18,6 @@ import TopNavigation from "../components/home/TopNavigation";
 import Navbar from "../components/layout/Navbar";
 import FadeInSection from "../components/common/FadeInSection";
 
-import { useState } from "react";
-import { useAnimationFrame } from "framer-motion";
-
 function Home() {
 
     const ordersToday = useOrdersCounter();
@@ -29,28 +26,10 @@ function Home() {
         product => product.featured
     );
 
-    const [x, setX] = useState(0);
-
     const cards = [
-        ...featuredProducts,
-        ...featuredProducts
-    ];
-
-    useAnimationFrame(() => {
-
-        setX(prev => {
-
-            const next = prev - 0.6;
-
-            if (next <= -(featuredProducts.length * 310)) {
-                return 0;
-            }
-
-            return next;
-
-        });
-
-    });
+    ...featuredProducts,
+    ...featuredProducts
+];
 
     return (
 
@@ -66,9 +45,8 @@ function Home() {
 
                 <FadeInSection delay={0.1}>
                 <FeaturedProducts
-                   cards={cards}
-                   x={x}
-                />
+    cards={cards}
+/>
                 
                  </FadeInSection>
 

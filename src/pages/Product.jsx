@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 
 import products from "../data/products";
+import { useState } from "react";
+import FeaturedProducts from "../components/home/FeaturedProducts";
 
 import {
     FaWhatsapp,
@@ -20,6 +22,7 @@ function Product() {
 
     const { slug } = useParams();
     const navigate = useNavigate();
+    const [imageOpen, setImageOpen] = useState(false);
 
 const product = products.find(
 
@@ -46,13 +49,22 @@ Me interesa este producto:
 const whatsappUrl =
 `https://wa.me/54911525218692?text=${whatsappMessage}`;
 
-const relatedProducts = products
-    .filter(
-        p =>
-            p.category === product.category &&
-            p.slug !== product.slug
-    )
-    .slice(0,4);
+const relatedProducts = products.filter(
+
+    p =>
+
+        p.category === product.category &&
+        p.slug !== product.slug
+
+);
+
+const relatedCards = [
+
+    ...relatedProducts,
+
+    ...relatedProducts
+
+];
 
     if (!product) {
 
@@ -86,21 +98,59 @@ const relatedProducts = products
             <div className="image-wrapper">
 
              <img
-                     src={product.image}
-                     alt={product.name}
-                   />
+    src={product.image}
+    alt={product.name}
+    onClick={() => setImageOpen(true)}
+    style={{ cursor: "zoom-in" }}
+/>
+{
+    imageOpen && (
 
-                 </div>
+        <div
+            className="image-modal"
+            onClick={() => setImageOpen(false)}
+        >
 
-                </div>
+            <img
 
-                <div className="product-info">
+                src={product.image}
 
-                    <span className="product-category">
+                alt={product.name}
+
+                className="image-modal-content"
+
+                onClick={(e) => e.stopPropagation()}
+
+            />
+
+            <button
+
+                className="image-close"
+
+                onClick={() => setImageOpen(false)}
+
+            >
+
+                ✕
+
+            </button>
+
+        </div>
+
+    )
+}
+
+</div>
+
+    </div>
+
+            <div className="product-info">
+
+                     <span className="product-category">
 
                         {product.category}
 
-                    </span>
+                     </span>
 
                     <h1>
 
@@ -113,64 +163,64 @@ const relatedProducts = products
                         {product.price}
 
                     </h2>
-                    <div className="product-benefits">
+            <div className="product-benefits">
 
-    <div>
+            <div>
 
-        <FaCheckCircle />
+                     <FaCheckCircle />
 
-        <span>
+                      <span>
 
-            Stock disponible
+                        Stock disponible
 
-        </span>
+                      </span>
 
-    </div>
+                </div>
 
-    <div>
+            <div>
 
-        <FaTruck />
+                    <FaTruck />
 
-        <span>
+                      <span>
 
-            Envíos a todo el país
+                      Envíos a todo el país
 
-        </span>
+                      </span>
 
-    </div>
+                </div>
 
-    <div>
+            <div>
 
-        <FaFileInvoice />
+                     <FaFileInvoice />
 
-        <span>
+                     <span>
+ 
+                      Factura A y B
 
-            Factura A y B
+                     </span>
 
-        </span>
+                </div>
 
-    </div>
+            <div>
 
-    <div>
+                     <FaCreditCard />
 
-        <FaCreditCard />
+                     <span>
+ 
+                     Todos los medios de pago
 
-        <span>
+                     </span>
 
-            Todos los medios de pago
+               </div>
 
-        </span>
+            </div>
 
-    </div>
-
-</div>
-
-                    <p>
+                     <p>
 
                         {product.description}
 
-                    </p>
-                    <a
+                     </p>
+                     <a
                         href={whatsappUrl}
                         target="_blank"
                         rel="noreferrer"
@@ -180,58 +230,22 @@ const relatedProducts = products
 
                          Consultar por WhatsApp
 
-                   </a>
-                   <section className="related-products">
-
-    <h2>
-
-        También te puede interesar
-
-    </h2>
-
-    <div className="related-grid">
-
-        {relatedProducts.map(item => (
-
-            <Link
-
-                key={item.slug}
-
-                to={`/producto/${item.slug}`}
-
-                className="related-card"
-
-            >
-
-                <img
-
-                    src={item.image}
-
-                    alt={item.name}
-
-                />
-
-                <h4>
-
-                    {item.name}
-
-                </h4>
-
-                <span>
-
-                    {item.price}
-
-                </span>
-
-            </Link>
-
-        ))}
-
-    </div>
-
-</section>
+                     </a>
 
                 </div>
+
+<section className="related-products">
+
+                     <FeaturedProducts
+
+                     cards={relatedCards}
+
+                      title="🧴 También te puede interesar"
+
+                      />
+
+                    </section>
+
 
             </div>
 

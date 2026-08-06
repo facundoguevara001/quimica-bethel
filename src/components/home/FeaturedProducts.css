@@ -5,8 +5,10 @@
 .featured-products{
 
     width:100%;
-    max-width:1400px;
-    margin-top:70px;
+
+    max-width:100%;
+
+    overflow:hidden;
 
 }
 
@@ -69,12 +71,20 @@
 
 }.featured-card{
 
-    transition:
+    width:260px;
 
-        transform .35s,
+}.related-products{
 
-        opacity .35s,
+    margin-top:70px;
 
-        box-shadow .35s;
+}
+
+.related-products .featured-title{
+
+    text-align:left;
+
+    font-size:34px;
+
+    margin-bottom:35px;
 
 }
