@@ -2,6 +2,7 @@ const products = [
   {
     "id": 1,
     "code": "CLO001",
+    "slug": "CLO001",
     "name": "cloro liquido",
     "category": "cloro",
     "subcategory": "tradicional",
@@ -20,6 +21,7 @@ const products = [
   {
     "id": 2,
     "code": "DET001",
+    "slug": "DET001",
     "name": "detergente liquido concentrado",
     "category": "detergente",
     "subcategory": "concentrado",
@@ -38,6 +40,7 @@ const products = [
   {
     "id": 3,
     "code": "LVA001",
+    "slug": "LVA001",
     "name": "lavavajillas listo para usar ",
     "category": "LAVAVAJILLAS",
     "subcategory": "listo para usar",
@@ -56,6 +59,7 @@ const products = [
   {
     "id": 4,
     "code": "LVA002",
+    "slug": "LVA002",
     "name": "lavavajillas concentrado",
     "category": "LAVAVAJILLAS",
     "subcategory": "concentrado",
@@ -74,6 +78,7 @@ const products = [
   {
     "id": 5,
     "code": "SUA001",
+    "slug": "SUA001",
     "name": "suavizante listo para usar",
     "category": "suavizante",
     "subcategory": "tradicional",
@@ -92,6 +97,7 @@ const products = [
   {
     "id": 6,
     "code": "SUA002",
+    "slug": "SUA002",
     "name": "suavizante listo para usar",
     "category": "suavizante",
     "subcategory": "tradicional",
@@ -110,6 +116,7 @@ const products = [
   {
     "id": 7,
     "code": "JBP001",
+    "slug": "JBP001",
     "name": "jabon en polvo",
     "category": "jabon en polvo ",
     "subcategory": "tradicional",
@@ -128,6 +135,7 @@ const products = [
   {
     "id": 8,
     "code": "PFA001",
+    "slug": "PFA001",
     "name": "perfume aromatico de base en agua",
     "category": "Perfume aromatico para ropa ",
     "subcategory": "base de agua",
@@ -146,6 +154,7 @@ const products = [
   {
     "id": 9,
     "code": "PFA002",
+    "slug": "PFA002",
     "name": "perfume aromatico de base en alcohol",
     "category": "Perfume aromatico para ropa ",
     "subcategory": "base alcohol",
@@ -164,6 +173,7 @@ const products = [
   {
     "id": 10,
     "code": "DES001",
+    "slug": "DES001",
     "name": "desengrasante industrial",
     "category": "desengrasante",
     "subcategory": "GA - 10",
@@ -182,6 +192,7 @@ const products = [
   {
     "id": 11,
     "code": "DES002",
+    "slug": "DES002",
     "name": "desengrasante lavamotor",
     "category": "desengrasante",
     "subcategory": "Lavamotor",
@@ -200,6 +211,7 @@ const products = [
   {
     "id": 12,
     "code": "DES003",
+    "slug": "DES003",
     "name": "desengrasante multi usos",
     "category": "desengrasante",
     "subcategory": "Multi uso",
@@ -218,6 +230,7 @@ const products = [
   {
     "id": 13,
     "code": "DES004",
+    "slug": "DES004",
     "name": "desengrasante quima manchas",
     "category": "desengrasante",
     "subcategory": "quima manchas",
@@ -236,6 +249,7 @@ const products = [
   {
     "id": 14,
     "code": "DES005",
+    "slug": "DES005",
     "name": "desengrasante limpiador cremoso",
     "category": "desengrasante",
     "subcategory": "limpiador cremoso",
@@ -254,6 +268,7 @@ const products = [
   {
     "id": 15,
     "code": "RJR001",
+    "slug": "RJR001",
     "name": "franela 40x50",
     "category": "Rejillas y repasadores",
     "subcategory": "franela",
@@ -272,6 +287,7 @@ const products = [
   {
     "id": 16,
     "code": "RJR002",
+    "slug": "RJR002",
     "name": "rejilla de cocina",
     "category": "Rejillas y repasadores",
     "subcategory": "paño amarillo cocina",
@@ -290,6 +306,7 @@ const products = [
   {
     "id": 17,
     "code": "RJR003",
+    "slug": "RJR003",
     "name": "Rejilla tipo americana",
     "category": "Rejillas y repasadores",
     "subcategory": "rejilla americana",
@@ -308,6 +325,7 @@ const products = [
   {
     "id": 18,
     "code": "RJR004",
+    "slug": "RJR004",
     "name": "Rejilla de auto",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla de auto economica",
@@ -326,6 +344,7 @@ const products = [
   {
     "id": 19,
     "code": "RJR005",
+    "slug": "RJR005",
     "name": "Rejilla de pabilo",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla pabilo doble",
@@ -344,6 +363,7 @@ const products = [
   {
     "id": 20,
     "code": "RJR006",
+    "slug": "RJR006",
     "name": "Rejilla de auto",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla de auto triple",
@@ -362,6 +382,7 @@ const products = [
   {
     "id": 21,
     "code": "RJR007",
+    "slug": "RJR007",
     "name": "Rejilla de auto",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla de auto doble",
@@ -380,6 +401,7 @@ const products = [
   {
     "id": 22,
     "code": "RJR008",
+    "slug": "RJR008",
     "name": "Rejilla cocina",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla cocina",
@@ -398,6 +420,7 @@ const products = [
   {
     "id": 23,
     "code": "RJR009",
+    "slug": "RJR009",
     "name": "Rejilla cocina",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla Kide",
@@ -416,6 +439,7 @@ const products = [
   {
     "id": 24,
     "code": "RJR011",
+    "slug": "RJR011",
     "name": "Rejilla pabilo",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla pabilo comun",
@@ -434,6 +458,7 @@ const products = [
   {
     "id": 25,
     "code": "RJR012",
+    "slug": "RJR012",
     "name": "Rejilla pabilo",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla pabilo especial",
@@ -452,6 +477,7 @@ const products = [
   {
     "id": 26,
     "code": "RJR013",
+    "slug": "RJR013",
     "name": "Rejilla cocina",
     "category": "Rejillas y repasadores",
     "subcategory": "Rejilla super cocina",
@@ -470,6 +496,7 @@ const products = [
   {
     "id": 27,
     "code": "RJR014",
+    "slug": "RJR014",
     "name": "Repasador",
     "category": "Rejillas y repasadores",
     "subcategory": "repasador toalla make",
@@ -488,6 +515,7 @@ const products = [
   {
     "id": 28,
     "code": "RJR015",
+    "slug": "RJR015",
     "name": "Repasador",
     "category": "Rejillas y repasadores",
     "subcategory": "repasador guarda francesa",
@@ -506,6 +534,7 @@ const products = [
   {
     "id": 29,
     "code": "RJR015",
+    "slug": "RJR015",
     "name": "Paño amarillo para piso",
     "category": "Rejillas y repasadores",
     "subcategory": "paño amarillo piso",
@@ -524,6 +553,7 @@ const products = [
   {
     "id": 30,
     "code": "TDP001",
+    "slug": "TDP001",
     "name": "trapo de piso blanco",
     "category": "trapos de piso",
     "subcategory": "",
@@ -542,6 +572,7 @@ const products = [
   {
     "id": 31,
     "code": "TDP002",
+    "slug": "TDP002",
     "name": "trapo de piso gris",
     "category": "trapos de piso",
     "subcategory": "",
@@ -560,6 +591,7 @@ const products = [
   {
     "id": 32,
     "code": "TDP003",
+    "slug": "TDP003",
     "name": "trapo de piso costurado ",
     "category": "trapos de piso",
     "subcategory": "",
@@ -578,6 +610,7 @@ const products = [
   {
     "id": 33,
     "code": "TDP004",
+    "slug": "TDP004",
     "name": "trapo de piso costurado",
     "category": "trapos de piso",
     "subcategory": "",
@@ -596,6 +629,7 @@ const products = [
   {
     "id": 34,
     "code": "TDP005",
+    "slug": "TDP005",
     "name": "trapo de piso nido de abeja",
     "category": "trapos de piso",
     "subcategory": "",
@@ -614,6 +648,7 @@ const products = [
   {
     "id": 35,
     "code": "TDP006",
+    "slug": "TDP006",
     "name": "trapo de piso nido de abeja economico",
     "category": "trapos de piso",
     "subcategory": "",
@@ -632,6 +667,7 @@ const products = [
   {
     "id": 36,
     "code": "TDP007",
+    "slug": "TDP007",
     "name": "trapo de piso rayado",
     "category": "trapos de piso",
     "subcategory": "",
@@ -650,6 +686,7 @@ const products = [
   {
     "id": 37,
     "code": "TDP008",
+    "slug": "TDP008",
     "name": "trapo de piso rayado",
     "category": "trapos de piso",
     "subcategory": "",
@@ -668,6 +705,7 @@ const products = [
   {
     "id": 38,
     "code": "EYE001",
+    "slug": "EYE001",
     "name": "Escoba Anden de 40 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba tipo Anden",
@@ -686,6 +724,7 @@ const products = [
   {
     "id": 39,
     "code": "EYE002",
+    "slug": "EYE002",
     "name": "Escoba Anden de 60 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba tipo Anden",
@@ -704,6 +743,7 @@ const products = [
   {
     "id": 40,
     "code": "EYE003",
+    "slug": "EYE003",
     "name": "Escoba Anden de 80 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba tipo Anden",
@@ -722,6 +762,7 @@ const products = [
   {
     "id": 41,
     "code": "EYE004",
+    "slug": "EYE004",
     "name": "Escoba Anden de 100 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba tipo Anden",
@@ -740,6 +781,7 @@ const products = [
   {
     "id": 42,
     "code": "EYE005",
+    "slug": "EYE005",
     "name": "Escoba Anden de 60 cm barregrueso",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba Anden Barregrueso",
@@ -758,6 +800,7 @@ const products = [
   {
     "id": 43,
     "code": "EYE006",
+    "slug": "EYE006",
     "name": "Escobillon Barrendero Economico",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Barrendero",
@@ -776,6 +819,7 @@ const products = [
   {
     "id": 44,
     "code": "EYE007",
+    "slug": "EYE007",
     "name": "Escoba tipo barredor de 35 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Barredor",
@@ -794,6 +838,7 @@ const products = [
   {
     "id": 45,
     "code": "EYE008",
+    "slug": "EYE008",
     "name": "Escoba tipo barredor de 60 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Barredor",
@@ -812,6 +857,7 @@ const products = [
   {
     "id": 46,
     "code": "EYE009",
+    "slug": "EYE009",
     "name": "Escoba tipo barredor de 80 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Barredor",
@@ -830,6 +876,7 @@ const products = [
   {
     "id": 47,
     "code": "EYE010",
+    "slug": "EYE010",
     "name": "Escoba tipo barredor de 100 cm",
     "category": "Escobas y escobillones",
     "subcategory": "Barredor",
@@ -848,6 +895,7 @@ const products = [
   {
     "id": 48,
     "code": "EYE011",
+    "slug": "EYE011",
     "name": "Barre Hojas Comun",
     "category": "Escobas y escobillones",
     "subcategory": "Barre Hojas",
@@ -866,6 +914,7 @@ const products = [
   {
     "id": 49,
     "code": "EYE012",
+    "slug": "EYE012",
     "name": "Barre Hojas Profesional",
     "category": "Escobas y escobillones",
     "subcategory": "Barre Hojas profesional",
@@ -884,6 +933,7 @@ const products = [
   {
     "id": 50,
     "code": "EYE013",
+    "slug": "EYE013",
     "name": "Escoba de tipo 6 hilos",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba 6 hilos",
@@ -902,6 +952,7 @@ const products = [
   {
     "id": 51,
     "code": "EYE014",
+    "slug": "EYE014",
     "name": "Escoba de tipo Americana",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba Americana",
@@ -920,6 +971,7 @@ const products = [
   {
     "id": 52,
     "code": "EYE015",
+    "slug": "EYE015",
     "name": "Escoba de tipo Capuchina",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba Capuchina",
@@ -938,6 +990,7 @@ const products = [
   {
     "id": 53,
     "code": "EYE016",
+    "slug": "EYE016",
     "name": "Escoba de tipo Barregrueso",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba Barregrueso",
@@ -956,6 +1009,7 @@ const products = [
   {
     "id": 54,
     "code": "EYE017",
+    "slug": "EYE017",
     "name": "Escobillon de tipo liso de Cerda",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon liso de cerda",
@@ -974,6 +1028,7 @@ const products = [
   {
     "id": 55,
     "code": "EYE018",
+    "slug": "EYE018",
     "name": "Escoba de tipo Galponera ",
     "category": "Escobas y escobillones",
     "subcategory": "Escoba Galponera",
@@ -992,6 +1047,7 @@ const products = [
   {
     "id": 56,
     "code": "EYE019",
+    "slug": "EYE019",
     "name": "Escobillon Rey Laqueado",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Laqueado",
@@ -1010,6 +1066,7 @@ const products = [
   {
     "id": 57,
     "code": "EYE020",
+    "slug": "EYE020",
     "name": "Escobillon tipo princesa laqueado",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Laqueado",
@@ -1028,6 +1085,7 @@ const products = [
   {
     "id": 58,
     "code": "EYE021",
+    "slug": "EYE021",
     "name": "Escobillon tipo barregrueso economico",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Barregrueso Economico",
@@ -1046,6 +1104,7 @@ const products = [
   {
     "id": 59,
     "code": "EYE022",
+    "slug": "EYE022",
     "name": "Escobillon tipo barregrueso salzano",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Barregrueso Salzano",
@@ -1064,6 +1123,7 @@ const products = [
   {
     "id": 60,
     "code": "EYE023",
+    "slug": "EYE023",
     "name": "Escobillon de tipo gondola",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon de tipo gondola",
@@ -1082,6 +1142,7 @@ const products = [
   {
     "id": 61,
     "code": "EYE024",
+    "slug": "EYE024",
     "name": "Escobillon de tipo Barrendero Salzano",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Barrendero Salzano",
@@ -1100,6 +1161,7 @@ const products = [
   {
     "id": 62,
     "code": "EYE025",
+    "slug": "EYE025",
     "name": " Escobillon bigote (cerda) Salzano",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Cerda de Salzano",
@@ -1118,6 +1180,7 @@ const products = [
   {
     "id": 63,
     "code": "EYE026",
+    "slug": "EYE026",
     "name": "Escobillon de tipo golf",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon de tipo golf",
@@ -1136,6 +1199,7 @@ const products = [
   {
     "id": 64,
     "code": "EYE027",
+    "slug": "EYE027",
     "name": "Escobillon Italia Salzano",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Italia Salzano",
@@ -1154,6 +1218,7 @@ const products = [
   {
     "id": 65,
     "code": "EYE028",
+    "slug": "EYE028",
     "name": "Escobillon Martina Salzano",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Martina Salzano",
@@ -1172,6 +1237,7 @@ const products = [
   {
     "id": 66,
     "code": "EYE029",
+    "slug": "EYE029",
     "name": "Escobillon Super Gondola",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Super Gondola",
@@ -1190,6 +1256,7 @@ const products = [
   {
     "id": 67,
     "code": "EYE030",
+    "slug": "EYE030",
     "name": "Escobillon Super Panda",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Super Panda",
@@ -1208,6 +1275,7 @@ const products = [
   {
     "id": 68,
     "code": "EYE031",
+    "slug": "EYE031",
     "name": "Escobillon Venecia Salzano",
     "category": "Escobas y escobillones",
     "subcategory": "Escobillon Venecia Salzano",
@@ -1226,6 +1294,7 @@ const products = [
   {
     "id": 69,
     "code": "EYE032",
+    "slug": "EYE032",
     "name": "Globo de Techo Make",
     "category": "Escobas y escobillones",
     "subcategory": "Globo de Techo Make",
@@ -1244,6 +1313,7 @@ const products = [
   {
     "id": 70,
     "code": "EYE033",
+    "slug": "EYE033",
     "name": "Globo de Techo Punky",
     "category": "Escobas y escobillones",
     "subcategory": "Globo de Techo Punky",
@@ -1262,6 +1332,7 @@ const products = [
   {
     "id": 71,
     "code": "EYE034",
+    "slug": "EYE034",
     "name": "Repuesto barredor",
     "category": "Escobas y escobillones",
     "subcategory": "Repuesto barredor",
@@ -1280,6 +1351,7 @@ const products = [
   {
     "id": 72,
     "code": "EYE035",
+    "slug": "EYE035",
     "name": "Repuesto barredor",
     "category": "Escobas y escobillones",
     "subcategory": "Repuesto barredor",
@@ -1298,6 +1370,7 @@ const products = [
   {
     "id": 73,
     "code": "EYE036",
+    "slug": "EYE036",
     "name": "Repuesto barredor",
     "category": "Escobas y escobillones",
     "subcategory": "Repuesto barredor",
@@ -1316,6 +1389,7 @@ const products = [
   {
     "id": 74,
     "code": "EYE037",
+    "slug": "EYE037",
     "name": "Repuesto barredor",
     "category": "Escobas y escobillones",
     "subcategory": "Repuesto barredor",
@@ -1334,6 +1408,7 @@ const products = [
   {
     "id": 75,
     "code": "EYE038",
+    "slug": "EYE038",
     "name": "Quita Pelusa Make",
     "category": "Escobas y escobillones",
     "subcategory": "Quita Pelusa Make",
@@ -1352,6 +1427,7 @@ const products = [
   {
     "id": 76,
     "code": "AUT001",
+    "slug": "AUT001",
     "name": "Limpiador Tipo \"Bruja\"",
     "category": "Cosmetica Automotor",
     "subcategory": "Bruja",
@@ -1370,6 +1446,7 @@ const products = [
   {
     "id": 77,
     "code": "AUT002",
+    "slug": "AUT002",
     "name": "Esponja para auto",
     "category": "Cosmetica Automotor",
     "subcategory": "Esponja",
@@ -1388,6 +1465,7 @@ const products = [
   {
     "id": 78,
     "code": "AUT003",
+    "slug": "AUT003",
     "name": "Silicona para auto por litro ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona",
@@ -1406,6 +1484,7 @@ const products = [
   {
     "id": 79,
     "code": "AUT004",
+    "slug": "AUT004",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1424,6 +1503,7 @@ const products = [
   {
     "id": 80,
     "code": "AUT005",
+    "slug": "AUT005",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1442,6 +1522,7 @@ const products = [
   {
     "id": 81,
     "code": "AUT006",
+    "slug": "AUT006",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1460,6 +1541,7 @@ const products = [
   {
     "id": 82,
     "code": "AUT007",
+    "slug": "AUT007",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1478,6 +1560,7 @@ const products = [
   {
     "id": 83,
     "code": "AUT008",
+    "slug": "AUT008",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1496,6 +1579,7 @@ const products = [
   {
     "id": 84,
     "code": "AUT009",
+    "slug": "AUT009",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1514,6 +1598,7 @@ const products = [
   {
     "id": 85,
     "code": "AUT010",
+    "slug": "AUT010",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1532,6 +1617,7 @@ const products = [
   {
     "id": 86,
     "code": "AUT011",
+    "slug": "AUT011",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1550,6 +1636,7 @@ const products = [
   {
     "id": 87,
     "code": "AUT012",
+    "slug": "AUT012",
     "name": "Silicona en Aerosol ",
     "category": "Cosmetica Automotor",
     "subcategory": "Silicona en Aerosol ",
@@ -1568,6 +1655,7 @@ const products = [
   {
     "id": 88,
     "code": "AUT013",
+    "slug": "AUT013",
     "name": "Shampoo Siliconado por litro",
     "category": "Cosmetica Automotor",
     "subcategory": "Shampoo Siliconado",
@@ -1586,6 +1674,7 @@ const products = [
   {
     "id": 89,
     "code": "AUT014",
+    "slug": "AUT014",
     "name": "Mini Lata Walker para auto",
     "category": "Cosmetica Automotor",
     "subcategory": "Mini Lata Walker",
@@ -1604,6 +1693,7 @@ const products = [
   {
     "id": 90,
     "code": "AUT015",
+    "slug": "AUT015",
     "name": "Perfume en Lata Walker",
     "category": "Cosmetica Automotor",
     "subcategory": "Perfume en Lata Walker",
@@ -1622,6 +1712,7 @@ const products = [
   {
     "id": 91,
     "code": "AUT016",
+    "slug": "AUT016",
     "name": "Perfume en Lata Walker",
     "category": "Cosmetica Automotor",
     "subcategory": "Perfume en Lata Walker",
@@ -1640,6 +1731,7 @@ const products = [
   {
     "id": 92,
     "code": "AUT017",
+    "slug": "AUT017",
     "name": "Perfume en Lata Walker",
     "category": "Cosmetica Automotor",
     "subcategory": "Perfume en Lata Walker",
@@ -1658,6 +1750,7 @@ const products = [
   {
     "id": 93,
     "code": "AUT018",
+    "slug": "AUT018",
     "name": "Perfume en Lata Walker",
     "category": "Cosmetica Automotor",
     "subcategory": "Perfume en Lata Walker",
@@ -1676,6 +1769,7 @@ const products = [
   {
     "id": 94,
     "code": "AUT019",
+    "slug": "AUT019",
     "name": "Perfume en Lata Walker",
     "category": "Cosmetica Automotor",
     "subcategory": "Perfume en Lata Walker",
@@ -1694,6 +1788,7 @@ const products = [
   {
     "id": 95,
     "code": "AUT020",
+    "slug": "AUT020",
     "name": "Cera para auto por litro",
     "category": "Cosmetica Automotor",
     "subcategory": "Cera",
@@ -1712,6 +1807,7 @@ const products = [
   {
     "id": 96,
     "code": "AUT021",
+    "slug": "AUT021",
     "name": "Limpia Tapizado en Aerosol",
     "category": "Cosmetica Automotor",
     "subcategory": "Limpia Tapizado en Aerosol",
@@ -1730,6 +1826,7 @@ const products = [
   {
     "id": 97,
     "code": "SHA001",
+    "slug": "SHA001",
     "name": "Shampoo para manos",
     "category": "Shampoo ",
     "subcategory": "Shampoo para manos",
@@ -1748,6 +1845,7 @@ const products = [
   {
     "id": 98,
     "code": "SHA002",
+    "slug": "SHA002",
     "name": "Shampoo para manos por 5 litros",
     "category": "Shampoo ",
     "subcategory": "Shampoo para manos",
@@ -1766,6 +1864,7 @@ const products = [
   {
     "id": 99,
     "code": "SHA003",
+    "slug": "SHA003",
     "name": "Shampoo para manos por 5 litros",
     "category": "Shampoo ",
     "subcategory": "Shampoo para manos",
@@ -1784,6 +1883,7 @@ const products = [
   {
     "id": 100,
     "code": "SHA004",
+    "slug": "SHA004",
     "name": "Shampoo para manos por 5 litros",
     "category": "Shampoo ",
     "subcategory": "Shampoo para manos",
@@ -1802,6 +1902,7 @@ const products = [
   {
     "id": 101,
     "code": "SHA005",
+    "slug": "SHA005",
     "name": "Shampoo para manos por 5 litros",
     "category": "Shampoo ",
     "subcategory": "Shampoo para manos",
@@ -1820,6 +1921,7 @@ const products = [
   {
     "id": 102,
     "code": "SHA006",
+    "slug": "SHA006",
     "name": "Shampoo para manos por 5 litros",
     "category": "Shampoo ",
     "subcategory": "Shampoo para manos",
@@ -1838,6 +1940,7 @@ const products = [
   {
     "id": 103,
     "code": "DAV001",
+    "slug": "DAV001",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1856,6 +1959,7 @@ const products = [
   {
     "id": 104,
     "code": "DAV002",
+    "slug": "DAV002",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1874,6 +1978,7 @@ const products = [
   {
     "id": 105,
     "code": "DAV003",
+    "slug": "DAV003",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1892,6 +1997,7 @@ const products = [
   {
     "id": 106,
     "code": "DAV004",
+    "slug": "DAV004",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1910,6 +2016,7 @@ const products = [
   {
     "id": 107,
     "code": "DAV005",
+    "slug": "DAV005",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1928,6 +2035,7 @@ const products = [
   {
     "id": 108,
     "code": "DAV006",
+    "slug": "DAV006",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1946,6 +2054,7 @@ const products = [
   {
     "id": 109,
     "code": "DAV007",
+    "slug": "DAV007",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1964,6 +2073,7 @@ const products = [
   {
     "id": 110,
     "code": "DAV008",
+    "slug": "DAV008",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -1982,6 +2092,7 @@ const products = [
   {
     "id": 111,
     "code": "DAV009",
+    "slug": "DAV009",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -2000,6 +2111,7 @@ const products = [
   {
     "id": 112,
     "code": "DAV010",
+    "slug": "DAV010",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -2018,6 +2130,7 @@ const products = [
   {
     "id": 113,
     "code": "DAV011",
+    "slug": "DAV011",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -2036,6 +2149,7 @@ const products = [
   {
     "id": 114,
     "code": "DAV012",
+    "slug": "DAV012",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -2054,6 +2168,7 @@ const products = [
   {
     "id": 115,
     "code": "DAV013",
+    "slug": "DAV013",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -2072,6 +2187,7 @@ const products = [
   {
     "id": 116,
     "code": "DAV014",
+    "slug": "DAV014",
     "name": "Difusor Aromatico Saphirus por 50 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 50 CC",
@@ -2090,6 +2206,7 @@ const products = [
   {
     "id": 117,
     "code": "DAV015",
+    "slug": "DAV015",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2108,6 +2225,7 @@ const products = [
   {
     "id": 118,
     "code": "DAV016",
+    "slug": "DAV016",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2126,6 +2244,7 @@ const products = [
   {
     "id": 119,
     "code": "DAV017",
+    "slug": "DAV017",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2144,6 +2263,7 @@ const products = [
   {
     "id": 120,
     "code": "DAV018",
+    "slug": "DAV018",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2162,6 +2282,7 @@ const products = [
   {
     "id": 121,
     "code": "DAV019",
+    "slug": "DAV019",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2180,6 +2301,7 @@ const products = [
   {
     "id": 122,
     "code": "DAV020",
+    "slug": "DAV020",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2198,6 +2320,7 @@ const products = [
   {
     "id": 123,
     "code": "DAV021",
+    "slug": "DAV021",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2216,6 +2339,7 @@ const products = [
   {
     "id": 124,
     "code": "DAV022",
+    "slug": "DAV022",
     "name": "Difusor Aromatico Saphirus por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus por 120 CC",
@@ -2234,6 +2358,7 @@ const products = [
   {
     "id": 125,
     "code": "DAV023",
+    "slug": "DAV023",
     "name": "Difusor Aromatico Saphirus combinados por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus combinados por 120 CC",
@@ -2252,6 +2377,7 @@ const products = [
   {
     "id": 126,
     "code": "DAV024",
+    "slug": "DAV024",
     "name": "Difusor Aromatico Saphirus combinados por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus combinados por 120 CC",
@@ -2270,6 +2396,7 @@ const products = [
   {
     "id": 127,
     "code": "DAV025",
+    "slug": "DAV025",
     "name": "Difusor Aromatico Saphirus combinados por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus combinados por 120 CC",
@@ -2288,6 +2415,7 @@ const products = [
   {
     "id": 128,
     "code": "DAV026",
+    "slug": "DAV026",
     "name": "Difusor Aromatico Saphirus combinados por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus combinados por 120 CC",
@@ -2306,6 +2434,7 @@ const products = [
   {
     "id": 129,
     "code": "DAV027",
+    "slug": "DAV027",
     "name": "Difusor Aromatico Saphirus combinados por 120 CC",
     "category": "Difusores Aromaticos",
     "subcategory": "Difusor Aromatico Saphirus combinados por 120 CC",
@@ -2324,6 +2453,7 @@ const products = [
   {
     "id": 130,
     "code": "PROM001",
+    "slug": "PROM001",
     "name": "Promo 15 litros",
     "category": "Promociones",
     "subcategory": "Promo 15 litros",
@@ -2342,6 +2472,7 @@ const products = [
   {
     "id": 131,
     "code": "PROM002",
+    "slug": "PROM002",
     "name": "Promo 12 litros + 5 de regalo",
     "category": "Promociones",
     "subcategory": "Promo 12 litros",
@@ -2360,6 +2491,7 @@ const products = [
   {
     "id": 132,
     "code": "PROM003",
+    "slug": "PROM003",
     "name": "Promo 10 litros",
     "category": "Promociones",
     "subcategory": "Promo 10 litros",

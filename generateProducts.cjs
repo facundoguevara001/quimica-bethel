@@ -12,6 +12,8 @@ const rows = XLSX.utils.sheet_to_json(sheet, {
     defval: ""
 });
 
+console.log(Object.keys(rows[0]));
+
 // Crear productos
 const products = rows
 .filter(row => row.CODIGO && row.PRODUCTO)
@@ -21,6 +23,8 @@ const products = rows
     id:index+1,
 
     code:row.CODIGO,
+
+    slug: row.SLUG,
 
     name:row.PRODUCTO,
 

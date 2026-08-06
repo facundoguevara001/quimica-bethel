@@ -1,42 +1,49 @@
 import "./FeaturedCard.css";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 function FeaturedCard({ product }) {
 
     return (
 
-        <div className="featured-card">
+    <Link
+        to={`/producto/${product.slug}`}
+        className="featured-card"
+    >
 
-            <div className="featured-image">
+        <div className="featured-image">
 
-                <img
-                    src={product.image}
-                    alt={product.name}
-                />
+            <img
+                src={product.image}
+                alt={product.name}
+            />
 
-            </div>
+        </div>
 
-            <div className="featured-info">
+        <div className="featured-info">
 
-                <h3>{product.name}</h3>
+            <h3>{product.name}</h3>
 
-                <span className="featured-price">
-                    {product.price}
-                </span>
+            <span className="featured-price">
 
-                <div className="featured-button">
+                {product.price}
 
-                    Ver promoción
+            </span>
 
-                    <FaArrowRight />
+            <div className="featured-button">
 
-                </div>
+                Ver promoción
+
+                <FaArrowRight />
 
             </div>
 
         </div>
 
-    );
+    </Link>
+
+);
 
 }
 
