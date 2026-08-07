@@ -1,13 +1,10 @@
 import "./Product.css";
 
-import {
-    useParams,
-    useNavigate,
-    Link
-} from "react-router-dom";
+import { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 
 import products from "../data/products";
-import { useState } from "react";
+
 import FeaturedProducts from "../components/home/FeaturedProducts";
 
 import {
@@ -15,56 +12,24 @@ import {
     FaCheckCircle,
     FaTruck,
     FaFileInvoice,
-    FaCreditCard
+    FaCreditCard,
 } from "react-icons/fa";
 
 function Product() {
 
     const { slug } = useParams();
     const navigate = useNavigate();
+
     const [imageOpen, setImageOpen] = useState(false);
 
-const product = products.find(
+    const product = products.find(
 
-    
-    p =>
-        String(p.slug).trim().toLowerCase() ===
-        String(slug).trim().toLowerCase()
-);
+        p =>
 
-const whatsappMessage = encodeURIComponent(
-`¡Hola! 👋
+            String(p.slug).trim().toLowerCase() ===
+            String(slug).trim().toLowerCase()
 
-Me interesa este producto:
-
-🧴 ${product?.name}
-
-📦 Código: ${product?.code}
-
-💲 Precio: ${product?.price}
-
-¿Podrían brindarme más información?`
-);
-
-const whatsappUrl =
-`https://wa.me/54911525218692?text=${whatsappMessage}`;
-
-const relatedProducts = products.filter(
-
-    p =>
-
-        p.category === product.category &&
-        p.slug !== product.slug
-
-);
-
-const relatedCards = [
-
-    ...relatedProducts,
-
-    ...relatedProducts
-
-];
+    );
 
     if (!product) {
 
@@ -80,77 +45,80 @@ const relatedCards = [
 
     }
 
+    const whatsappMessage = encodeURIComponent(
+
+`¡Hola! 👋
+
+Me interesa este producto:
+
+🧴 ${product.name}
+
+📦 Código: ${product.code}
+
+💲 Precio: ${product.price}
+
+¿Podrían brindarme más información?`
+
+    );
+
+    const whatsappUrl =
+        `https://wa.me/54911525218692?text=${whatsappMessage}`;
+
+    const relatedProducts = products.filter(
+
+        p =>
+
+            p.category === product.category &&
+            p.slug !== product.slug
+
+    );
+
+    const relatedCards = [
+
+        ...relatedProducts,
+        ...relatedProducts
+
+    ];
+
     return (
 
         <div className="product-page">
 
             <button
-                   className="back-button"
-                   onClick={() => navigate(-1)}
-                >
-                   ← Volver
-                   </button>
+                className="back-button"
+                onClick={() => navigate(-1)}
+            >
+                ← Volver
+            </button>
 
             <div className="product-container">
 
+                {/* FOTO */}
+
                 <div className="product-image">
 
-            <div className="image-wrapper">
+                    <div className="image-wrapper">
 
-             <img
-    src={product.image}
-    alt={product.name}
-    onClick={() => setImageOpen(true)}
-    style={{ cursor: "zoom-in" }}
-/>
-{
-    imageOpen && (
+                        <img
+                            src={product.image}
+                            alt={product.name}
+                            style={{ cursor: "zoom-in" }}
+                            onClick={() => setImageOpen(true)}
+                        />
 
-        <div
-            className="image-modal"
-            onClick={() => setImageOpen(false)}
-        >
+                    </div>
 
-            <img
+                </div>
 
-                src={product.image}
+                {/* INFORMACIÓN */}
 
-                alt={product.name}
+                <div className="product-info">
 
-                className="image-modal-content"
-
-                onClick={(e) => e.stopPropagation()}
-
-            />
-
-            <button
-
-                className="image-close"
-
-                onClick={() => setImageOpen(false)}
-
-            >
-
-                ✕
-
-            </button>
-
-        </div>
-
-    )
-}
-
-</div>
-
-    </div>
-
-            <div className="product-info">
-
-                     <span className="product-category">
+                    <span className="product-category">
 
                         {product.category}
 
-                     </span>
+                    </span>
 
                     <h1>
 
@@ -163,91 +131,128 @@ const relatedCards = [
                         {product.price}
 
                     </h2>
-            <div className="product-benefits">
 
-            <div>
+                    <div className="product-benefits">
 
-                     <FaCheckCircle />
+                        <div>
 
-                      <span>
+                            <FaCheckCircle />
 
-                        Stock disponible
+                            <span>
 
-                      </span>
+                                Stock disponible
 
-                </div>
+                            </span>
 
-            <div>
+                        </div>
 
-                    <FaTruck />
+                        <div>
 
-                      <span>
+                            <FaTruck />
 
-                      Envíos a todo el país
+                            <span>
 
-                      </span>
+                                Envíos a todo el país
 
-                </div>
+                            </span>
 
-            <div>
+                        </div>
 
-                     <FaFileInvoice />
+                        <div>
 
-                     <span>
- 
-                      Factura A y B
+                            <FaFileInvoice />
 
-                     </span>
+                            <span>
 
-                </div>
+                                Factura A y B
 
-            <div>
+                            </span>
 
-                     <FaCreditCard />
+                        </div>
 
-                     <span>
- 
-                     Todos los medios de pago
+                        <div>
 
-                     </span>
+                            <FaCreditCard />
 
-               </div>
+                            <span>
 
-            </div>
+                                Todos los medios de pago
 
-                     <p>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <p>
 
                         {product.description}
 
-                     </p>
-                     <a
+                    </p>
+
+                    <a
                         href={whatsappUrl}
                         target="_blank"
                         rel="noreferrer"
                         className="whatsapp-button"
-                        >
+                    >
+
                         <FaWhatsapp />
 
-                         Consultar por WhatsApp
+                        Consultar por WhatsApp
 
-                     </a>
+                    </a>
 
                 </div>
 
-<section className="related-products">
+            </div>
 
-                     <FeaturedProducts
+            {/* PRODUCTOS RELACIONADOS */}
 
-                     cards={relatedCards}
+            <div className="related-products">
 
-                      title="🧴 También te puede interesar"
+                <FeaturedProducts
 
-                      />
+                    cards={relatedCards}
 
-                    </section>
+                    title="🧴 También te puede interesar"
 
+                />
 
             </div>
+
+            {/* MODAL IMAGEN */}
+
+            {
+
+                imageOpen && (
+
+                    <div
+                        className="image-modal"
+                        onClick={() => setImageOpen(false)}
+                    >
+
+                        <img
+                            src={product.image}
+                            alt={product.name}
+                            className="image-modal-content"
+                            onClick={(e) => e.stopPropagation()}
+                        />
+
+                        <button
+                            className="image-close"
+                            onClick={() => setImageOpen(false)}
+                        >
+
+                            ✕
+
+                        </button>
+
+                    </div>
+
+                )
+
+            }
 
         </div>
 

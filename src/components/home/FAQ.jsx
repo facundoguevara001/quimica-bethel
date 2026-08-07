@@ -6,6 +6,11 @@ const questions = [
         question: "¿Realizan envíos?",
         answer:
             "Sí. Realizamos envíos dentro de CABA y Gran Buenos Aires."
+            
+        
+
+            
+            
     },
     {
         question: "¿Puedo comprar por mayor?",

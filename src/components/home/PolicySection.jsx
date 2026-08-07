@@ -14,19 +14,19 @@ function PolicySection() {
         {
             icon: <FaTruck />,
             title: "Envíos",
-            text: "Realizamos entregas rápidas en CABA y Gran Buenos Aires."
+            text: "Realizamos entregas rápidas en CABA y Gran Buenos Aires. Costo envio de $8500."
         },
 
         {
             icon: <FaMoneyBillWave />,
             title: "Formas de pago",
-            text: "Aceptamos efectivo, transferencia bancaria y billeteras virtuales."
+            text: "¡Abonas al recibir! Además, poder abonar en efectivo o transferencias😉."
         },
 
         {
             icon: <FaExchangeAlt />,
             title: "Cambios",
-            text: "Si un producto presenta inconvenientes, realizamos el reemplazo correspondiente."
+            text: "Si el producto no es lo que esperabas, solamente no lo abonas y el repartidor te hace el descuento por el mismo."
         },
 
         {
