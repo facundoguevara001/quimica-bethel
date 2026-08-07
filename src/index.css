@@ -1,4 +1,85 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/*======================================
+            RESET GLOBAL
+======================================*/
+
+*,
+*::before,
+*::after{
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+    -webkit-text-size-adjust:100%;
+
+}
+
+body{
+
+    margin:0;
+
+    min-width:320px;
+
+    overflow-x:hidden;
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:#0f1115;
+
+    color:white;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+button{
+
+    font:inherit;
+
+}
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+}
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+}
+
+#root{
+
+    width:100%;
+
+    min-height:100vh;
+
 }

@@ -71,8 +71,8 @@
 
     position:absolute;
 
-    width:420px;
-    height:420px;
+    width:clamp(220px,55vw,420px);
+    height:clamp(220px,55vw,420px);
 
     border-radius:50%;
 
@@ -95,9 +95,9 @@
 
 .logo-image{
 
-    width:320px;
+    width:clamp(180px,32vw,320px);
 
-    max-width:85%;
+    max-width:90%;
 
     border-radius:20px;
 
@@ -133,13 +133,15 @@
 
 .hero-title{
 
-    font-size:56px;
+    font-size:clamp(2.3rem,6vw,4rem);
 
     font-weight:800;
 
+    line-height:1.1;
+
     margin-top:20px;
 
-    margin-bottom:10px;
+    margin-bottom:14px;
 
 }
 
@@ -147,16 +149,17 @@
 
     color:#b9c3cf;
 
-    font-size:18px;
+    font-size:clamp(1rem,2vw,1.25rem);
 
     line-height:1.8;
 
-    max-width:650px;
+    max-width:700px;
 
     margin:auto;
 
-}
+    padding:0 18px;
 
+}
 @keyframes heroGlow{
 
     0%{
