@@ -24,61 +24,41 @@ function HomeLinks() {
             <button
                 className="catalog-button"
                 onClick={() => navigate("/catalogo")}
-            >
+            > 
+              <span className="catalog-button-bg"></span>
+              <span className="catalog-button-content"> 
 
-                <div className="catalog-left">
+              <span className="catalog-icon">
+                📦
+              </span> 
 
-                    <FaBoxOpen className="catalog-icon" />
+              <span>
+                Ver catálogo completo
+              </span>
 
-                    <div className="catalog-text">
+              <span className="catalog-arrow">
+                →
+              </span>
 
-                        <span className="catalog-badge">
-
-                            {products.length} productos disponibles
-
-                        </span>
-
-                        <h2>
-
-                            Ver Catálogo Completo
-
-                        </h2>
-
-                        <p>
-
-                            Encontrá productos para el hogar,
-                            empresas y comercios.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <FaChevronRight className="catalog-arrow" />
+              </span>
 
             </button>
 
             {/* PROMOCIONES */}
 
             <button
-                className="home-button promo-button"
+                className="promo-premium-button"
                 onClick={() => navigate("/promociones")}
             >
 
-                <div>
+                <span className="promo-button-bg"></span>
+                <span className="promo-button-content">
+                    <span className="promo-badge">HOT</span>
+                    <span className="promo-icon">🔥</span>
+                    <span className="promo-text">Ofertas y promociones</span>
+                    <span className="promo-arrow">→</span>
 
-                    <FaTag />
-
-                    <span>
-
-                        Ofertas y promociones
-
-                    </span>
-
-                </div>
-
-                <FaChevronRight />
+                </span>
 
             </button>
 

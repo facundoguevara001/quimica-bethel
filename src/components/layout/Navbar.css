@@ -43,13 +43,6 @@
     box-shadow:
         0 22px 55px rgba(0,0,0,.40);
 
-}.navbar:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:
-        0 22px 55px rgba(0,0,0,.40);
-
 }.navbar-links{
 
     display:flex;
@@ -107,5 +100,143 @@
 .navbar-links a:hover::after{
 
     width:100%;
+
+}/*======================================
+        BOTÓN HAMBURGUESA
+======================================*/
+
+.navbar-toggle{
+
+    display:none;
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.06);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    transition:.30s;
+
+}
+
+.navbar-toggle:hover{
+
+    background:#00c853;
+
+    transform:scale(1.05);
+
+}
+
+/*======================================
+        RESPONSIVE
+======================================*/
+
+@media (max-width:900px){
+
+    .navbar{
+
+        padding:16px 20px;
+
+        margin:15px;
+
+        border-radius:18px;
+
+    }
+
+    .navbar-logo{
+
+        font-size:22px;
+
+    }
+
+    .navbar-toggle{
+
+        display:flex;
+
+        justify-content:center;
+
+        align-items:center;
+
+    }
+
+    .navbar-links{
+
+        position:absolute;
+
+        top:calc(100% + 15px);
+
+        left:0;
+
+        right:0;
+
+        margin:0 15px;
+
+        padding:20px;
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:18px;
+
+        border-radius:18px;
+
+        background:rgba(18,20,23,.98);
+
+        backdrop-filter:blur(20px);
+
+        border:1px solid rgba(255,255,255,.08);
+
+        box-shadow:
+
+            0 20px 60px rgba(0,0,0,.45);
+
+        opacity:0;
+
+        pointer-events:none;
+
+        transform:translateY(-10px);
+
+        transition:.30s;
+
+    }
+
+    .navbar-links.active{
+
+        opacity:1;
+
+        pointer-events:auto;
+
+        transform:translateY(0);
+
+    }
+
+    .navbar-links a{
+
+        width:100%;
+
+        padding:12px;
+
+        text-align:center;
+
+        border-radius:12px;
+
+    }
+
+    .navbar-links a:hover{
+
+        background:rgba(255,255,255,.05);
+
+    }
 
 }

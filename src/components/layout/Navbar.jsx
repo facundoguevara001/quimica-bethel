@@ -1,42 +1,90 @@
 import "./Navbar.css";
 
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
 
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
 
-        <header className="navbar">
+<header className="navbar">
 
-            <div className="navbar-logo">
+    <div className="navbar-logo">
 
-                <Link to="/">
+        <Link to="/">
 
-                    🧪 <span>Bethel</span>
+            🧪 <span>Bethel</span>
 
-                </Link>
+        </Link>
 
-            </div>
+    </div>
 
-            <nav className="navbar-links">
+    <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
 
-                <Link to="/">Inicio</Link>
+        <Link to="/" onClick={() => setMenuOpen(false)}>
 
-                <Link to="/catalogo">Catálogo</Link>
+            Inicio
 
-                <Link to="/promociones">Promociones</Link>
+        </Link>
 
-                <a href="#faq">FAQ</a>
+        <Link to="/catalogo" onClick={() => setMenuOpen(false)}>
 
-                <a href="#nosotros">Nosotros</a>
+            Catálogo
 
-                <a href="#politica">Política</a>
+        </Link>
 
-            </nav>
+        <Link to="/promociones" onClick={() => setMenuOpen(false)}>
 
-        </header>
+            Promociones
 
-    );
+        </Link>
+
+        <a href="#faq" onClick={() => setMenuOpen(false)}>
+
+            FAQ
+
+        </a>
+
+        <a href="#nosotros" onClick={() => setMenuOpen(false)}>
+
+            Nosotros
+
+        </a>
+
+        <a href="#politica" onClick={() => setMenuOpen(false)}>
+
+            Política
+
+        </a>
+
+    </nav>
+
+    <button
+
+        className="navbar-toggle"
+
+        onClick={() => setMenuOpen(!menuOpen)}
+
+    >
+
+        {
+
+            menuOpen
+
+                ? <FaTimes />
+
+                : <FaBars />
+
+        }
+
+    </button>
+
+</header>
+
+);
 
 }
 

@@ -16,11 +16,17 @@
 
 .hero{
 
-    width:100%;
+    width:min(1200px,100%);
 
-    max-width:1200px;
+    margin-inline:auto;
 
     margin-bottom:60px;
+
+    padding-inline:20px;
+
+    position:relative;
+
+    overflow:hidden;
 
 }
 
@@ -308,5 +314,65 @@
     box-shadow:
 
         0 0 12px rgba(0,200,83,.35);
+
+}/*======================================
+        HERO RESPONSIVE
+======================================*/
+
+@media (max-width:768px){
+
+    .home{
+
+        padding:40px 20px;
+
+    }
+
+    .hero{
+
+        margin-bottom:40px;
+
+    }
+
+    .hero-title{
+
+        margin-top:10px;
+
+    }
+
+    .logo-container{
+
+        margin-bottom:20px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .home{
+
+        padding:30px 16px;
+
+    }
+
+    .hero-title{
+
+        line-height:1.15;
+
+    }
+
+    .hero-description{
+
+        line-height:1.6;
+
+        padding:0;
+
+    }
+
+    .logo-container{
+
+        margin-bottom:10px;
+
+    }
 
 }

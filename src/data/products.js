@@ -2466,7 +2466,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": true,
+    "featured": false,
     "image": "/products/PROM001.png"
   },
   {
@@ -2485,7 +2485,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": true,
+    "featured": false,
     "image": "/products/PROM002.png"
   },
   {
@@ -2504,7 +2504,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": true,
+    "featured": false,
     "image": "/products/PROM003.png"
   },
   {
@@ -2523,7 +2523,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/CLO002.png"
   },
   {
@@ -2542,7 +2542,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/CLO003.png"
   },
   {
@@ -2561,7 +2561,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/DET002.png"
   },
   {
@@ -2580,7 +2580,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/DET003.png"
   },
   {
@@ -2599,7 +2599,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/LVA003.png"
   },
   {
@@ -2618,7 +2618,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/LVA004.png"
   },
   {
@@ -2637,7 +2637,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/LVA005.png"
   },
   {
@@ -2656,7 +2656,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/LVA006.png"
   },
   {
@@ -2675,7 +2675,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/SUA003.png"
   },
   {
@@ -2694,7 +2694,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/SUA004.png"
   },
   {
@@ -2713,7 +2713,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/SUA005.png"
   },
   {
@@ -2732,7 +2732,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/SUA006.png"
   },
   {
@@ -2751,7 +2751,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/DPP001.png"
   },
   {
@@ -2808,7 +2808,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/DPP004.png"
   },
   {
@@ -2865,7 +2865,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/DPP007.png"
   },
   {
@@ -2922,7 +2922,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/DPP010.png"
   },
   {
@@ -3473,7 +3473,7 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": false,
+    "featured": true,
     "image": "/products/AER003.jpg"
   },
   {

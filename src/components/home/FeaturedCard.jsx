@@ -1,50 +1,87 @@
 import "./FeaturedCard.css";
-import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-
 function FeaturedCard({ product }) {
-
     return (
 
-    <Link
-        to={`/producto/${product.slug}`}
-        className="featured-card"
-    >
+        <Link
+            to={`/producto/${product.slug}`}
+            className="featured-card"
+        >
 
-        <div className="featured-image">
+            <div className="featured-content">
 
-            <img
-                src={product.image}
-                alt={product.name}
-            />
+                {/* PARTE DE ATRÁS */}
+                <div className="featured-back">
 
-        </div>
+                    <div className="featured-back-content">
 
-        <div className="featured-info">
+                        <div className="card-glow"></div>
 
-            <h3>{product.name}</h3>
+                        <div className="featured-circle"></div>
 
-            <span className="featured-price">
+                        <div
+                            className="featured-circle"
+                            id="bottom"
+                        ></div>
 
-                {product.price}
+                        <div
+                            className="featured-circle"
+                            id="right"
+                        ></div>
 
-            </span>
+                        <img
+                            src={product.image}
+                            alt={product.name}
+                            className="featured-back-image"
+                        />
 
-            <div className="featured-button">
+                    </div>
 
-                Ver promoción
+                </div>
 
-                <FaArrowRight />
+                {/* PARTE DELANTERA */}
+                <div className="featured-front">
+
+                    <img
+                        src={product.image}
+                        alt={product.name}
+                        className="featured-front-image"
+                    />
+
+                    <div className="featured-front-content">
+
+                        <span className="featured-badge">
+                            {product.category}
+                        </span>
+
+                        <div className="featured-description">
+
+                            <div className="featured-title">
+
+                                <h3>{product.name}</h3>
+
+                            </div>
+
+                            <span className="featured-price">
+                                {product.price}
+                            </span>
+
+                            <div className="featured-button">
+                                Ver producto →
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
-        </div>
+        </Link>
 
-    </Link>
-
-);
-
+    );
 }
 
 export default FeaturedCard;
