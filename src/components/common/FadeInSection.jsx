@@ -13,7 +13,8 @@ function FadeInSection({ children, delay = 0 }) {
             }}
             viewport={{
                 once: true,
-                amount: 0.2
+                amount: 0,
+                margin: "0px 0px -100px 0px"
             }}
             transition={{
                 duration: 0.6,
