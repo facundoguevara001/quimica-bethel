@@ -2,8 +2,14 @@
         FEATURED CARD PREMIUM
 ======================================*/
 
+/*======================================
+        CONTENEDOR PRINCIPAL
+======================================*/
+
 .featured-card{
     display:block;
+    position:relative;
+
     width:300px;
     height:430px;
 
@@ -12,51 +18,52 @@
     text-decoration:none;
     color:inherit;
 
-    perspective:1200px;
-
     background:transparent;
+    border:none;
 
     overflow:visible;
 
-    border:none;
+    perspective:1200px;
+}
 
-    position:relative;
+/*======================================
+        CONTENEDOR 3D
+======================================*/
 
-}.featured-content{
-
+.featured-content{
     position:relative;
 
     width:100%;
-
     height:100%;
 
     transform-style:preserve-3d;
 
-    transition:transform .65s cubic-bezier(.22,.61,.36,1);
+    transition:
+        transform .65s cubic-bezier(.22,.61,.36,1);
+}
 
-}.featured-card:hover .featured-content{
-
+.featured-card:hover .featured-content{
     transform:rotateY(180deg);
+}
 
-}.card-glow{
+/*======================================
+            GLOW
+======================================*/
 
+.card-glow{
     position:absolute;
     inset:0;
 
     overflow:hidden;
-
     border-radius:22px;
-
 }
 
-/* ========= CÍRCULOS ========= */
+/*======================================
+            CÍRCULOS
+======================================*/
 
 .featured-circle{
-
     position:absolute;
-
-    width:90px;
-    height:90px;
 
     border-radius:50%;
 
@@ -68,21 +75,20 @@
 
     background:#00c853;
 
+    width:90px;
+    height:90px;
 }
 
-/* círculo principal */
+/* Principal */
 
 .featured-circle:first-child{
-
     left:-15px;
     top:-10px;
-
 }
 
-/* inferior */
+/* Inferior */
 
 #bottom{
-
     width:170px;
     height:170px;
 
@@ -92,26 +98,41 @@
     background:#00b4ff;
 
     animation-delay:-1s;
-
 }
 
-/* superior derecho */
+/* Superior Derecho */
 
 #right{
-
     width:55px;
     height:55px;
 
-    right:15px;
     top:25px;
+    right:15px;
 
     background:#00ff88;
 
     animation-delay:-2s;
+}
 
-}/*=========================
-      DOS CARAS
-==========================*/
+@keyframes floating{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/*======================================
+        DOS CARAS
+======================================*/
 
 .featured-front,
 .featured-back{
@@ -120,18 +141,21 @@
 
     inset:0;
 
+    width:100%;
+    height:100%;
+
     border-radius:22px;
 
     overflow:hidden;
 
-    width:100%;
-    height:100%;
-
     backface-visibility:hidden;
-
     -webkit-backface-visibility:hidden;
 
 }
+
+/*======================================
+            FRENTE
+======================================*/
 
 .featured-front{
 
@@ -143,14 +167,14 @@
 
     box-shadow:0 20px 45px rgba(0,0,0,.35);
 
-}.featured-front-image{
+}
+
+.featured-front-image{
 
     position:absolute;
-
     inset:0;
 
     width:100%;
-
     height:100%;
 
     object-fit:cover;
@@ -160,16 +184,15 @@
 .featured-front-content{
 
     position:absolute;
-
     inset:0;
 
     display:flex;
-
     flex-direction:column;
-
     justify-content:space-between;
 
     padding:16px;
+
+    z-index:3;
 
 }
 
@@ -188,7 +211,6 @@
     color:white;
 
     font-size:12px;
-
     font-weight:700;
 
 }
@@ -235,13 +257,11 @@
 
     margin-top:16px;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
     height:46px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     border-radius:12px;
 
@@ -253,27 +273,27 @@
 
 }
 
-/* ---------- Dorso ---------- */
-
+/*======================================
+            DORSO
+======================================*/
 
 .featured-back{
 
-    background:#151515;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
-}.featured-back::before{
+    background:#151515;
+
+}
+
+.featured-back::before{
 
     content:"";
 
     position:absolute;
 
     width:180px;
-
     height:180%;
 
     background:
@@ -297,58 +317,28 @@
 
     border-radius:20px;
 
-    background:#12161b;
-
     overflow:hidden;
 
+    background:#12161b;
+
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
 }
 
-.featured-front-content{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
-
-    padding:16px;
-
-    z-index:3;
-
-}@keyframes borderRotate{
-
-    from{
-        transform:rotate(0deg);
-    }
-
-    to{
-        transform:rotate(360deg);
-    }
-
-}.featured-back-image{
-
-    width:82%;
-
-    max-height:82%;
-
-    object-fit:contain;
+.featured-back-image{
 
     position:relative;
 
     z-index:3;
 
-    filter:
+    width:82%;
+    max-height:82%;
 
+    object-fit:contain;
+
+    filter:
         drop-shadow(0 25px 45px rgba(0,0,0,.45));
 
     transition:.45s;
@@ -358,9 +348,23 @@
 .featured-card:hover .featured-back-image{
 
     transform:
-
         scale(1.05)
-
         rotate(-2deg);
+
+}
+
+/*======================================
+        ANIMACIÓN BORDE
+======================================*/
+
+@keyframes borderRotate{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
 
 }
