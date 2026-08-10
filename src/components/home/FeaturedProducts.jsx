@@ -21,7 +21,7 @@ useAnimationFrame(() => {
 
         const next = prev - 0.6;
 
-        if (next <= -(cards.length / 2 * 310)) {
+        if (next <= -(cards.length / 2 * 368)) {
 
             return 0;
 

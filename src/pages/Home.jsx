@@ -14,7 +14,7 @@ import FAQ from "../components/home/FAQ";
 import AboutUs from "../components/home/AboutUs";
 import PolicySection from "../components/home/PolicySection";
 import ContactSection from "../components/home/ContactSection";
-import TopNavigation from "../components/home/TopNavigation";
+
 import Navbar from "../components/layout/Navbar";
 import FadeInSection from "../components/common/FadeInSection";
 

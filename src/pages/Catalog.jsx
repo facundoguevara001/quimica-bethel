@@ -86,7 +86,7 @@ function Catalog({
 />
 
 <CartButton
-    onClick={() => setCartOpen(false)}
+    onClick={() => setCartOpen(true)}
 />
 
 <CartDrawer
