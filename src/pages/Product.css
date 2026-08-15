@@ -119,7 +119,7 @@
 
 .product-category{
 
-    color:#00c853;
+    color:#4F46E5;
 
     font-weight:700;
 
@@ -177,7 +177,7 @@
 
     border-radius:18px;
 
-    background:#00c853;
+    background:linear-gradient(135deg,#4F46E5,#4338CA);
 
     color:white;
 
@@ -191,7 +191,7 @@
 
     box-shadow:
 
-        0 15px 40px rgba(0,200,83,.25);
+        0 15px 40px rgba(79,70,229,.30);
 
 }
 
@@ -205,13 +205,12 @@
 
     transform:translateY(-4px);
 
-    background:#09d861;
-
     box-shadow:
 
-        0 25px 60px rgba(0,200,83,.40);
+        0 25px 60px rgba(79,70,229,.45);
 
-}.product-benefits{
+}
+.product-benefits{
 
     margin:35px 0;
 
@@ -461,7 +460,7 @@
 
 .image-close:hover{
 
-    background:#00c853;
+    background:#4F46E5;
 
     transform:rotate(90deg) scale(1.1);
 

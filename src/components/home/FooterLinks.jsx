@@ -3,9 +3,25 @@ import "./FooterLinks.css";
 import {
     FaQuestionCircle,
     FaBuilding,
-    FaClipboardList,
-    FaCommentDots
+    FaClipboardList
 } from "react-icons/fa";
+
+function scrollToSection(id) {
+
+    const element = document.getElementById(id);
+
+    if (element) {
+
+        element.scrollIntoView({
+
+            behavior: "smooth",
+            block: "start"
+
+        });
+
+    }
+
+}
 
 function FooterLinks() {
 
@@ -13,7 +29,10 @@ function FooterLinks() {
 
         <section className="footer-links">
 
-            <button className="footer-link">
+            <button
+                className="footer-link"
+                onClick={() => scrollToSection("faq")}
+            >
 
                 <FaQuestionCircle />
 
@@ -21,7 +40,10 @@ function FooterLinks() {
 
             </button>
 
-            <button className="footer-link">
+            <button
+                className="footer-link"
+                onClick={() => scrollToSection("nosotros")}
+            >
 
                 <FaBuilding />
 
@@ -29,19 +51,14 @@ function FooterLinks() {
 
             </button>
 
-            <button className="footer-link">
+            <button
+                className="footer-link"
+                onClick={() => scrollToSection("politica")}
+            >
 
                 <FaClipboardList />
 
                 <span>Política comercial</span>
-
-            </button>
-
-            <button className="footer-link">
-
-                <FaCommentDots />
-
-                <span>Déjanos tu comentario</span>
 
             </button>
 

@@ -1,6 +1,6 @@
 import "./Hero.css";
 import { motion } from "framer-motion";
-import HeroParticles from "./HeroParticles";
+import { Link } from "react-router-dom";
 
 function Hero() {
 
@@ -12,35 +12,59 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
         >
-<HeroParticles />
 
-             <div className="hero-content">
+            <div className="hero-content">
 
-             <div className="logo-container">
+                <div className="logo-container">
 
-                <img
-                    src="/logo.png"
-                    alt="Química Bethel"
-                    className="logo-image"
-                />
+                    <img
+                        src="/logo.png"
+                        alt="Química Bethel"
+                        className="logo-image"
+                    />
 
-            </div>
+                </div>
 
-            <h1 className="hero-title">
+                <h1 className="hero-title">
 
-                Química Bet. Inc
+                    Todo lo que necesitás para limpiar,
+                    <br />
+                    en un solo pedido mensual
 
-            </h1>
+                </h1>
 
-            <p className="hero-description">
+                <p className="hero-description">
 
-                Productos de limpieza de calidad
+                    Comprá tus productos de limpieza y lavandería a precio
+                    de por mayor y recibilos en la puerta de tu casa o negocio.
 
-                <br />
+                </p>
 
-                para tu hogar y negocio 🌿
+                <div className="hero-actions">
 
-            </p>
+                    <Link
+                        to="/catalogo"
+                        className="hero-cta-primary"
+                    >
+
+                        Ver catálogo completo →
+
+                    </Link>
+
+                    <a
+
+                    
+                        href="https://wa.me/5491125218692?text=Hola,%20quiero%20hacer%20un%20pedido"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="hero-cta-secondary"
+                    >
+
+                        Consultar por WhatsApp
+
+                    </a>
+
+                </div>
 
             </div>
 

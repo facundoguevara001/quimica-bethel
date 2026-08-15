@@ -4,12 +4,6 @@
 
 .product-card{
 
-    --card-glow: linear-gradient(
-        135deg,
-        #00c853,
-        #00b0ff
-    );
-
     position:relative;
 
     display:flex;
@@ -21,7 +15,7 @@
 
     padding:2px;
 
-    background:var(--card-glow);
+    background:rgba(255,255,255,.08);
 
     transition:.35s;
 
@@ -32,6 +26,12 @@
 }
 
 .product-card:hover{
+
+    background:linear-gradient(
+        135deg,
+        #4F46E5,
+        #4338CA
+    );
 
     transform:
         translateY(-8px)
@@ -49,7 +49,7 @@
 
     overflow:hidden;
 
-    background:#181c22;
+    background:var(--surface);
 
     border-radius:18px 18px 0 0;
 
@@ -137,7 +137,7 @@
 
     transform:scale(1.08);
 
-    background:#00c853;
+    background:var(--primary);
 
     color:white;
 
@@ -160,8 +160,8 @@
 
     background:linear-gradient(
         180deg,
-        rgba(27,30,36,.98),
-        rgba(20,23,28,.98)
+        rgba(30,36,80,.95),
+        rgba(18,22,52,.97)
     );
 
     border-left:1px solid rgba(255,255,255,.05);
@@ -224,17 +224,17 @@
 
     background:linear-gradient(
         135deg,
-        rgba(0,200,83,.18),
-        rgba(0,176,255,.10)
+        rgba(79,70,229,.20),
+        rgba(79,70,229,.08)
     );
 
-    border:1px solid rgba(0,200,83,.25);
+    border:1px solid rgba(79,70,229,.35);
 
     font-size:30px;
 
     font-weight:800;
 
-    color:#2cff88;
+    color:#9d97ff;
 
 }
 
@@ -321,7 +321,7 @@
 
 .buy-button{
 
-    background:#25D366;
+    background:var(--primary);
 
     color:white;
 
@@ -339,13 +339,13 @@
 
 .buy-button:hover{
 
-    background:#1ebe5d;
+    background:#5a52f0;
 
 }
 
 .cart-button{
 
-    background:#0077ff;
+    background:var(--primary);
 
     color:white;
 
@@ -353,6 +353,6 @@
 
 .cart-button:hover{
 
-    background:#1484ff;
+    background:#5a52f0;
 
 }

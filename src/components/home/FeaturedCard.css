@@ -162,7 +162,7 @@
 
     transform:rotateY(180deg);
 
-    background:#161a20;
+    background:var(--surface);
 
     border:1px solid rgba(255,255,255,.08);
 
@@ -266,7 +266,7 @@
 
     border-radius:12px;
 
-    background:#0077ff;
+    background:var(--primary);
 
     color:white;
 
@@ -284,7 +284,7 @@
     justify-content:center;
     align-items:center;
 
-    background:#151515;
+    background:#10132A;
 
 }
 
@@ -320,7 +320,7 @@
 
     overflow:hidden;
 
-    background:#12161b;
+    background:#0E1130;
 
     display:flex;
     justify-content:center;

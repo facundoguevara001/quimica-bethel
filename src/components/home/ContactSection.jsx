@@ -65,9 +65,11 @@ function ContactSection() {
 
                 </a>
 
-                <button
+
                     className="contact-card comment"
-                >
+                    href="https://wa.me/5491125218692?text=Hola,%20quiero%20dejarles%20mi%20opini%C3%B3n%20sobre%20mi%20compra"
+                    target="_blank"
+                    rel="noreferrer"
 
                     <FaCommentDots />
 
@@ -79,7 +81,7 @@ function ContactSection() {
 
                     </p>
 
-                </button>
+                    
 
             </div>
 

@@ -5,9 +5,9 @@
 
     margin:40px auto;
 
-    background:#1b1f27;
+    background:var(--surface);
 
-    border:1px solid #2b3343;
+    border:1px solid var(--border);
 
     border-radius:16px;
 

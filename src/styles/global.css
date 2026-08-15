@@ -6,20 +6,20 @@
 
 :root{
 
-    --primary:#00c853;
-    --primary-dark:#00a844;
+    --primary:#4F46E5;
+    --primary-dark:#4338CA;
 
-    --background:#0f1115;
+    --background:#0B0F2B;
 
-    --surface:#181b22;
+    --surface:#141935;
 
-    --surface-light:#222733;
+    --surface-light:#1E2450;
 
     --text:#ffffff;
 
     --text-secondary:#a8b0bf;
 
-    --border:#2c3443;
+    --border:#2C3268;
 
     --shadow:0 15px 40px rgba(0,0,0,.35);
 
@@ -59,7 +59,7 @@ body{
             transparent 40%
         ),
 
-        #070707;
+       #0B0F2B;
 
     background-attachment:fixed;
 
@@ -135,7 +135,7 @@ img{
 
     border-radius:50%;
 
-    background:#00c853;
+    background:var(--primary);
 
     color:white;
 

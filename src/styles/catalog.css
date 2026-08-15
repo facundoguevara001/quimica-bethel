@@ -1,6 +1,6 @@
 .catalog-page{
     min-height:100vh;
-    background:#0b0f14;
+    background:#0B0F2B;
     padding:24px;
     max-width:1400px;
     margin:0 auto;
@@ -21,12 +21,12 @@
 
 .back-button:hover{
     transform:translateY(-2px);
-    background:rgba(0,200,83,.15);
-    border-color:rgba(0,200,83,.35);
+    background:rgba(79,70,229,.15);
+    border-color:rgba(79,70,229,.35);
 }
 
 .catalog-banner{
-    background:linear-gradient(135deg,#00c853,#009688);
+    background:linear-gradient(135deg,#4F46E5,#4338CA);
     border-radius:24px;
     padding:48px 32px;
     text-align:center;

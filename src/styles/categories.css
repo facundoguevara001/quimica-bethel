@@ -32,7 +32,7 @@
 
     border:none;
 
-    background:#1c212b;
+    background:var(--surface);
 
     color:#bfc7d5;
 
@@ -48,13 +48,13 @@
 
     transition:.25s;
 
-    border:1px solid #30384a;
+    border:1px solid var(--border);
 
 }
 
 .category-btn:hover{
 
-    background:#2a3242;
+    background:var(--surface-light);
 
     color:white;
 
@@ -64,15 +64,17 @@
 
 .category-active{
 
-    background:#00d26a;
+    background:#4F46E5;
 
     color:white;
 
     border:none;
 
-    box-shadow:0 8px 25px rgba(0,210,106,.35);
+    box-shadow:0 8px 25px rgba(79,70,229,.35);
 
-}/* ============================
+}
+
+/* ============================
    CATEGORÍAS RESPONSIVE
 ============================ */
 
