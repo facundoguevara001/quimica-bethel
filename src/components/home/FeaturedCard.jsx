@@ -2,6 +2,7 @@ import "./FeaturedCard.css";
 import { Link } from "react-router-dom";
 
 function FeaturedCard({ product }) {
+
     return (
 
         <Link
@@ -9,79 +10,48 @@ function FeaturedCard({ product }) {
             className="featured-card"
         >
 
-            <div className="featured-content">
+            <div className="featured-card-image">
 
-                {/* PARTE DE ATRÁS */}
-                <div className="featured-back">
+                <span className="featured-card-tag">
 
-                    <div className="featured-back-content">
+                    {product.category}
 
-                        <div className="card-glow"></div>
+                </span>
 
-                        <div className="featured-circle"></div>
+                <span className="featured-card-size">
 
-                        <div
-                            className="featured-circle"
-                            id="bottom"
-                        ></div>
+                    {product.description}
 
-                        <div
-                            className="featured-circle"
-                            id="right"
-                        ></div>
+                </span>
 
-                        <img
-                            src={product.image}
-                            alt={product.name}
-                            className="featured-back-image"
-                        />
+                <img
+                    src={product.image}
+                    alt={product.name}
+                    loading="lazy"
+                />
 
-                    </div>
+            </div>
 
-                </div>
+            <div className="featured-card-info">
 
-                {/* PARTE DELANTERA */}
-                <div className="featured-front">
+                <h3>
 
-                    <img
-                        src={product.image}
-                        alt={product.name}
-                        className="featured-front-image"
-                    />
+                    {product.name}
 
-                    <div className="featured-front-content">
+                </h3>
 
-                        <span className="featured-badge">
-                            {product.category}
-                        </span>
+                <span className="featured-card-cta">
 
-                        <div className="featured-description">
+                    Tocá para ver precio →
 
-                            <div className="featured-title">
-
-                                <h3>{product.name}</h3>
-
-                            </div>
-
-                            <span className="featured-price">
-                                {product.price}
-                            </span>
-
-                            <div className="featured-button">
-                                Ver producto →
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
+                </span>
 
             </div>
 
         </Link>
 
     );
+
 }
 
 export default FeaturedCard;

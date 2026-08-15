@@ -1,0 +1,282 @@
+/*======================================
+        SECCIÓN — CONTENEDOR
+======================================*/
+
+.category-section{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:70px auto 0;
+
+}
+
+/*======================================
+        ENCABEZADO
+======================================*/
+
+.category-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.category-eyebrow{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+.category-header h2{
+
+    font-size:clamp(1.6rem,3vw,2.2rem);
+
+    font-weight:800;
+
+    color:white;
+
+    max-width:480px;
+
+}
+
+.category-header p{
+
+    max-width:340px;
+
+    color:#9aa3b5;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+}
+
+/*======================================
+        GRID DE FICHAS
+======================================*/
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+/*======================================
+        FICHA INDIVIDUAL
+======================================*/
+
+.category-tile{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:22px 24px;
+
+    border-radius:18px;
+
+    border:1px solid var(--border);
+
+    background:rgba(255,255,255,.03);
+
+    cursor:pointer;
+
+    text-align:left;
+
+    transition:.25s;
+
+}
+
+.category-tile:hover{
+
+    transform:translateY(-4px);
+
+    border-color:var(--primary);
+
+    background:rgba(79,70,229,.08);
+
+}
+
+.category-tile-number{
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:#6b7488;
+
+}
+
+.category-tile-icon{
+
+    width:44px;
+
+    height:44px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:12px;
+
+    background:rgba(79,70,229,.15);
+
+    color:var(--primary);
+
+    font-size:18px;
+
+}
+
+.category-tile-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2px;
+
+}
+
+.category-tile-text strong{
+
+    font-size:16px;
+
+    color:white;
+
+}
+
+.category-tile-text small{
+
+    font-size:12px;
+
+    color:#8d97ab;
+
+}
+
+.category-tile-arrow{
+
+    margin-left:auto;
+
+    color:#6b7488;
+
+    transition:.25s;
+
+}
+
+.category-tile:hover .category-tile-arrow{
+
+    transform:translateX(4px);
+
+    color:var(--primary);
+
+}
+
+/*======================================
+        VARIANTE "OFERTAS" (urgencia)
+======================================*/
+
+.category-tile-hot{
+
+    border-color:rgba(255,122,0,.35);
+
+}
+
+.category-tile-hot:hover{
+
+    border-color:#ff7a00;
+
+    background:rgba(255,122,0,.08);
+
+}
+
+.category-tile-hot .category-tile-icon{
+
+    background:rgba(255,122,0,.18);
+
+    color:#ff7a00;
+
+}
+
+.category-tile-hot:hover .category-tile-arrow{
+
+    color:#ff7a00;
+
+}
+
+.category-tile-badge{
+
+    position:absolute;
+
+    top:-9px;
+
+    right:16px;
+
+    padding:4px 10px;
+
+    border-radius:999px;
+
+    background:#ff3d00;
+
+    color:white;
+
+    font-size:10px;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+}
+
+/*======================================
+        RESPONSIVE
+======================================*/
+
+@media (max-width:768px){
+
+    .category-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .category-header{
+
+        align-items:flex-start;
+
+    }
+}

@@ -37,9 +37,19 @@ useAnimationFrame(() => {
 
         <section className="featured-products">
 
-            <h2 className="featured-title">
-    {title}
-</h2>
+            <div className="featured-header">
+
+                <h2 className="featured-title">
+                    {title}
+                </h2>
+
+                <span className="featured-hint">
+
+                    Tocá una ficha para ver el precio →
+
+                </span>
+
+            </div>
 
             <div className="featured-slider">
 

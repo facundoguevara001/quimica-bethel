@@ -1,0 +1,135 @@
+/*======================================
+        LOGO — CONTENEDOR
+======================================*/
+
+.brand-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/*======================================
+        CAJA "QK"
+======================================*/
+
+.brand-mark{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:42px;
+
+    height:42px;
+
+    flex-shrink:0;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#4F46E5,#4338CA);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:800;
+
+    letter-spacing:.5px;
+
+    box-shadow:0 8px 20px rgba(79,70,229,.35);
+
+}
+
+/*======================================
+        WORDMARK (dos líneas)
+======================================*/
+
+.brand-wordmark{
+
+    display:flex;
+
+    flex-direction:column;
+
+    line-height:1.15;
+
+}
+
+.brand-wordmark strong{
+
+    font-size:17px;
+
+    font-weight:800;
+
+    color:white;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.brand-wordmark span{
+
+    font-size:10px;
+
+    font-weight:600;
+
+    color:#9aa3b5;
+
+    text-transform:uppercase;
+
+    letter-spacing:1.5px;
+
+}
+
+/*======================================
+        VARIANTE "HERO"
+        (sobre foto con overlay oscuro,
+        usa el lima de acento en el subtítulo)
+======================================*/
+
+.brand-logo-hero .brand-wordmark span{
+
+    color:#C6FF3D;
+
+}
+
+/*======================================
+        RESPONSIVE
+======================================*/
+
+@media (max-width:480px){
+
+    .brand-mark{
+
+        width:36px;
+
+        height:36px;
+
+        font-size:14px;
+
+    }
+
+    .brand-wordmark strong{
+
+        font-size:15px;
+
+    }
+
+    .brand-wordmark span{
+
+        font-size:9px;
+
+    }
+
+}

@@ -1,371 +1,187 @@
-
 /*======================================
-        FEATURED CARD PREMIUM
-======================================*/
-
-/*======================================
-        CONTENEDOR PRINCIPAL
+        TARJETA — CONTENEDOR
 ======================================*/
 
 .featured-card{
-    display:block;
-    position:relative;
 
-    width:300px;
-    height:430px;
+    display:flex;
+
+    flex-direction:column;
+
+    width:280px;
 
     flex:0 0 auto;
-
-    text-decoration:none;
-    color:inherit;
-
-    background:transparent;
-    border:none;
-
-    overflow:visible;
-
-    perspective:1200px;
-}
-
-/*======================================
-        CONTENEDOR 3D
-======================================*/
-
-.featured-content{
-    position:relative;
-
-    width:100%;
-    height:100%;
-
-    transform-style:preserve-3d;
-
-    transition:
-        transform .65s cubic-bezier(.22,.61,.36,1);
-}
-
-.featured-card:hover .featured-content{
-    transform:rotateY(180deg);
-}
-
-/*======================================
-            GLOW
-======================================*/
-
-.card-glow{
-    position:absolute;
-    inset:0;
-
-    overflow:hidden;
-    border-radius:22px;
-}
-
-/*======================================
-            CÍRCULOS
-======================================*/
-
-.featured-circle{
-    position:absolute;
-
-    border-radius:50%;
-
-    filter:blur(38px);
-
-    opacity:.9;
-
-    animation:floating 4s ease-in-out infinite;
-
-    background:#00c853;
-
-    width:90px;
-    height:90px;
-}
-
-/* Principal */
-
-.featured-circle:first-child{
-    left:-15px;
-    top:-10px;
-}
-
-/* Inferior */
-
-#bottom{
-    width:170px;
-    height:170px;
-
-    left:45%;
-    bottom:-40px;
-
-    background:#00b4ff;
-
-    animation-delay:-1s;
-}
-
-/* Superior Derecho */
-
-#right{
-    width:55px;
-    height:55px;
-
-    top:25px;
-    right:15px;
-
-    background:#00ff88;
-
-    animation-delay:-2s;
-}
-
-@keyframes floating{
-
-    0%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(18px);
-    }
-
-    100%{
-        transform:translateY(0);
-    }
-
-}
-
-/*======================================
-        DOS CARAS
-======================================*/
-
-.featured-front,
-.featured-back{
-
-    position:absolute;
-
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    border-radius:22px;
-
-    overflow:hidden;
-
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
-
-}
-
-/*======================================
-            FRENTE
-======================================*/
-
-.featured-front{
-
-    transform:rotateY(180deg);
-
-    background:var(--surface);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    box-shadow:0 20px 45px rgba(0,0,0,.35);
-
-}
-
-.featured-front-image{
-
-    position:absolute;
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-}
-
-.featured-front-content{
-
-    position:absolute;
-    inset:0;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-
-    padding:16px;
-
-    z-index:3;
-
-}
-
-.featured-badge{
-
-    width:max-content;
-
-    padding:6px 12px;
-
-    border-radius:999px;
-
-    background:rgba(0,0,0,.55);
-
-    backdrop-filter:blur(8px);
-
-    color:white;
-
-    font-size:12px;
-    font-weight:700;
-
-}
-
-.featured-description{
-
-    background:rgba(0,0,0,.55);
-
-    backdrop-filter:blur(10px);
-
-    border-radius:18px;
-
-    padding:18px;
-
-}
-
-.featured-title h3{
-
-    margin:0;
-
-    color:white;
-
-    font-size:26px;
-
-    line-height:1.15;
-
-}
-
-.featured-price{
-
-    display:block;
-
-    margin-top:10px;
-
-    color:#00d35f;
-
-    font-size:34px;
-
-    font-weight:800;
-
-}
-
-.featured-button{
-
-    margin-top:16px;
-
-    height:46px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    border-radius:12px;
-
-    background:var(--primary);
-
-    color:white;
-
-    font-weight:700;
-
-}
-
-/*======================================
-            DORSO
-======================================*/
-
-.featured-back{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:#10132A;
-
-}
-
-.featured-back::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:180px;
-    height:180%;
-
-    background:
-        linear-gradient(
-            transparent,
-            #00c853,
-            #00b0ff,
-            #00c853,
-            transparent
-        );
-
-    animation:borderRotate 6s linear infinite;
-
-}
-
-.featured-back-content{
-
-    position:absolute;
-
-    inset:2px;
 
     border-radius:20px;
 
     overflow:hidden;
 
-    background:#0E1130;
+    text-decoration:none;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    color:inherit;
 
-}
+    background:var(--surface);
 
-.featured-back-image{
+    border:1px solid var(--border);
 
-    position:relative;
+    box-shadow:0 15px 35px rgba(0,0,0,.30);
 
-    z-index:3;
-
-    width:82%;
-    max-height:82%;
-
-    object-fit:contain;
-
-    filter:
-        drop-shadow(0 25px 45px rgba(0,0,0,.45));
-
-    transition:.45s;
+    transition:.30s;
 
 }
 
-.featured-card:hover .featured-back-image{
+.featured-card:hover{
 
-    transform:
-        scale(1.05)
-        rotate(-2deg);
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+    box-shadow:0 20px 45px rgba(79,70,229,.20);
 
 }
 
 /*======================================
-        ANIMACIÓN BORDE
+        ZONA DE FOTO (clara)
 ======================================*/
 
-@keyframes borderRotate{
+.featured-card-image{
 
-    from{
-        transform:rotate(0deg);
-    }
+    position:relative;
 
-    to{
-        transform:rotate(360deg);
-    }
+    height:230px;
+
+    background:#f4f5f7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.featured-card-image img{
+
+    width:auto;
+
+    max-width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    transition:.35s;
+}
+
+.featured-card:hover .featured-card-image img{
+
+    transform:scale(1.05);
+
+}
+
+/*======================================
+        CHIPS SOBRE LA FOTO
+======================================*/
+
+.featured-card-tag,
+.featured-card-size{
+
+    position:absolute;
+
+    top:12px;
+
+    padding:5px 11px;
+
+    border-radius:999px;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.featured-card-tag{
+
+    left:12px;
+
+    max-width:60%;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+    white-space:nowrap;
+
+    background:rgba(11,15,43,.85);
+
+    color:white;
+
+}
+
+.featured-card-size{
+
+    right:12px;
+
+    background:white;
+
+    color:#0B0F2B;
+
+}
+
+/*======================================
+        FRANJA DE INFO (oscura)
+======================================*/
+
+.featured-card-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    padding:18px 20px 20px;
+
+}
+
+.featured-card-info h3{
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:white;
+
+    line-height:1.35;
+
+    min-height:40px;
+
+    text-transform:capitalize;
+
+}
+
+.featured-card-cta{
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    transition:.25s;
+
+}
+
+.featured-card:hover .featured-card-cta{
+
+    color:#7a72f5;
+
+    transform:translateX(2px);
 
 }

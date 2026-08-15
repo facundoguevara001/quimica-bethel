@@ -23,7 +23,7 @@ function CartDrawer({ open, onClose }) {
     if (cart.length === 0) return;
 
     const message = `
-🧪 *Pedido Química Bethel*
+🧪 *Pedido Químicas King*
 
 Hola, quisiera realizar el siguiente pedido:
 

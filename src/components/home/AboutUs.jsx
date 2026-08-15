@@ -13,7 +13,7 @@ function AboutUs() {
 
                 <img
                     src="/logo.png"
-                    alt="Química Bet. Inc."
+                    alt="Químicas King"
                 />
 
             </div>
@@ -34,7 +34,7 @@ function AboutUs() {
 
                 <p>
 
-                    En <strong>Química Bet. Inc.</strong> trabajamos para ofrecer
+                    En <strong>Químicas King</strong> trabajamos para ofrecer
                     productos de limpieza de excelente calidad para hogares,
                     empresas y comercios.
 

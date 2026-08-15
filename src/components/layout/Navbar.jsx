@@ -3,22 +3,19 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Logo from "../common/Logo";
 
-function Navbar() {
+function Navbar({ transparent = false }) {
 
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
 
-<header className="navbar">
+<header className={`navbar ${transparent ? "navbar-transparent" : ""}`}>
 
     <div className="navbar-logo">
 
-        <Link to="/">
-
-            🧪 <span>Bethel</span>
-
-        </Link>
+        <Logo variant={transparent ? "hero" : "default"} />
 
     </div>
 

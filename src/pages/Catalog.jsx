@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import products from "../data/products";
 
@@ -8,7 +8,7 @@ import ProductGrid from "../components/catalog/ProductGrid";
 import CartButton from "../components/cart/CartButton";
 import CartDrawer from "../components/cart/CartDrawer";
 import MainLayout from "../layout/MainLayout";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 
 function Catalog({
@@ -19,7 +19,8 @@ function Catalog({
 
 }) {
     const navigate = useNavigate();
-    const [search, setSearch] = useState("");
+    const [searchParams] = useSearchParams();
+    const [search, setSearch] = useState(searchParams.get("buscar") || "");
     const [cartOpen, setCartOpen] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState("Todos");
     const sourceProducts = customProducts || products;

@@ -2,7 +2,7 @@
 
 
 import Hero from "../components/home/Hero";
-import HomeLinks from "../components/home/HomeLinks";
+import CategorySection from "../components/home/CategorySection";
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import OrdersCounter from "../components/home/OrdersCounter";
 import MainLayout from "../layout/MainLayout";
@@ -15,7 +15,6 @@ import AboutUs from "../components/home/AboutUs";
 import PolicySection from "../components/home/PolicySection";
 import ContactSection from "../components/home/ContactSection";
 
-import Navbar from "../components/layout/Navbar";
 import FadeInSection from "../components/common/FadeInSection";
 
 function Home() {
@@ -35,13 +34,11 @@ function Home() {
 
         <MainLayout>
 
-            <Navbar />
-
             <div className="home">
 
-                <Hero />
+               <Hero />
 
-                <HomeLinks />
+                <CategorySection />
 
                 <FadeInSection delay={0.1}>
                 <FeaturedProducts

@@ -12,11 +12,49 @@
 
 }
 
-.featured-title{
+.featured-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
 
     margin-bottom:30px;
-    font-size:34px;
-    font-weight:700;
+
+}
+
+.featured-title{
+
+    font-size:22px;
+
+    font-weight:800;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.featured-hint{
+
+    color:#8d97ab;
+
+    font-size:13px;
+
+}
+
+@media(max-width:768px){
+
+    .featured-hint{
+
+        display:none;
+
+    }
 
 }
 
