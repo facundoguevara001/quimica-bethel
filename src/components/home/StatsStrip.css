@@ -1,0 +1,121 @@
+/*======================================
+        CONTENEDOR FULL-BLEED
+        (misma técnica de sangrado que
+        Hero.css, bands.css y Footer.css)
+======================================*/
+
+.stats-strip{
+
+    width:calc(100% + 50px);
+
+    margin:0 -25px;
+
+    padding:44px 25px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    background:#0B0F2B;
+
+}
+
+/*======================================
+        ITEM
+======================================*/
+
+.stats-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:6px;
+
+    padding:0 20px;
+
+    border-left:1px solid var(--border);
+
+}
+
+.stats-item:first-child{
+
+    border-left:none;
+
+}
+
+.stats-value{
+
+    font-size:clamp(1.8rem,3vw,2.4rem);
+
+    font-weight:800;
+
+    color:#C6FF3D;
+
+}
+
+.stats-label{
+
+    max-width:160px;
+
+    color:#9aa3b5;
+
+    font-size:12px;
+
+    line-height:1.5;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+/*======================================
+        RESPONSIVE
+======================================*/
+
+@media (max-width:1024px){
+
+    .stats-strip{
+
+        width:calc(100% + 40px);
+
+        margin:0 -20px;
+
+        padding:36px 20px;
+
+    }
+}
+
+@media (max-width:768px){
+
+    .stats-strip{
+
+        width:calc(100% + 30px);
+
+        margin:0 -15px;
+
+        grid-template-columns:repeat(2,1fr);
+
+        row-gap:28px;
+
+        padding:32px 15px;
+
+    }
+
+    .stats-item{
+
+        border-left:none;
+
+    }
+
+    .stats-item:nth-child(odd){
+
+        border-right:1px solid var(--border);
+
+    }
+}
