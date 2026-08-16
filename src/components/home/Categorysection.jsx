@@ -1,4 +1,4 @@
-import "./CategorySection.css";
+import "./Categorysection.css";
 import { useNavigate } from "react-router-dom";
 import { FaTint, FaTshirt, FaFire, FaArrowRight } from "react-icons/fa";
 
