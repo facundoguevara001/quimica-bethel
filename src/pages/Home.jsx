@@ -2,7 +2,7 @@
 
 
 import Hero from "../components/home/Hero";
-import CategorySection from "../components/home/CategorySection";
+import CategorySection from "../components/home/Categorysection";
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import MainLayout from "../layout/MainLayout";
 import products from "../data/products";
