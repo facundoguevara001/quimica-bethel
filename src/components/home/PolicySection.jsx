@@ -1,4 +1,5 @@
 import "./PolicySection.css";
+import SectionHeader from "../common/SectionHeader";
 
 import {
     FaTruck,
@@ -14,59 +15,60 @@ function PolicySection() {
         {
             icon: <FaTruck />,
             title: "Envíos",
-            text: "Realizamos entregas rápidas en CABA y Gran Buenos Aires. Costo envio de $8500."
+            text: "Entregas rápidas en CABA y Gran Buenos Aires. Envío bonificado a partir de $50.000."
         },
 
         {
             icon: <FaMoneyBillWave />,
             title: "Formas de pago",
-            text: "¡Abonas al recibir! Además, poder abonar en efectivo o transferencias😉."
+            text: "Abonás al recibir, o consultá por efectivo y transferencias disponibles."
         },
 
         {
             icon: <FaExchangeAlt />,
             title: "Cambios",
-            text: "Si el producto no es lo que esperabas, solamente no lo abonas y el repartidor te hace el descuento por el mismo."
+            text: "Si el producto no es el esperado, escribinos y coordinamos una solución."
         },
 
         {
             icon: <FaShieldAlt />,
             title: "Calidad",
-            text: "Todos nuestros productos son controlados antes de ser entregados."
-
+            text: "Todos los productos son controlados antes de ser preparados para entrega."
         }
 
     ];
 
     return (
 
-        <section 
-        
-        id="politica"
-        className="policy-section">
+        <section
+            id="politica"
+            className="light-band"
+        >
 
-            <h2>
+            <div className="policy-inner">
 
-                📋 Política Comercial
+                <SectionHeader
+                    theme="light"
+                    number="02"
+                    eyebrow="Antes y después de tu compra"
+                    titleBold="Nuestra política comercial."
+                    subtitle="Información simple y visible para comprar con confianza, sin letras chicas ni recorridos innecesarios."
+                />
 
-            </h2>
+                <div className="policy-grid">
 
-            <div className="policy-grid">
-
-                {
-
-                    policies.map((policy, index) => (
+                    {policies.map((policy, index) => (
 
                         <div
                             key={index}
                             className="policy-card"
                         >
 
-                            <div className="policy-icon">
+                            <span className="policy-icon">
 
                                 {policy.icon}
 
-                            </div>
+                            </span>
 
                             <h3>
 
@@ -82,9 +84,9 @@ function PolicySection() {
 
                         </div>
 
-                    ))
+                    ))}
 
-                }
+                </div>
 
             </div>
 

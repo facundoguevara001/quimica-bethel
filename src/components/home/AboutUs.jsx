@@ -1,59 +1,78 @@
 import "./AboutUs.css";
+import SectionHeader from "../common/SectionHeader";
 
 function AboutUs() {
 
     return (
 
-        <section 
-        
-        id="nosotros"
-        className="about-us">
+        <section
+            id="nosotros"
+            className="about-section"
+        >
 
-            <div className="about-image">
+            {/* TARJETA DE MARCA */}
 
-                <img
-                    src="/logo.png"
-                    alt="Químicas King"
-                />
+            <div className="about-mark-wrap">
+
+                <div className="about-mark-card">
+
+                    <span className="about-since">
+
+                        Desde 2020
+
+                    </span>
+
+                    <div className="about-mark-frame">
+
+                        <span className="about-mark-letters">
+
+                            QK
+
+                        </span>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div className="about-content">
+            {/* BANDA CLARA */}
 
-                <span className="about-badge">
+            <div className="light-band">
 
-                    Desde 2020
+                <div className="about-band-inner">
 
-                </span>
+                    <SectionHeader
+                        theme="light"
+                        number="02"
+                        eyebrow="Conocé la empresa"
+                        titleBold="Productos confiables."
+                        titleAccent="Atención directa."
+                    />
 
-                <h2>
+                    <div className="about-copy">
 
-                    🏢 Quiénes Somos
+                        <p>
 
-                </h2>
+                            En <strong>Químicas King</strong> trabajamos para
+                            que hogares, comercios y negocios puedan resolver
+                            su limpieza sin complicaciones: productos
+                            rendidores, precios competitivos y reposición en
+                            un solo pedido.
 
-                <p>
+                        </p>
 
-                    En <strong>Químicas King</strong> trabajamos para ofrecer
-                    productos de limpieza de excelente calidad para hogares,
-                    empresas y comercios.
+                        <p>
 
-                </p>
+                            Elegimos una atención cercana y entregas ágiles,
+                            para que siempre encuentres exactamente lo que
+                            necesitás.
 
-                <p>
+                        </p>
 
-                    Nuestro compromiso es brindar atención personalizada,
-                    precios competitivos y entregas rápidas, para que cada
-                    cliente encuentre exactamente lo que necesita.
+                    </div>
 
-                </p>
-
-                <p>
-
-                    Buscamos construir relaciones de confianza ofreciendo
-                    productos confiables y un servicio cada vez mejor.
-
-                </p>
+                </div>
 
             </div>
 

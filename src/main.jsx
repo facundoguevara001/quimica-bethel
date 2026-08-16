@@ -9,6 +9,7 @@ import "./styles/responsive.css";
 import "./styles/cart.css";
 import "./components/home/FeaturedCard.css";
 import "./styles/layout.css";
+import "./styles/bands.css";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

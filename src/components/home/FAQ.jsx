@@ -1,32 +1,29 @@
 import { useState } from "react";
 import "./FAQ.css";
+import SectionHeader from "../common/SectionHeader";
 
 const questions = [
+
     {
         question: "¿Realizan envíos?",
-        answer:
-            "Sí. Realizamos envíos dentro de CABA y Gran Buenos Aires."
-            
-        
-
-            
-            
+        answer: "Sí. Realizamos envíos dentro de CABA y Gran Buenos Aires."
     },
+
     {
         question: "¿Puedo comprar por mayor?",
-        answer:
-            "Sí. Tenemos precios especiales para revendedores, empresas y comercios."
+        answer: "Sí. Tenemos precios especiales para revendedores, empresas y comercios."
     },
+
     {
         question: "¿Qué métodos de pago aceptan?",
-        answer:
-            "Aceptamos efectivo, transferencia bancaria y billeteras virtuales."
+        answer: "Aceptamos efectivo, transferencia bancaria y billeteras virtuales."
     },
+
     {
-        question: "¿Los productos tienen garantía?",
-        answer:
-            "Sí. Todos nuestros productos cuentan con garantía de calidad."
+        question: "¿Cómo consulto por un producto?",
+        answer: "Escribinos por WhatsApp desde cualquier ficha de producto o desde el botón de contacto al pie de la página."
     }
+
 ];
 
 function FAQ() {
@@ -35,34 +32,33 @@ function FAQ() {
 
     return (
 
-        <section 
-        
-        id="faq"
-        className="faq-section">
+        <section
+            id="faq"
+            className="faq-section"
+        >
 
-            <h2>
+            <SectionHeader
+                theme="dark"
+                number="02"
+                eyebrow="Resolvemos tus dudas"
+                titleBold="Preguntas"
+                titleAccent="Frecuentes."
+                subtitle="Lo importante, respondido antes de que tengas que preguntar. Si necesitás más ayuda, estamos a un mensaje de distancia."
+            />
 
-                ❓ Preguntas Frecuentes
+            <div className="faq-list">
 
-            </h2>
-
-            {
-
-                questions.map((item, index) => (
+                {questions.map((item, index) => (
 
                     <div
                         key={index}
-                        className="faq-item"
+                        className="faq-row"
                     >
 
                         <button
                             className="faq-question"
                             onClick={() =>
-                                setOpen(
-                                    open === index
-                                        ? null
-                                        : index
-                                )
+                                setOpen(open === index ? null : index)
                             }
                         >
 
@@ -72,7 +68,7 @@ function FAQ() {
 
                             </span>
 
-                            <span>
+                            <span className="faq-toggle">
 
                                 {open === index ? "−" : "+"}
 
@@ -80,25 +76,21 @@ function FAQ() {
 
                         </button>
 
-                        {
+                        {open === index && (
 
-                            open === index && (
+                            <div className="faq-answer">
 
-                                <div className="faq-answer">
+                                {item.answer}
 
-                                    {item.answer}
+                            </div>
 
-                                </div>
-
-                            )
-
-                        }
+                        )}
 
                     </div>
 
-                ))
+                ))}
 
-            }
+            </div>
 
         </section>
 

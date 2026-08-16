@@ -1,0 +1,52 @@
+/*======================================
+        BANDA CLARA (full-bleed)
+
+        Rompe el fondo oscuro general del
+        sitio para secciones que necesitan
+        contraste de lectura (Nosotros,
+        Política Comercial).
+
+        Usa el mismo truco de sangrado que
+        Hero.css: cancela el padding de
+        ".home" con márgenes negativos.
+======================================*/
+
+.light-band{
+
+    width:calc(100% + 50px);
+
+    margin:80px -25px 0;
+
+    padding:70px 25px;
+
+    background:#EEF1EE;
+
+    color:#0B0F2B;
+
+}
+
+@media (max-width:1024px){
+
+    .light-band{
+
+        width:calc(100% + 40px);
+
+        margin:60px -20px 0;
+
+        padding:60px 20px;
+
+    }
+}
+
+@media (max-width:768px){
+
+    .light-band{
+
+        width:calc(100% + 30px);
+
+        margin:50px -15px 0;
+
+        padding:50px 15px;
+
+    }
+}

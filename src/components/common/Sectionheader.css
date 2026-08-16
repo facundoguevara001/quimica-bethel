@@ -1,0 +1,154 @@
+/*======================================
+        CONTENEDOR
+======================================*/
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+    margin-bottom:40px;
+
+}
+
+/*======================================
+        EYEBROW (número / texto)
+======================================*/
+
+.section-header-eyebrow{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+.section-header-eyebrow strong{
+
+    color:var(--primary);
+
+}
+
+/*======================================
+        TÍTULO
+======================================*/
+
+.section-header-title{
+
+    font-size:clamp(1.8rem,3.6vw,2.6rem);
+
+    font-weight:800;
+
+    line-height:1.18;
+
+    text-transform:uppercase;
+
+    max-width:520px;
+
+}
+
+.section-header-title em{
+
+    font-style:italic;
+
+    color:var(--primary);
+
+}
+
+/*======================================
+        SUBTÍTULO
+======================================*/
+
+.section-header-subtitle{
+
+    max-width:340px;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+/*======================================
+        TEMA OSCURO (default)
+======================================*/
+
+.section-header-dark .section-header-eyebrow{
+
+    color:#8d97ab;
+
+}
+
+.section-header-dark .section-header-title{
+
+    color:white;
+
+}
+
+.section-header-dark .section-header-title em{
+
+    color:#C6FF3D;
+
+}
+
+.section-header-dark .section-header-subtitle{
+
+    color:#9aa3b5;
+
+}
+
+/*======================================
+        TEMA CLARO
+======================================*/
+
+.section-header-light .section-header-eyebrow{
+
+    color:#6b7488;
+
+}
+
+.section-header-light .section-header-title{
+
+    color:#0B0F2B;
+
+}
+
+.section-header-light .section-header-title em{
+
+    color:var(--primary);
+
+}
+
+.section-header-light .section-header-subtitle{
+
+    color:#565f70;
+
+}
+
+/*======================================
+        RESPONSIVE
+======================================*/
+
+@media (max-width:768px){
+
+    .section-header{
+
+        align-items:flex-start;
+
+    }
+}

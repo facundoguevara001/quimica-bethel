@@ -1,94 +1,35 @@
 import "./ContactSection.css";
 
-import {
-    FaWhatsapp,
-    FaFacebookF,
-    FaCommentDots
-} from "react-icons/fa";
-
 function ContactSection() {
+  return (
+    <section className="contact-banner">
+      <h2>¿Necesitás ayuda con tu pedido?</h2>
 
-    return (
+      <p>
+        Atención personalizada para consultar productos, precios y entregas.
+      </p>
 
-        <section className="contact-section">
+      <div className="contact-banner-actions">
+        <a
+          className="contact-whatsapp"
+          href="https://wa.me/5491125218692"
+          target="_blank"
+          rel="noreferrer"
+        >
+          WhatsApp ↗
+        </a>
 
-            <h2>
-
-                📞 Contactanos
-
-            </h2>
-
-            <p className="contact-subtitle">
-
-                ¿Tenés alguna consulta?
-                Estamos para ayudarte.
-
-            </p>
-
-            <div className="contact-grid">
-
-                <a
-                    className="contact-card whatsapp"
-                    href="https://wa.me/5491125218692"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-
-                    <FaWhatsapp />
-
-                    <h3>WhatsApp</h3>
-
-                    <p>
-
-                        Atención rápida y personalizada.
-
-                    </p>
-
-                </a>
-
-                <a
-                    className="contact-card facebook"
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noreferrer"
-                >
-
-                    <FaFacebookF />
-
-                    <h3>Facebook</h3>
-
-                    <p>
-
-                        Seguinos para conocer novedades.
-
-                    </p>
-
-                </a>
-
-
-                    className="contact-card comment"
-                    href="https://wa.me/5491125218692?text=Hola,%20quiero%20dejarles%20mi%20opini%C3%B3n%20sobre%20mi%20compra"
-                    target="_blank"
-                    rel="noreferrer"
-
-                    <FaCommentDots />
-
-                    <h3>Dejanos tu opinión</h3>
-
-                    <p>
-
-                        Tu experiencia nos ayuda a mejorar.
-
-                    </p>
-
-                    
-
-            </div>
-
-        </section>
-
-    );
-
+        <a
+          className="contact-facebook"
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Facebook ↗
+        </a>
+      </div>
+    </section>
+  );
 }
 
 export default ContactSection;

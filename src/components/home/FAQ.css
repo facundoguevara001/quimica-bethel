@@ -1,38 +1,38 @@
 .faq-section{
 
     width:100%;
+
     max-width:900px;
 
-    margin:70px auto;
+    margin:90px auto 0;
 
 }
 
-.faq-section h2{
+/*======================================
+        LISTA
+======================================*/
 
-    text-align:center;
-    margin-bottom:30px;
+.faq-list{
 
-    font-size:34px;
+    margin-top:10px;
+
+}
+
+.faq-row{
+
+    border-bottom:1px solid var(--border);
 
 }
 
-.faq-item{
-
-    background:var(--surface);
-
-    border:1px solid var(--border);
-
-    border-radius:18px;
-
-    margin-bottom:15px;
-
-    overflow:hidden;
-
-}
+/*======================================
+        PREGUNTA
+======================================*/
 
 .faq-question{
 
     width:100%;
+
+    padding:22px 0;
 
     background:none;
 
@@ -42,32 +42,41 @@
 
     cursor:pointer;
 
-    padding:22px;
-
     display:flex;
 
     justify-content:space-between;
 
     align-items:center;
 
-    font-size:18px;
+    font-size:16px;
 
-    font-weight:600;
+    font-weight:700;
+
+    text-align:left;
+
+}
+
+.faq-toggle{
+
+    color:#C6FF3D;
+
+    font-size:20px;
+
+    font-weight:700;
 
 }
 
-.faq-question:hover{
-
-    background:rgba(255,255,255,.04);
-
-}
+/*======================================
+        RESPUESTA
+======================================*/
 
 .faq-answer{
 
-    padding:0 22px 22px;
+    padding:0 0 22px;
 
-    color:#bfc8d6;
+    max-width:600px;
+
+    color:#9aa3b5;
 
     line-height:1.7;
-
 }
