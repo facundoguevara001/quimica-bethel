@@ -1,4 +1,4 @@
-import "./SectionHeader.css";
+import "./Sectionheader.css";
 
 function SectionHeader({
 
