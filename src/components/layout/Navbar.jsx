@@ -21,7 +21,7 @@ function Navbar({ transparent = false }) {
 
     <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
 
-        <Link to="/" onClick={() => setMenuOpen(false)}>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
 
             Inicio
 
@@ -33,29 +33,17 @@ function Navbar({ transparent = false }) {
 
         </Link>
 
-        <Link to="/promociones" onClick={() => setMenuOpen(false)}>
-
-            Promociones
-
-        </Link>
-
-        <a href="#faq" onClick={() => setMenuOpen(false)}>
-
-            FAQ
-
-        </a>
-
-        <a href="#nosotros" onClick={() => setMenuOpen(false)}>
+        <Link to="/nosotros" onClick={() => setMenuOpen(false)}>
 
             Nosotros
 
-        </a>
+        </Link>
 
-        <a href="#politica" onClick={() => setMenuOpen(false)}>
+        <Link to="/nosotros#contacto" onClick={() => setMenuOpen(false)}>
 
-            Política
+            Contacto
 
-        </a>
+        </Link>
 
     </nav>
 

@@ -2,7 +2,11 @@ import "./ContactSection.css";
 
 function ContactSection() {
   return (
-    <section className="contact-banner">
+    <section
+            id="contacto"
+            className="contact-banner"
+        >
+          
       <h2>¿Necesitás ayuda con tu pedido?</h2>
 
       <p>

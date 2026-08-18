@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Catalog from "../pages/Catalog";
 import Promotions from "../pages/Promotions";
 import Product from "../pages/Product";
+import AboutPage from "../pages/AboutPage";
 
 function AppRoutes() {
 
@@ -27,12 +28,18 @@ function AppRoutes() {
             />
 
             <Route
-                path="*"
-                element={<Navigate to="/" />}
+                path="/nosotros"
+                element={<AboutPage />}
             />
+
             <Route
                path="/producto/:slug"
                element={<Product />}
+            />
+
+            <Route
+                path="*"
+                element={<Navigate to="/" />}
             />
 
         </Routes>

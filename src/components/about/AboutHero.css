@@ -1,0 +1,199 @@
+/*======================================
+        CONTENEDOR FULL-BLEED
+======================================*/
+
+.about-hero{
+
+    --hero-accent:#C6FF3D;
+
+    position:relative;
+
+    width:calc(100% + 50px);
+
+    margin:-60px -25px 20px;
+
+    min-height:52vh;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/*======================================
+        FOTO DE FONDO
+======================================*/
+
+.about-hero-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:0;
+
+}
+
+.about-hero-bg-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+}
+
+.about-hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(11,15,43,.55) 0%,
+            rgba(11,15,43,.75) 55%,
+            rgba(11,15,43,.96) 100%
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(11,15,43,.85) 0%,
+            rgba(11,15,43,.35) 60%,
+            rgba(11,15,43,.15) 100%
+        );
+
+}
+
+/*======================================
+        CONTENIDO
+======================================*/
+
+.about-hero-inner{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    min-height:52vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.about-hero-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    max-width:640px;
+
+    padding:20px 50px 50px;
+
+}
+
+.about-hero-badge{
+
+    width:max-content;
+
+    margin-bottom:18px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(198,255,61,.45);
+
+    background:rgba(198,255,61,.08);
+
+    color:var(--hero-accent);
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+.about-hero-title{
+
+    font-size:clamp(1.9rem,4.2vw,3rem);
+
+    font-weight:800;
+
+    line-height:1.18;
+
+    text-transform:uppercase;
+
+    color:white;
+
+    max-width:560px;
+
+}
+
+.about-hero-title em{
+
+    font-style:italic;
+
+    color:var(--hero-accent);
+
+}
+
+/*======================================
+        RESPONSIVE
+======================================*/
+
+@media (max-width:1024px){
+
+    .about-hero{
+
+        margin:-50px -20px 20px;
+
+        width:calc(100% + 40px);
+
+    }
+}
+
+@media (max-width:768px){
+
+    .about-hero{
+
+        margin:-35px -15px 20px;
+
+        width:calc(100% + 30px);
+
+        min-height:42vh;
+
+    }
+
+    .about-hero-inner{
+
+        min-height:42vh;
+
+    }
+
+    .about-hero-content{
+
+        padding:16px 24px 30px;
+
+    }
+}
