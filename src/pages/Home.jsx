@@ -1,6 +1,7 @@
 import Hero from "../components/home/Hero";
 import CategorySection from "../components/home/Categorysection";
 import FeaturedProducts from "../components/home/FeaturedProducts";
+import DeliveryProcess from "../components/home/DeliveryProcess";
 import MainLayout from "../layout/MainLayout";
 import products from "../data/products";
 import ReviewsSection from "../components/home/ReviewsSection";
@@ -43,9 +44,9 @@ function Home() {
                 <CategorySection />
 
                 <FadeInSection delay={0.1}>
-                    <FeaturedProducts
-                        cards={cards}
-                    />
+                <FeaturedProducts
+    cards={cards}
+/>
                 </FadeInSection>
 
                 <StatsStrip
@@ -54,9 +55,13 @@ function Home() {
                     yearsSince={yearsSince}
                 />
 
-                <FadeInSection delay={0.2}>
-                    <ReviewsSection />
-                </FadeInSection>
+                <FadeInSection delay={0.15}>
+    <DeliveryProcess />
+</FadeInSection>
+
+<FadeInSection delay={0.2}>
+    <ReviewsSection />
+</FadeInSection>
 
                 <Footer />
 
