@@ -27,13 +27,17 @@ const steps = [
     {
         icon: <FaTruck />,
         title: "Recibís",
-        text: "Te lo llevamos hasta la puerta de tu casa o negocio."
+        text: "Te lo llevamos hasta la puerta de tu casa o negocio.",
+        link: "/nosotros#envios",
+        hint: "Ver zonas y costo →"
     },
 
     {
         icon: <FaCheckCircle />,
         title: "Revisás",
-        text: "Chequeás que esté todo completo y en buen estado."
+        text: "Chequeás que esté todo completo y en buen estado.",
+        link: "/nosotros#revision",
+        hint: "Cómo funciona →"
     },
 
     {
@@ -64,9 +68,7 @@ function DeliveryProcess() {
 
                         <div className="delivery-steps">
 
-                {steps.map((step, index) => {
-
-                    const isDeliveryStep = index === 2;
+                                {steps.map((step, index) => {
 
                     const content = (
 
@@ -96,11 +98,11 @@ function DeliveryProcess() {
 
                             </p>
 
-                            {isDeliveryStep && (
+                            {step.hint && (
 
                                 <span className="delivery-step-hint">
 
-                                    Ver zonas y costo →
+                                    {step.hint}
 
                                 </span>
 
@@ -116,13 +118,13 @@ function DeliveryProcess() {
 
                     );
 
-                    if (isDeliveryStep) {
+                    if (step.link) {
 
                         return (
 
                             <Link
                                 key={index}
-                                to="/nosotros#envios"
+                                to={step.link}
                                 className="delivery-step delivery-step-link"
                             >
 

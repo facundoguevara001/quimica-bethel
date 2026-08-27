@@ -7,6 +7,7 @@ import FAQ from "../components/home/FAQ";
 import AboutUs from "../components/home/AboutUs";
 import PolicySection from "../components/home/PolicySection";
 import DeliveryInfo from "../components/about/Deliveryinfo";
+import ReviewPolicy from "../components/about/ReviewPolicy";
 import ContactSection from "../components/home/ContactSection";
 import Footer from "../components/home/Footer";
 
@@ -52,6 +53,8 @@ function AboutPage() {
                 <PolicySection />
 
                 <DeliveryInfo />
+
+                <ReviewPolicy />
 
                 <ContactSection />
 
