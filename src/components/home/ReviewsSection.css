@@ -1,195 +1,257 @@
-.reviews-section{
-
-    width:100%;
-    max-width:1000px;
-
-    margin:80px auto;
-
-    text-align:center;
-
-}
-
-.reviews-title{
-
-    font-size:34px;
-    font-weight:700;
-
-    margin-bottom:12px;
-
-}
-
-.reviews-average{
-
-    color:#9fb2c8;
-
-    font-size:18px;
-
-    margin-bottom:35px;
-
-}
-
-.review-card{
-
-    background:rgba(255,255,255,.04);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:22px;
-
-    padding:35px;
-
-    backdrop-filter:blur(18px);
-
-    box-shadow:
-
-        0 15px 45px rgba(0,0,0,.25);
-
-    transition:.35s;
-
-}
-
-.review-card:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:
-
-        0 25px 60px rgba(0,0,0,.35);
-
-}
-
-.review-stars{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:8px;
-
-    margin-bottom:25px;
-
-    color:#FFD54A;
-
-    font-size:28px;
-
-}
-
-.review-text{
-
-    font-size:22px;
-
-    line-height:1.8;
-
-    color:white;
-
-    max-width:700px;
-
-    margin:auto;
-
-    font-style:italic;
-
-}
-
-.review-author{
-
-    display:block;
-
-    margin-top:28px;
-
-    color:#7fd8ff;
-
-    font-weight:600;
-
-    font-size:16px;
-
-}/*======================================
-        REVIEW PREMIUM
+/*======================================
+        OPINIONES Y UBICACIONES
 ======================================*/
 
-.review-card{
-
-    position:relative;
-
-    overflow:hidden;
-
+.reviews-section {
+    width: 100%;
+    max-width: 1180px;
+    margin: 80px auto;
 }
 
-.review-card::before{
-
-    content:"❝";
-
-    position:absolute;
-
-    top:-45px;
-
-    left:25px;
-
-    font-size:180px;
-
-    color:rgba(255,255,255,.03);
-
-    font-family:serif;
-
+.reviews-content {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+    align-items: start;
+    gap: 48px;
 }
 
-.review-card{
-
-    animation:reviewFade .6s ease;
-
+.reviews-panel {
+    text-align: left;
 }
 
-@keyframes reviewFade{
+.reviews-title {
+    margin-bottom: 12px;
+    font-size: 34px;
+    font-weight: 700;
+}
 
-    from{
+.reviews-average {
+    margin-bottom: 35px;
+    color: #9fb2c8;
+    font-size: 18px;
+}
 
-        opacity:0;
+/*======================================
+        TARJETA DE OPINIÓN
+======================================*/
 
-        transform:translateY(15px);
+.review-card {
+    position: relative;
+    overflow: hidden;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18px);
+    animation: review-fade 0.6s ease;
+    transition: transform 0.35s, box-shadow 0.35s;
+}
 
+.review-card::before {
+    position: absolute;
+    top: -45px;
+    left: 25px;
+    color: rgba(255, 255, 255, 0.03);
+    content: "❝";
+    font-family: serif;
+    font-size: 180px;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.review-stars,
+.review-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.review-stars {
+    gap: 8px;
+    margin-bottom: 25px;
+    color: #ffd54a;
+    font-size: 28px;
+}
+
+.review-text {
+    margin: auto;
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.review-author {
+    display: block;
+    margin-top: 28px;
+    color: #7fd8ff;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.review-dots {
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #444;
+    transition: 0.35s;
+}
+
+.dot.active {
+    width: 28px;
+    border-radius: 20px;
+    background: #4f46e5;
+}
+
+@keyframes review-fade {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
     }
 
-    to{
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        opacity:1;
+/*======================================
+        MINIMAPA DE SUCURSALES
+======================================*/
 
-        transform:translateY(0);
+.locations-map {
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
+    background: rgba(20, 25, 53, 0.78);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+}
 
+.locations-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.locations-heading > svg {
+    margin-top: 4px;
+    color: #ffd54a;
+    font-size: 22px;
+}
+
+.locations-heading h2 {
+    font-size: 22px;
+}
+
+.locations-heading p {
+    margin-top: 5px;
+    color: #9fb2c8;
+    font-size: 14px;
+}
+
+.locations-selector {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.location-button {
+    min-height: 66px;
+    padding: 10px;
+    border: 1px solid rgba(159, 178, 200, 0.25);
+    border-radius: 12px;
+    background: rgba(11, 15, 43, 0.7);
+    color: #dbe8f8;
+    cursor: pointer;
+    text-align: left;
+    transition: border-color 0.25s, background 0.25s, transform 0.25s;
+}
+
+.location-button:hover,
+.location-button:focus-visible,
+.location-button.is-active {
+    border-color: #4f46e5;
+    background: rgba(79, 70, 229, 0.2);
+}
+
+.location-button:hover {
+    transform: translateY(-2px);
+}
+
+.location-button:focus-visible {
+    outline: 2px solid #7fd8ff;
+    outline-offset: 2px;
+}
+
+.location-button strong,
+.location-button span {
+    display: block;
+}
+
+.location-button strong {
+    font-size: 13px;
+}
+
+.location-button span {
+    margin-top: 4px;
+    color: #9fb2c8;
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+.locations-iframe {
+    display: block;
+    width: 100%;
+    height: 235px;
+    border: 0;
+    border-radius: 14px;
+    background: #10162f;
+}
+
+/*======================================
+        RESPONSIVE
+======================================*/
+
+@media (max-width: 900px) {
+    .reviews-content {
+        grid-template-columns: 1fr;
     }
 
+    .reviews-panel {
+        text-align: center;
+    }
 }
 
-.review-dots{
+@media (max-width: 560px) {
+    .reviews-section {
+        margin: 56px auto;
+    }
 
-    display:flex;
+    .reviews-title {
+        font-size: 28px;
+    }
 
-    justify-content:center;
+    .review-card,
+    .locations-map {
+        padding: 22px;
+    }
 
-    gap:10px;
+    .review-text {
+        font-size: 18px;
+    }
 
-    margin-top:30px;
-
-}
-
-.dot{
-
-    width:10px;
-
-    height:10px;
-
-    border-radius:50%;
-
-    background:#444;
-
-    transition:.35s;
-
-}
-
-.dot.active{
-
-    width:28px;
-
-    border-radius:20px;
-
-    background:#4F46E5;
-
+    .locations-selector {
+        grid-template-columns: 1fr;
+    }
 }
