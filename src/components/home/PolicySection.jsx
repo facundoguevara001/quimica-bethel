@@ -12,10 +12,10 @@ function PolicySection() {
 
     const policies = [
 
-        {
+                {
             icon: <FaTruck />,
             title: "Envíos",
-            text: "Entregas rápidas en CABA y Gran Buenos Aires. Envío bonificado a partir de $50.000."
+            text: "Costo de envío: $8.500, bonificado en compras mayores a $50.000. Más abajo, el detalle por zona."
         },
 
         {

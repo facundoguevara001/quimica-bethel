@@ -6,7 +6,7 @@ const questions = [
 
     {
         question: "¿Realizan envíos?",
-        answer: "Sí. Realizamos envíos dentro de CABA y Gran Buenos Aires."
+        answer: "Sí. Envíos a zonas de CABA y Gran Buenos Aires, con un costo de $8.500 bonificado en compras mayores a $50.000. Más abajo detallamos las zonas exactas."
     },
 
     {

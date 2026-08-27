@@ -1,5 +1,6 @@
 import "./DeliveryProcess.css";
 import SectionHeader from "../common/SectionHeader";
+import { Link } from "react-router-dom";
 
 import {
     FaSearch,
@@ -61,48 +62,92 @@ function DeliveryProcess() {
                 subtitle="Nuestro proceso está pensado para que compres con total tranquilidad, de principio a fin."
             />
 
-            <div className="delivery-steps">
+                        <div className="delivery-steps">
 
-                {steps.map((step, index) => (
+                {steps.map((step, index) => {
 
-                    <div
-                        key={index}
-                        className="delivery-step"
-                    >
+                    const isDeliveryStep = index === 2;
 
-                        <span className="delivery-step-number">
+                    const content = (
 
-                            {String(index + 1).padStart(2, "0")}
+                        <>
 
-                        </span>
+                            <span className="delivery-step-number">
 
-                        <span className="delivery-step-icon">
+                                {String(index + 1).padStart(2, "0")}
 
-                            {step.icon}
+                            </span>
 
-                        </span>
+                            <span className="delivery-step-icon">
 
-                        <h3>
+                                {step.icon}
 
-                            {step.title}
+                            </span>
 
-                        </h3>
+                            <h3>
 
-                        <p>
+                                {step.title}
 
-                            {step.text}
+                            </h3>
 
-                        </p>
+                            <p>
 
-                        {index < steps.length - 1 && (
+                                {step.text}
 
-                            <span className="delivery-step-connector" />
+                            </p>
 
-                        )}
+                            {isDeliveryStep && (
 
-                    </div>
+                                <span className="delivery-step-hint">
 
-                ))}
+                                    Ver zonas y costo →
+
+                                </span>
+
+                            )}
+
+                            {index < steps.length - 1 && (
+
+                                <span className="delivery-step-connector" />
+
+                            )}
+
+                        </>
+
+                    );
+
+                    if (isDeliveryStep) {
+
+                        return (
+
+                            <Link
+                                key={index}
+                                to="/nosotros#envios"
+                                className="delivery-step delivery-step-link"
+                            >
+
+                                {content}
+
+                            </Link>
+
+                        );
+
+                    }
+
+                    return (
+
+                        <div
+                            key={index}
+                            className="delivery-step"
+                        >
+
+                            {content}
+
+                        </div>
+
+                    );
+
+                })}
 
             </div>
 
