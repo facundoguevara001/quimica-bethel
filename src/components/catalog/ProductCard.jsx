@@ -1,13 +1,32 @@
 import "./ProductCard.css";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaMinus, FaPlus } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 
 function ProductCard({ product, openCart }) {
     const { addToCart } = useCart();
 
+    const [quantity, setQuantity] = useState(1);
+
     const stock = product.stock ?? 999;
+
+    const unitPrice =
+        Number(product.cost) * (Number(product.margin) + 1);
+
+    const subtotal = unitPrice * quantity;
+
+    const whatsappMessage = encodeURIComponent(
+
+`¡Hola! 👋 Quiero hacer este pedido:
+
+🧴 ${quantity} x ${product.name}
+💲 Subtotal: $${subtotal.toLocaleString("es-AR")}
+
+¿Confirmamos?`
+
+    );
 
     return (
 
@@ -71,20 +90,44 @@ function ProductCard({ product, openCart }) {
                     )
                 }
 
+                <div className="qty-stepper">
+
+                    <button
+                        type="button"
+                        onClick={() =>
+                            setQuantity(q => Math.max(1, q - 1))
+                        }
+                        aria-label="Restar cantidad"
+                    >
+                        <FaMinus />
+                    </button>
+
+                    <span>{quantity}</span>
+
+                    <button
+                        type="button"
+                        onClick={() => setQuantity(q => q + 1)}
+                        aria-label="Sumar cantidad"
+                    >
+                        <FaPlus />
+                    </button>
+
+                </div>
+
                 <a
                     className="buy-button"
-                    href={`https://wa.me/5491125218692?text=Hola,%20quiero%20consultar%20por%20${product.name}`}
+                    href={`https://wa.me/5491125218692?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noreferrer"
                 >
                     <FaWhatsapp />
-                    Consultar
+                    Pedir por WhatsApp
                 </a>
                 <button
     className="cart-button"
     onClick={() => {
 
-        addToCart(product);
+        addToCart(product, quantity);
 
         openCart();
 

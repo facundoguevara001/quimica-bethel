@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Hero from "../components/home/Hero";
 import CategorySection from "../components/home/Categorysection";
 import FeaturedProducts from "../components/home/FeaturedProducts";
@@ -7,10 +9,14 @@ import products from "../data/products";
 import ReviewsSection from "../components/home/ReviewsSection";
 import StatsStrip from "../components/home/StatsStrip";
 import Footer from "../components/home/Footer";
+import CartButton from "../components/cart/CartButton";
+import CartDrawer from "../components/cart/CartDrawer";
 
 import FadeInSection from "../components/common/FadeInSection";
 
 function Home() {
+
+    const [cartOpen, setCartOpen] = useState(false);
 
     const featuredProducts = products.filter(
         product => product.featured
@@ -46,6 +52,7 @@ function Home() {
                 <FadeInSection delay={0.1}>
                 <FeaturedProducts
     cards={cards}
+    openCart={() => setCartOpen(true)}
 />
                 </FadeInSection>
 
@@ -64,6 +71,15 @@ function Home() {
 </FadeInSection>
 
                 <Footer />
+
+                <CartButton
+                    onClick={() => setCartOpen(true)}
+                />
+
+                <CartDrawer
+                    open={cartOpen}
+                    onClose={() => setCartOpen(false)}
+                />
 
             </div>
 

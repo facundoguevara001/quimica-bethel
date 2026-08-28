@@ -9,13 +9,18 @@ function FeaturedProducts({
 
     cards,
 
-    title = "⭐ Productos destacados"
+    title = "⭐ Productos destacados",
+
+    openCart
 
 }) {
 
     const [x, setX] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
 
 useAnimationFrame(() => {
+
+    if (isPaused) return;
 
     setX(prev => {
 
@@ -45,13 +50,17 @@ useAnimationFrame(() => {
 
                 <span className="featured-hint">
 
-                    Tocá una ficha para ver el precio →
+                    Elegí cantidad y pedí directo →
 
                 </span>
 
             </div>
 
-            <div className="featured-slider">
+            <div
+                className="featured-slider"
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
+            >
 
                 <motion.div
                     className="featured-track"
@@ -67,6 +76,7 @@ useAnimationFrame(() => {
 
                             <FeaturedCard
                                 product={product}
+                                openCart={openCart}
                             />
 
                         </div>

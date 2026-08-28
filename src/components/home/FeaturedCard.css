@@ -16,10 +16,6 @@
 
     overflow:hidden;
 
-    text-decoration:none;
-
-    color:inherit;
-
     background:var(--surface);
 
     border:1px solid var(--border);
@@ -30,6 +26,13 @@
 
 }
 
+.featured-card a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
 .featured-card:hover{
 
     transform:translateY(-6px);
@@ -166,22 +169,152 @@
 
 }
 
-.featured-card-cta{
+.featured-card-price{
 
-    font-size:13px;
+    display:inline-block;
 
-    font-weight:700;
+    width:max-content;
 
-    color:var(--primary);
+    padding:4px 12px;
+
+    border-radius:999px;
+
+    background:rgba(79,70,229,.15);
+
+    border:1px solid rgba(79,70,229,.35);
+
+    color:#9d97ff;
+
+    font-size:16px;
+
+    font-weight:800;
+
+}
+
+/*======================================
+        SELECTOR DE CANTIDAD
+======================================*/
+
+.featured-card-qty{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:2px;
+
+}
+
+.featured-card-qty button{
+
+    width:28px;
+
+    height:28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:11px;
 
     transition:.25s;
 
 }
 
-.featured-card:hover .featured-card-cta{
+.featured-card-qty button:hover{
 
-    color:#7a72f5;
+    transform:scale(1.1);
 
-    transform:translateX(2px);
+}
+
+.featured-card-qty span{
+
+    min-width:18px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+/*======================================
+        ACCIONES DE COMPRA
+======================================*/
+
+.featured-card-whatsapp{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:11px;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.featured-card-whatsapp:hover{
+
+    background:#5a52f0;
+
+}
+
+.featured-card-add{
+
+    padding:11px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.featured-card-add:hover{
+
+    border-color:var(--primary);
+
+    background:rgba(79,70,229,.08);
 
 }

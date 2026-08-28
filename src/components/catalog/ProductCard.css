@@ -297,6 +297,70 @@
 }
 
 /*======================================
+            QUANTITY STEPPER
+======================================*/
+
+.qty-stepper{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    margin:4px 0 6px;
+
+}
+
+.qty-stepper button{
+
+    width:34px;
+
+    height:34px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.qty-stepper button:hover{
+
+    transform:scale(1.08);
+
+}
+
+.qty-stepper span{
+
+    min-width:24px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:700;
+
+}
+
+/*======================================
             BUTTONS
 ======================================*/
 

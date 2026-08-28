@@ -6,6 +6,9 @@ import { useParams, useNavigate } from "react-router-dom";
 import products from "../data/products";
 
 import FeaturedProducts from "../components/home/FeaturedProducts";
+import CartButton from "../components/cart/CartButton";
+import CartDrawer from "../components/cart/CartDrawer";
+import { useCart } from "../context/CartContext";
 
 import {
     FaWhatsapp,
@@ -13,14 +16,19 @@ import {
     FaTruck,
     FaFileInvoice,
     FaCreditCard,
+    FaMinus,
+    FaPlus,
 } from "react-icons/fa";
 
 function Product() {
 
     const { slug } = useParams();
     const navigate = useNavigate();
+    const { addToCart } = useCart();
 
     const [imageOpen, setImageOpen] = useState(false);
+    const [quantity, setQuantity] = useState(1);
+    const [cartOpen, setCartOpen] = useState(false);
 
     const product = products.find(
 
@@ -45,24 +53,29 @@ function Product() {
 
     }
 
+    const unitPrice =
+        Number(product.cost) * (Number(product.margin) + 1);
+
+    const subtotal = unitPrice * quantity;
+
     const whatsappMessage = encodeURIComponent(
 
 `¡Hola! 👋
 
-Me interesa este producto:
+Quiero pedir:
 
-🧴 ${product.name}
+🧴 ${quantity} x ${product.name}
 
 📦 Código: ${product.code}
 
-💲 Precio: ${product.price}
+💲 Subtotal: $${subtotal.toLocaleString("es-AR")}
 
-¿Podrían brindarme más información?`
+¿Confirmamos el pedido?`
 
     );
 
     const whatsappUrl =
-        `https://wa.me/54911525218692?text=${whatsappMessage}`;
+        `https://wa.me/5491125218692?text=${whatsappMessage}`;
 
     const relatedProducts = products.filter(
 
@@ -190,18 +203,61 @@ Me interesa este producto:
 
                     </p>
 
-                    <a
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="whatsapp-button"
-                    >
+                    <div className="qty-stepper">
 
-                        <FaWhatsapp />
+                        <button
+                            type="button"
+                            onClick={() =>
+                                setQuantity(q => Math.max(1, q - 1))
+                            }
+                            aria-label="Restar cantidad"
+                        >
+                            <FaMinus />
+                        </button>
 
-                        Consultar por WhatsApp
+                        <span>{quantity}</span>
 
-                    </a>
+                        <button
+                            type="button"
+                            onClick={() => setQuantity(q => q + 1)}
+                            aria-label="Sumar cantidad"
+                        >
+                            <FaPlus />
+                        </button>
+
+                    </div>
+
+                    <div className="product-cta-group">
+
+                        <a
+                            href={whatsappUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="whatsapp-button"
+                        >
+
+                            <FaWhatsapp />
+
+                            Pedir por WhatsApp
+
+                        </a>
+
+                        <button
+                            className="add-to-cart-button"
+                            onClick={() => {
+
+                                addToCart(product, quantity);
+
+                                setCartOpen(true);
+
+                            }}
+                        >
+
+                            🛒 Agregar al carrito
+
+                        </button>
+
+                    </div>
 
                 </div>
 
@@ -216,6 +272,8 @@ Me interesa este producto:
                     cards={relatedCards}
 
                     title="🧴 También te puede interesar"
+
+                    openCart={() => setCartOpen(true)}
 
                 />
 
@@ -253,6 +311,15 @@ Me interesa este producto:
                 )
 
             }
+
+            <CartButton
+                onClick={() => setCartOpen(true)}
+            />
+
+            <CartDrawer
+                open={cartOpen}
+                onClose={() => setCartOpen(false)}
+            />
 
         </div>
 

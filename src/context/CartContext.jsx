@@ -21,7 +21,7 @@ export function CartProvider({ children }) {
 
     }, [cart]);
 
-    function addToCart(product) {
+        function addToCart(product, quantity = 1) {
 
         setCart(current => {
 
@@ -36,7 +36,7 @@ export function CartProvider({ children }) {
                     item.id === product.id
                         ? {
                             ...item,
-                            quantity: item.quantity + 1
+                            quantity: item.quantity + quantity
                         }
                         : item
 
@@ -50,7 +50,7 @@ export function CartProvider({ children }) {
 
                 {
                     ...product,
-                    quantity: 1
+                    quantity
                 }
 
             ];
