@@ -38,6 +38,8 @@ const products = rows
 
     description:row.PRESENTACION,
 
+    characteristics:row.CARACTERISTICAS,
+
     cost:Number(row.COSTO),
 
     margin:Number(row["% MARGEN"]),

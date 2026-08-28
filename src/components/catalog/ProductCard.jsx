@@ -10,7 +10,7 @@ function ProductCard({ product, openCart }) {
 
     const [quantity, setQuantity] = useState(1);
 
-    const stock = product.stock ?? 999;
+        const characteristics = String(product.characteristics || "").trim();
 
     const unitPrice =
         Number(product.cost) * (Number(product.margin) + 1);
@@ -69,26 +69,25 @@ function ProductCard({ product, openCart }) {
 
                 <h3>{product.name}</h3>
 
-                <p>🧴 {product.description}</p>
+                <p className="product-presentation">
+                    📦 Presentación: {product.description}
+                </p>
+
+                {
+                    characteristics && (
+                        <p className="product-characteristics">
+                            {characteristics}
+                        </p>
+                    )
+                }
 
                 <span className="price">
                     {product.price}
                 </span>
 
-                {
-                    stock <= 0
-            
-                    ? (
-                        <span className="stock agotado">
-                            Sin stock
-                        </span>
-                    )
-                    : (
-                        <span className="stock disponible">
-                            Disponible
-                        </span>
-                    )
-                }
+                <span className="product-order-note">
+                    🛡️ Recibís, revisás y pagás
+                </span>
 
                 <div className="qty-stepper">
 
