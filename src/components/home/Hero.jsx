@@ -1,6 +1,5 @@
 import "./Hero.css";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import Navbar from "../layout/Navbar";
 
 function Hero() {
@@ -38,44 +37,45 @@ function Hero() {
 
                     <span className="hero-badge">
 
-                        Mayorista y minorista
+                        Productos de limpieza a buen precio
 
                     </span>
 
                     <h1 className="hero-title">
 
-                        Todo lo que necesitás para{" "}
-                        <em>limpiar</em>, en un solo pedido mensual.
+                        Productos de limpieza
+                        <em> a buen precio</em>
 
                     </h1>
 
                     <p className="hero-description">
 
-                        Comprá tus productos de limpieza y lavandería{" "}
-                        <strong>a precio de por mayor</strong> y recibilos
-                        en la puerta de tu casa o negocio.
+                        Te los llevamos a tu casa.
 
                     </p>
 
+                    <ul className="hero-benefits">
+
+                        <li>🛡️ Sin adelanto</li>
+
+                        <li>🚚 Entrega a domicilio</li>
+
+                        <li>👀 Revisás antes de pagar</li>
+
+                        <li>💰 Pagás solamente lo que te quedás</li>
+
+                    </ul>
+
                     <div className="hero-actions">
-
-                        <Link
-                            to="/catalogo"
-                            className="hero-cta-primary"
-                        >
-
-                            Ver catálogo →
-
-                        </Link>
 
                         <a
                             href="https://wa.me/5491125218692?text=Hola,%20quiero%20hacer%20un%20pedido"
                             target="_blank"
                             rel="noreferrer"
-                            className="hero-cta-secondary"
+                            className="hero-cta-primary"
                         >
 
-                            Consultar por WhatsApp ↗
+                            Pedir por WhatsApp ↗
 
                         </a>
 
@@ -87,13 +87,13 @@ function Hero() {
 
                     <span className="hero-caption">
 
-                        01 · Soluciones de limpieza profesional
+                        Pedido simple, sin adelanto
 
                     </span>
 
                     <span className="hero-shipping-badge">
 
-                        📦 Envío bonificado en compras mayores a $50.000
+                        Recibís · Revisás · Pagás
 
                     </span>
 
