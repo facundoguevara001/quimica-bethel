@@ -44,7 +44,9 @@ const products = rows
 
     margin:Number(row["% MARGEN"]),
 
-    price:`$${Number(row["PRECIO VENTA"]).toLocaleString("es-AR")}`,
+    price:`$${Number(
+    row["PRECIO VENTA AJUSTADO"] || row["PRECIO VENTA"]
+).toLocaleString("es-AR")}`,
 
     stock:Number(row.STOCK),
 
