@@ -4,13 +4,14 @@ import { useCart } from "../../context/CartContext";
 function CartButton({ onClick }) {
 
     const { totalItems } = useCart();
-    console.log("TOTAL ITEMS:", totalItems);
 
     return (
 
         <button
             className="cart-floating-button"
             onClick={onClick}
+            type="button"
+aria-label="Abrir carrito"
         >
 
             <FaShoppingCart />

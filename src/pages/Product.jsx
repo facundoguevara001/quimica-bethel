@@ -3,8 +3,7 @@ import "./Product.css";
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-import products from "../data/products";
-import { getVariants } from "../utils/productGroups";
+import products, { productVariants } from "../data/products";
 
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import CartButton from "../components/cart/CartButton";
@@ -31,14 +30,11 @@ function Product() {
     const [quantity, setQuantity] = useState(1);
     const [cartOpen, setCartOpen] = useState(false);
 
-    const product = products.find(
-
-        p =>
-
-            String(p.slug).trim().toLowerCase() ===
-            String(slug).trim().toLowerCase()
-
-    );
+    const product = productVariants.find(
+    p =>
+        String(p.slug).trim().toLowerCase() ===
+        String(slug).trim().toLowerCase()
+);
 
     if (!product) {
 
@@ -54,12 +50,11 @@ function Product() {
 
     }
 
-    const variants = getVariants(products, product);
+    const variants = productVariants
+    .filter(variant => variant.group === product.group)
+    .sort((a, b) => a.salePrice - b.salePrice);
 
-    const unitPrice =
-        Number(product.cost) * (Number(product.margin) + 1);
-
-    const subtotal = unitPrice * quantity;
+    const subtotal = Number(product.salePrice) * quantity;
 
     const whatsappMessage = encodeURIComponent(
 
@@ -81,13 +76,10 @@ Quiero pedir:
         `https://wa.me/5491125218692?text=${whatsappMessage}`;
 
     const relatedProducts = products.filter(
-
-        p =>
-
-            p.category === product.category &&
-            p.slug !== product.slug
-
-    );
+    p =>
+        p.category === product.category &&
+        p.group !== product.group
+);
 
     const relatedCards = [
 
@@ -207,37 +199,45 @@ Quiero pedir:
                     </p>
 
                     {
+    variants.length > 1 && (
+        <section className="variant-selector">
+            <p className="variant-title">
+                Presentación elegida:
+                <strong>{product.variantLabel}</strong>
+            </p>
 
-                        variants.length > 1 && (
+            <div className="variant-options">
+                {variants.map(variant => (
+                    <button
+                        key={variant.slug}
+                        type="button"
+                        className={
+                            variant.slug === product.slug
+                                ? "variant-chip variant-chip-active"
+                                : "variant-chip"
+                        }
+                        onClick={() =>
+                            navigate(
+                                `/producto/${variant.slug}`,
+                                { replace: true }
+                            )
+                        }
+                        aria-pressed={
+                            variant.slug === product.slug
+                        }
+                    >
+                        <span>{variant.variantLabel}</span>
 
-                            <div className="variant-selector">
-
-                                {variants.map(variant => (
-
-                                    <button
-                                        key={variant.slug}
-                                        type="button"
-                                        className={
-                                            variant.slug === product.slug
-                                                ? "variant-chip variant-chip-active"
-                                                : "variant-chip"
-                                        }
-                                        onClick={() =>
-                                            navigate(`/producto/${variant.slug}`)
-                                        }
-                                    >
-
-                                        {variant.variantLabel}
-
-                                    </button>
-
-                                ))}
-
-                            </div>
-
-                        )
-
-                    }
+                        <img
+                            src={variant.image}
+                            alt={`Presentación ${variant.variantLabel}`}
+                        />
+                    </button>
+                ))}
+            </div>
+        </section>
+    )
+}
 
                     <div className="qty-stepper">
 

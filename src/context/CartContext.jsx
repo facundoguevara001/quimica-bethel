@@ -3,117 +3,79 @@ import { createContext, useContext, useEffect, useState } from "react";
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
-
     const [cart, setCart] = useState(() => {
-
         const saved = localStorage.getItem("bethel-cart");
-
         return saved ? JSON.parse(saved) : [];
-
     });
 
     useEffect(() => {
-
-        localStorage.setItem(
-            "bethel-cart",
-            JSON.stringify(cart)
-        );
-
+        localStorage.setItem("bethel-cart", JSON.stringify(cart));
     }, [cart]);
 
-        function addToCart(product, quantity = 1) {
-
+    function addToCart(product, quantity = 1) {
         setCart(current => {
-
             const existing = current.find(
-                item => item.id === product.id
+                item => item.slug === product.slug
             );
 
             if (existing) {
-
                 return current.map(item =>
-
-                    item.id === product.id
+                    item.slug === product.slug
                         ? {
                             ...item,
                             quantity: item.quantity + quantity
                         }
                         : item
-
                 );
-
             }
 
             return [
-
                 ...current,
-
                 {
                     ...product,
                     quantity
                 }
-
             ];
-
         });
-
     }
 
-    function removeFromCart(id) {
-
+    function removeFromCart(slug) {
         setCart(current =>
-            current.filter(item => item.id !== id)
+            current.filter(item => item.slug !== slug)
         );
-
     }
 
-    function increaseQuantity(id) {
-
+    function increaseQuantity(slug) {
         setCart(current =>
-
             current.map(item =>
-
-                item.id === id
+                item.slug === slug
                     ? {
                         ...item,
                         quantity: item.quantity + 1
                     }
                     : item
-
             )
-
         );
-
     }
 
-    function decreaseQuantity(id) {
-
+    function decreaseQuantity(slug) {
         setCart(current =>
-
             current.flatMap(item => {
-
-                if (item.id !== id) return item;
+                if (item.slug !== slug) return item;
 
                 if (item.quantity === 1) return [];
 
                 return {
-
                     ...item,
-
                     quantity: item.quantity - 1
-
                 };
-
             })
-
         );
+    }
 
-    }function clearCart() {
-
-    setCart([]);
-
-}
-    
+    function clearCart() {
+        setCart([]);
+    }
 
     const totalItems = cart.reduce(
         (acc, item) => acc + item.quantity,
@@ -122,15 +84,11 @@ export function CartProvider({ children }) {
 
     const totalPrice = cart.reduce(
         (acc, item) =>
-            acc +
-            Number(item.cost) *
-            (Number(item.margin) + 1) *
-            item.quantity,
+            acc + Number(item.salePrice) * item.quantity,
         0
     );
 
     return (
-
         <CartContext.Provider
             value={{
                 cart,
@@ -143,17 +101,11 @@ export function CartProvider({ children }) {
                 totalPrice
             }}
         >
-
             {children}
-
         </CartContext.Provider>
-
     );
-
 }
 
 export function useCart() {
-
     return useContext(CartContext);
-
 }

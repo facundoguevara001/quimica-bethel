@@ -30,9 +30,10 @@ Hola, quisiera realizar el siguiente pedido:
 ${cart
     .map(
         item =>
-`• ${item.name}
+`• ${item.name}${item.variantLabel ? ` — ${item.variantLabel}` : ""}
 Cantidad: ${item.quantity}
-Precio: ${item.price}`
+Precio unitario: ${item.price}
+Subtotal: $${(Number(item.salePrice) * item.quantity).toLocaleString("es-AR")}`
     )
     .join("\n\n")}
 
@@ -67,66 +68,30 @@ Muchas gracias.
 
                     <h2>🛒 Mi Pedido</h2>
 
-                    <button onClick={onClose}>
-                        <FaTimes />
-                    </button>
+                    <button
+    type="button"
+    onClick={onClose}
+    aria-label="Cerrar carrito"
+>
+    <FaTimes />
+</button>
 
                 </div>
 
                 <div className="cart-items">
-
-                    {
-
-                        cart.length === 0 ?
-
-                        (
-
-                            <p className="empty-cart">
-
-                                Tu carrito está vacío.
-
-                            </p>
-
-                        )
-
-                        :
-
-                        <div className="cart-items">
-
-{
-
-    cart.length === 0
-
-    ? (
-
+    {cart.length === 0 ? (
         <p className="empty-cart">
-
             Tu carrito está vacío.
-
         </p>
-
-    )
-
-    : (
-
+    ) : (
         cart.map(item => (
-
             <CartItem
-                key={item.id}
+                key={item.slug}
                 item={item}
             />
-
         ))
-
-    )
-
-}
-
+    )}
 </div>
-
-                    }
-
-                </div>
 
                 <div className="cart-footer">
 

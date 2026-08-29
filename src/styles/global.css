@@ -229,6 +229,22 @@ body{
 img{
     max-width:100%;
     height:auto;
+}@media (max-width: 768px){
+    .cart-floating-button{
+        right:16px;
+        bottom:calc(16px + env(safe-area-inset-bottom));
+        width:58px;
+        height:58px;
+        font-size:22px;
+    }
+
+    .cart-badge{
+        top:-5px;
+        right:-5px;
+        width:24px;
+        height:24px;
+        font-size:11px;
+    }
 }
 
 

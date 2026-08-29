@@ -21,7 +21,6 @@ function ProductGrid({ products, openCart }) {
                 <ProductCard
     key={product.id}
     product={product}
-    openCart={openCart}
 />
 
             ))}

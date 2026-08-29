@@ -29,6 +29,10 @@ function CartItem({ item }) {
 
                 <h4>{item.name}</h4>
 
+                {item.variantLabel && (
+    <p>{item.variantLabel}</p>
+)}
+
                 <span>{item.price}</span>
 
                 <div className="cart-quantity">

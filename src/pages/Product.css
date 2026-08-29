@@ -605,30 +605,256 @@
     }
 
 }.variant-selector{
+    margin:24px 0 10px;
+}
+
+.variant-title{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    margin:0 0 12px;
+    color:#b7c0cb;
+    font-size:15px;
+}
+
+.variant-title strong{
+    color:white;
+    font-size:18px;
+}
+
+.variant-options{
     display:flex;
     flex-wrap:wrap;
     gap:10px;
-    margin:20px 0;
 }
 
 .variant-chip{
-    padding:10px 18px;
-    border-radius:12px;
+    min-width:118px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:7px 8px 7px 14px;
     border:1px solid rgba(255,255,255,.18);
+    border-radius:14px;
     background:rgba(255,255,255,.04);
     color:white;
+    font:inherit;
     font-size:14px;
-    font-weight:600;
+    font-weight:700;
     cursor:pointer;
+    text-align:left;
     transition:.25s;
 }
 
 .variant-chip:hover{
     border-color:#00c853;
+    background:rgba(0,200,83,.08);
+    transform:translateY(-2px);
+}
+
+.variant-chip img{
+    width:42px;
+    height:42px;
+    flex:0 0 42px;
+    object-fit:contain;
+    border-radius:9px;
+    background:white;
 }
 
 .variant-chip-active{
     border-color:#00c853;
     background:rgba(0,200,83,.12);
     color:#00c853;
+    box-shadow:0 0 0 1px rgba(0,200,83,.2);
+}
+
+.variant-chip-active img{
+    outline:2px solid #00c853;
+    outline-offset:2px;
+}
+
+@media (max-width: 520px){
+    .variant-options{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    .variant-chip{
+        width:100%;
+    }
+}@media (max-width: 900px){
+    .product-page{
+        padding:32px 20px 110px;
+    }
+
+    .product-container{
+        grid-template-columns:1fr;
+        gap:32px;
+    }
+
+    .product-page .product-image{
+        margin-top:0;
+    }
+
+    .product-page .image-wrapper{
+        max-width:520px;
+        margin:0 auto;
+    }
+
+    .product-info{
+        max-width:620px;
+        margin:0 auto;
+        width:100%;
+    }
+
+    .product-info h1{
+        font-size:clamp(34px, 8vw, 48px);
+    }
+
+    .product-info h2{
+        font-size:clamp(32px, 7vw, 40px);
+    }
+
+    .related-products{
+        margin-top:55px;
+    }
+}
+
+@media (max-width: 600px){
+    .product-page{
+        padding:18px 16px 100px;
+    }
+
+    .product-page .back-button{
+        margin-bottom:18px;
+        padding:10px 14px;
+    }
+
+    .product-page .image-wrapper{
+        max-width:100%;
+        border-radius:20px;
+    }
+
+    .product-page .image-wrapper img{
+        width:92%;
+    }
+
+    .product-category{
+        font-size:14px;
+    }
+
+    .product-info h1{
+        margin:12px 0;
+        font-size:34px;
+        line-height:1.15;
+    }
+
+    .product-info h2{
+        margin-bottom:18px;
+        font-size:32px;
+    }
+
+    .product-info p{
+        font-size:16px;
+        line-height:1.65;
+    }
+
+    .product-benefits{
+        gap:13px;
+        margin:24px 0;
+        padding:18px;
+        border-radius:16px;
+    }
+
+    .product-benefits div{
+        gap:12px;
+        font-size:15px;
+    }
+
+    .product-benefits svg{
+        font-size:19px;
+    }
+
+    .variant-selector{
+        margin-top:22px;
+    }
+
+    .variant-title{
+        font-size:14px;
+    }
+
+    .variant-title strong{
+        font-size:17px;
+    }
+
+    .variant-options{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:9px;
+    }
+
+    .variant-chip{
+        width:100%;
+        min-height:62px;
+        padding:8px 9px 8px 15px;
+        font-size:15px;
+    }
+
+    .variant-chip img{
+        width:46px;
+        height:46px;
+        flex-basis:46px;
+    }
+
+    .qty-stepper{
+        justify-content:center;
+        margin-top:28px;
+    }
+
+    .qty-stepper button{
+        width:46px;
+        height:46px;
+    }
+
+    .product-cta-group{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+
+    .whatsapp-button,
+    .add-to-cart-button{
+        min-width:0;
+        width:100%;
+        padding:16px;
+        font-size:16px;
+    }
+
+    .whatsapp-button{
+        order:2;
+    }
+
+    .add-to-cart-button{
+        order:1;
+    }
+
+    .related-products h2{
+        font-size:26px;
+        margin-bottom:20px;
+    }
+
+    .image-modal-content{
+        width:94%;
+        max-height:78dvh;
+        border-radius:16px;
+    }
+
+    .image-close{
+        top:16px;
+        right:16px;
+        width:44px;
+        height:44px;
+        font-size:22px;
+    }
 }
