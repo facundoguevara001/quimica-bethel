@@ -604,4 +604,31 @@
 
     }
 
+}.variant-selector{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+.variant-chip{
+    padding:10px 18px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.04);
+    color:white;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.variant-chip:hover{
+    border-color:#00c853;
+}
+
+.variant-chip-active{
+    border-color:#00c853;
+    background:rgba(0,200,83,.12);
+    color:#00c853;
 }

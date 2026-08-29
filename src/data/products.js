@@ -17,7 +17,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CLO001.jpg"
+    "image": "/products/CLO001.jpg",
+    "group": "CLO001",
+    "variantLabel": "5 litros",
+    "unitPrice": 4620
   },
   {
     "id": 2,
@@ -37,7 +40,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DET001.jpg"
+    "image": "/products/DET001.jpg",
+    "group": "DET001",
+    "variantLabel": "5 litros",
+    "unitPrice": 11700
   },
   {
     "id": 3,
@@ -57,7 +63,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/LVA001.jpg"
+    "image": "/products/LVA001.jpg",
+    "group": "LVA001",
+    "variantLabel": "5 litros",
+    "unitPrice": 3575
   },
   {
     "id": 4,
@@ -77,7 +86,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/LVA002.jpg"
+    "image": "/products/LVA002.jpg",
+    "group": "LVA002",
+    "variantLabel": "5 litros",
+    "unitPrice": 4225
   },
   {
     "id": 5,
@@ -97,7 +109,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SUA001.jpg"
+    "image": "/products/SUA001.jpg",
+    "group": "SUA001",
+    "variantLabel": "5 litros",
+    "unitPrice": 6500
   },
   {
     "id": 6,
@@ -117,7 +132,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SUA002.jpg"
+    "image": "/products/SUA002.jpg",
+    "group": "SUA002",
+    "variantLabel": "5 litros",
+    "unitPrice": 5200
   },
   {
     "id": 7,
@@ -137,7 +155,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/JBP001.jpg"
+    "image": "/products/JBP001.jpg",
+    "group": "JBP001",
+    "variantLabel": "20 kg",
+    "unitPrice": 26000
   },
   {
     "id": 8,
@@ -157,7 +178,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PFA001.jpg"
+    "image": "/products/PFA001.jpg",
+    "group": "PFA001",
+    "variantLabel": "1 litros",
+    "unitPrice": 2860
   },
   {
     "id": 9,
@@ -177,7 +201,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PFA002.jpg"
+    "image": "/products/PFA002.jpg",
+    "group": "PFA002",
+    "variantLabel": "5 litros",
+    "unitPrice": 20800
   },
   {
     "id": 10,
@@ -197,7 +224,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DES001.jpg"
+    "image": "/products/DES001.jpg",
+    "group": "DES001",
+    "variantLabel": "5 litros",
+    "unitPrice": 5980
   },
   {
     "id": 11,
@@ -217,7 +247,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DES002.jpg"
+    "image": "/products/DES002.jpg",
+    "group": "DES002",
+    "variantLabel": "5 litros",
+    "unitPrice": 7020
   },
   {
     "id": 12,
@@ -237,7 +270,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DES003.jpg"
+    "image": "/products/DES003.jpg",
+    "group": "DES003",
+    "variantLabel": "5 litros",
+    "unitPrice": 7020
   },
   {
     "id": 13,
@@ -257,7 +293,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DES004.jpg"
+    "image": "/products/DES004.jpg",
+    "group": "DES004",
+    "variantLabel": "5 litros",
+    "unitPrice": 7020
   },
   {
     "id": 14,
@@ -277,7 +316,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DES005.jpg"
+    "image": "/products/DES005.jpg",
+    "group": "DES005",
+    "variantLabel": "5 litros",
+    "unitPrice": 9490
   },
   {
     "id": 15,
@@ -297,7 +339,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR001.jpg"
+    "image": "/products/RJR001.jpg",
+    "group": "RJR001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 910
   },
   {
     "id": 16,
@@ -317,7 +362,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR002.jpg"
+    "image": "/products/RJR002.jpg",
+    "group": "RJR002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 390
   },
   {
     "id": 17,
@@ -337,7 +385,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR003.jpg"
+    "image": "/products/RJR003.jpg",
+    "group": "RJR003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 650
   },
   {
     "id": 18,
@@ -357,7 +408,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR004.jpg"
+    "image": "/products/RJR004.jpg",
+    "group": "RJR-AUTO",
+    "variantLabel": "SIMPLE",
+    "unitPrice": 650
   },
   {
     "id": 19,
@@ -377,7 +431,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR005.jpg"
+    "image": "/products/RJR005.jpg",
+    "group": "RJR005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 650
   },
   {
     "id": 20,
@@ -397,7 +454,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR006.jpg"
+    "image": "/products/RJR006.jpg",
+    "group": "RJR-AUTO",
+    "variantLabel": "DOBLE",
+    "unitPrice": 2665
   },
   {
     "id": 21,
@@ -417,7 +477,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR007.jpg"
+    "image": "/products/RJR007.jpg",
+    "group": "RJR-AUTO",
+    "variantLabel": "TRIPLE",
+    "unitPrice": 2665
   },
   {
     "id": 22,
@@ -437,7 +500,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR008.jpg"
+    "image": "/products/RJR008.jpg",
+    "group": "RJR-COCINA",
+    "variantLabel": "TRIPLE",
+    "unitPrice": 975
   },
   {
     "id": 23,
@@ -457,7 +523,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR009.jpg"
+    "image": "/products/RJR009.jpg",
+    "group": "RJR-COCINA",
+    "variantLabel": "DOBLE",
+    "unitPrice": 845
   },
   {
     "id": 24,
@@ -477,7 +546,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR010.jpg"
+    "image": "/products/RJR010.jpg",
+    "group": "RJR011",
+    "variantLabel": "1 unidad",
+    "unitPrice": 338
   },
   {
     "id": 25,
@@ -497,7 +569,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR011.jpg"
+    "image": "/products/RJR011.jpg",
+    "group": "RJR012",
+    "variantLabel": "1 unidad",
+    "unitPrice": 390
   },
   {
     "id": 26,
@@ -517,7 +592,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR012.jpg"
+    "image": "/products/RJR012.jpg",
+    "group": "RJR-COCINA",
+    "variantLabel": "SIMPLE",
+    "unitPrice": 390
   },
   {
     "id": 27,
@@ -537,7 +615,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR013.jpg"
+    "image": "/products/RJR013.jpg",
+    "group": "RJR014",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1430
   },
   {
     "id": 28,
@@ -557,7 +638,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR014.jpg"
+    "image": "/products/RJR014.jpg",
+    "group": "RJR015",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2210
   },
   {
     "id": 29,
@@ -577,7 +661,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RJR015.jpg"
+    "image": "/products/RJR015.jpg",
+    "group": "RJR015",
+    "variantLabel": "1 unidad",
+    "unitPrice": 780
   },
   {
     "id": 30,
@@ -597,7 +684,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/TDP001.jpg"
+    "image": "/products/TDP001.jpg",
+    "group": "TDP001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1495
   },
   {
     "id": 31,
@@ -617,7 +707,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/TDP002.jpg"
+    "image": "/products/TDP002.jpg",
+    "group": "TDP002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1495
   },
   {
     "id": 32,
@@ -637,7 +730,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/TDP003.jpg"
+    "image": "/products/TDP003.jpg",
+    "group": "TDP-COSTURADO",
+    "variantLabel": "DOBLE",
+    "unitPrice": 1300
   },
   {
     "id": 33,
@@ -657,7 +753,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/TDP004.jpg"
+    "image": "/products/TDP004.jpg",
+    "group": "TDP-COSTURADO",
+    "variantLabel": "SIMPLE",
+    "unitPrice": 845
   },
   {
     "id": 34,
@@ -677,7 +776,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/TDP005.jpg"
+    "image": "/products/TDP005.jpg",
+    "group": "TDP005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1690
   },
   {
     "id": 35,
@@ -697,7 +799,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Inactivo",
     "featured": false,
-    "image": "/products/TDP006.jpg"
+    "image": "/products/TDP006.jpg",
+    "group": "TDP006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 0
   },
   {
     "id": 36,
@@ -717,7 +822,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/TDP007.jpg"
+    "image": "/products/TDP007.jpg",
+    "group": "TDP007",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1430
   },
   {
     "id": 37,
@@ -737,7 +845,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/TDP008.jpg"
+    "image": "/products/TDP008.jpg",
+    "group": "TDP008",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1495
   },
   {
     "id": 38,
@@ -757,7 +868,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE001.jpg"
+    "image": "/products/EYE001.jpg",
+    "group": "EYE-ANDEN",
+    "variantLabel": "40 CM",
+    "unitPrice": 6630
   },
   {
     "id": 39,
@@ -777,7 +891,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE002.jpg"
+    "image": "/products/EYE002.jpg",
+    "group": "EYE-ANDEN",
+    "variantLabel": "60 CM",
+    "unitPrice": 9360
   },
   {
     "id": 40,
@@ -797,7 +914,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE003.jpg"
+    "image": "/products/EYE003.jpg",
+    "group": "EYE-ANDEN",
+    "variantLabel": "80 CM",
+    "unitPrice": 11570
   },
   {
     "id": 41,
@@ -817,7 +937,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE004.jpg"
+    "image": "/products/EYE004.jpg",
+    "group": "EYE-ANDEN",
+    "variantLabel": "100 CM",
+    "unitPrice": 14950
   },
   {
     "id": 42,
@@ -837,7 +960,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE005.jpg"
+    "image": "/products/EYE005.jpg",
+    "group": "EYE005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 8060
   },
   {
     "id": 43,
@@ -857,7 +983,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE006.jpg"
+    "image": "/products/EYE006.jpg",
+    "group": "EYE006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 9230
   },
   {
     "id": 44,
@@ -877,7 +1006,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE007.jpg"
+    "image": "/products/EYE007.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "35 CM",
+    "unitPrice": 7150
   },
   {
     "id": 45,
@@ -897,7 +1029,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE008.jpg"
+    "image": "/products/EYE008.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "60 CM",
+    "unitPrice": 9100
   },
   {
     "id": 46,
@@ -917,7 +1052,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE009.jpg"
+    "image": "/products/EYE009.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "80 CM",
+    "unitPrice": 10400
   },
   {
     "id": 47,
@@ -937,7 +1075,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE010.jpg"
+    "image": "/products/EYE010.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "100 CM",
+    "unitPrice": 12870
   },
   {
     "id": 48,
@@ -957,7 +1098,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE011.jpg"
+    "image": "/products/EYE011.jpg",
+    "group": "EYE011",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2340
   },
   {
     "id": 49,
@@ -977,7 +1121,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE012.jpg"
+    "image": "/products/EYE012.jpg",
+    "group": "EYE012",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3770
   },
   {
     "id": 50,
@@ -997,7 +1144,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE013.jpg"
+    "image": "/products/EYE013.jpg",
+    "group": "EYE013",
+    "variantLabel": "1 unidad",
+    "unitPrice": 8450
   },
   {
     "id": 51,
@@ -1017,7 +1167,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE014.jpg"
+    "image": "/products/EYE014.jpg",
+    "group": "EYE014",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2600
   },
   {
     "id": 52,
@@ -1037,7 +1190,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE015.jpg"
+    "image": "/products/EYE015.jpg",
+    "group": "EYE015",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3380
   },
   {
     "id": 53,
@@ -1057,7 +1213,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE016.jpg"
+    "image": "/products/EYE016.jpg",
+    "group": "EYE016",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2600
   },
   {
     "id": 54,
@@ -1077,7 +1236,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE017.jpg"
+    "image": "/products/EYE017.jpg",
+    "group": "EYE017",
+    "variantLabel": "1 unidad",
+    "unitPrice": 11830
   },
   {
     "id": 55,
@@ -1097,7 +1259,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE018.jpg"
+    "image": "/products/EYE018.jpg",
+    "group": "EYE018",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3900
   },
   {
     "id": 56,
@@ -1117,7 +1282,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE019.jpg"
+    "image": "/products/EYE019.jpg",
+    "group": "EYE019",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3900
   },
   {
     "id": 57,
@@ -1137,7 +1305,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE020.jpg"
+    "image": "/products/EYE020.jpg",
+    "group": "EYE020",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5460
   },
   {
     "id": 58,
@@ -1157,7 +1328,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE021.jpg"
+    "image": "/products/EYE021.jpg",
+    "group": "EYE021",
+    "variantLabel": "1 unidad",
+    "unitPrice": 4030
   },
   {
     "id": 59,
@@ -1177,7 +1351,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE022.jpg"
+    "image": "/products/EYE022.jpg",
+    "group": "EYE022",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5200
   },
   {
     "id": 60,
@@ -1197,7 +1374,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE023.jpg"
+    "image": "/products/EYE023.jpg",
+    "group": "EYE023",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2600
   },
   {
     "id": 61,
@@ -1217,7 +1397,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE024.jpg"
+    "image": "/products/EYE024.jpg",
+    "group": "EYE024",
+    "variantLabel": "1 unidad",
+    "unitPrice": 9750
   },
   {
     "id": 62,
@@ -1237,7 +1420,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE025.jpg"
+    "image": "/products/EYE025.jpg",
+    "group": "EYE025",
+    "variantLabel": "1 unidad",
+    "unitPrice": 7410
   },
   {
     "id": 63,
@@ -1257,7 +1443,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE026.jpg"
+    "image": "/products/EYE026.jpg",
+    "group": "EYE026",
+    "variantLabel": "1 unidad",
+    "unitPrice": 6500
   },
   {
     "id": 64,
@@ -1277,7 +1466,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE027.jpg"
+    "image": "/products/EYE027.jpg",
+    "group": "EYE027",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2080
   },
   {
     "id": 65,
@@ -1297,7 +1489,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE028.jpg"
+    "image": "/products/EYE028.jpg",
+    "group": "EYE028",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5720
   },
   {
     "id": 66,
@@ -1317,7 +1512,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE029.jpg"
+    "image": "/products/EYE029.jpg",
+    "group": "EYE029",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 67,
@@ -1337,7 +1535,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE030.jpg"
+    "image": "/products/EYE030.jpg",
+    "group": "EYE030",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2860
   },
   {
     "id": 68,
@@ -1357,7 +1558,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE031.jpg"
+    "image": "/products/EYE031.jpg",
+    "group": "EYE031",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2470
   },
   {
     "id": 69,
@@ -1377,7 +1581,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE032.jpg"
+    "image": "/products/EYE032.jpg",
+    "group": "EYE032",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5850
   },
   {
     "id": 70,
@@ -1397,7 +1604,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE033.jpg"
+    "image": "/products/EYE033.jpg",
+    "group": "EYE033",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3510
   },
   {
     "id": 71,
@@ -1417,7 +1627,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE034.jpg"
+    "image": "/products/EYE034.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "35 CM",
+    "unitPrice": 3380
   },
   {
     "id": 72,
@@ -1437,7 +1650,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE035.jpg"
+    "image": "/products/EYE035.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "60 CM",
+    "unitPrice": 4810
   },
   {
     "id": 73,
@@ -1457,7 +1673,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE036.jpg"
+    "image": "/products/EYE036.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "80 CM",
+    "unitPrice": 5200
   },
   {
     "id": 74,
@@ -1477,7 +1696,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE037.jpg"
+    "image": "/products/EYE037.jpg",
+    "group": "EYE-BARREDOR",
+    "variantLabel": "100 CM",
+    "unitPrice": 6370
   },
   {
     "id": 75,
@@ -1497,7 +1719,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/EYE038.jpg"
+    "image": "/products/EYE038.jpg",
+    "group": "EYE038",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2860
   },
   {
     "id": 76,
@@ -1517,7 +1742,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT001.jpg"
+    "image": "/products/AUT001.jpg",
+    "group": "AUT001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2470
   },
   {
     "id": 77,
@@ -1537,7 +1765,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT002.jpg"
+    "image": "/products/AUT002.jpg",
+    "group": "AUT002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1040
   },
   {
     "id": 78,
@@ -1557,7 +1788,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT003.jpg"
+    "image": "/products/AUT003.jpg",
+    "group": "AUT003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 6500
   },
   {
     "id": 79,
@@ -1577,7 +1811,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT004.jpg"
+    "image": "/products/AUT004.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Black",
+    "unitPrice": 5330
   },
   {
     "id": 80,
@@ -1597,7 +1834,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT005.jpg"
+    "image": "/products/AUT005.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Carolina Herrera",
+    "unitPrice": 5330
   },
   {
     "id": 81,
@@ -1617,7 +1857,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT006.jpg"
+    "image": "/products/AUT006.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Frutilla",
+    "unitPrice": 5330
   },
   {
     "id": 82,
@@ -1637,7 +1880,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT007.jpg"
+    "image": "/products/AUT007.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Kenzo",
+    "unitPrice": 5330
   },
   {
     "id": 83,
@@ -1657,7 +1903,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT008.jpg"
+    "image": "/products/AUT008.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Lavanda",
+    "unitPrice": 5330
   },
   {
     "id": 84,
@@ -1677,7 +1926,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT009.jpg"
+    "image": "/products/AUT009.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "One Million",
+    "unitPrice": 5330
   },
   {
     "id": 85,
@@ -1697,7 +1949,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT010.jpg"
+    "image": "/products/AUT010.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Paco rabanne",
+    "unitPrice": 5330
   },
   {
     "id": 86,
@@ -1717,7 +1972,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT011.jpg"
+    "image": "/products/AUT011.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Sensual",
+    "unitPrice": 5330
   },
   {
     "id": 87,
@@ -1737,7 +1995,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT012.jpg"
+    "image": "/products/AUT012.jpg",
+    "group": "AUT-SILICONA-AEROSOL",
+    "variantLabel": "Vainilla",
+    "unitPrice": 5330
   },
   {
     "id": 88,
@@ -1757,7 +2018,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT013.jpg"
+    "image": "/products/AUT013.jpg",
+    "group": "AUT013",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3900
   },
   {
     "id": 89,
@@ -1777,7 +2041,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT014.jpg"
+    "image": "/products/AUT014.jpg",
+    "group": "AUT014",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 90,
@@ -1797,7 +2064,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT015.jpg"
+    "image": "/products/AUT015.jpg",
+    "group": "AUT-PERFUME-LATA",
+    "variantLabel": "Black",
+    "unitPrice": 8450
   },
   {
     "id": 91,
@@ -1817,7 +2087,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT016.jpg"
+    "image": "/products/AUT016.jpg",
+    "group": "AUT-PERFUME-LATA",
+    "variantLabel": "Frutilla",
+    "unitPrice": 8450
   },
   {
     "id": 92,
@@ -1837,7 +2110,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT017.jpg"
+    "image": "/products/AUT017.jpg",
+    "group": "AUT-PERFUME-LATA",
+    "variantLabel": "Limon",
+    "unitPrice": 8450
   },
   {
     "id": 93,
@@ -1857,7 +2133,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT018.jpg"
+    "image": "/products/AUT018.jpg",
+    "group": "AUT-PERFUME-LATA",
+    "variantLabel": "Vainilla",
+    "unitPrice": 8450
   },
   {
     "id": 94,
@@ -1877,7 +2156,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT019.jpg"
+    "image": "/products/AUT019.jpg",
+    "group": "AUT-PERFUME-LATA",
+    "variantLabel": "Aqua",
+    "unitPrice": 8450
   },
   {
     "id": 95,
@@ -1897,7 +2179,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT020.jpg"
+    "image": "/products/AUT020.jpg",
+    "group": "AUT020",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3250
   },
   {
     "id": 96,
@@ -1917,7 +2202,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AUT021.jpg"
+    "image": "/products/AUT021.jpg",
+    "group": "AUT021",
+    "variantLabel": "1 unidad",
+    "unitPrice": 4420
   },
   {
     "id": 97,
@@ -1937,7 +2225,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA001.png"
+    "image": "/products/SHA001.png",
+    "group": "SHA001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 98,
@@ -1957,7 +2248,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA002.png"
+    "image": "/products/SHA002.png",
+    "group": "SHA002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 99,
@@ -1977,7 +2271,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA003.png"
+    "image": "/products/SHA003.png",
+    "group": "SHA003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 100,
@@ -1997,7 +2294,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA004.png"
+    "image": "/products/SHA004.png",
+    "group": "SHA004",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 101,
@@ -2017,7 +2317,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA005.png"
+    "image": "/products/SHA005.png",
+    "group": "SHA005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 102,
@@ -2037,7 +2340,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/SHA006.png"
+    "image": "/products/SHA006.png",
+    "group": "SHA006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5590
   },
   {
     "id": 103,
@@ -2057,7 +2363,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV001.jpg"
+    "image": "/products/DAV001.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "vainilla",
+    "unitPrice": 2080
   },
   {
     "id": 104,
@@ -2077,7 +2386,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV002.jpg"
+    "image": "/products/DAV002.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "lavanda",
+    "unitPrice": 2080
   },
   {
     "id": 105,
@@ -2097,7 +2409,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV003.jpg"
+    "image": "/products/DAV003.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "uva",
+    "unitPrice": 2080
   },
   {
     "id": 106,
@@ -2117,7 +2432,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV004.jpg"
+    "image": "/products/DAV004.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "palito de la selva",
+    "unitPrice": 2080
   },
   {
     "id": 107,
@@ -2137,7 +2455,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV005.jpg"
+    "image": "/products/DAV005.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "vaini coco",
+    "unitPrice": 2080
   },
   {
     "id": 108,
@@ -2157,7 +2478,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV006.jpg"
+    "image": "/products/DAV006.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "coniglio",
+    "unitPrice": 2080
   },
   {
     "id": 109,
@@ -2177,7 +2501,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV007.jpg"
+    "image": "/products/DAV007.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "limon",
+    "unitPrice": 2080
   },
   {
     "id": 110,
@@ -2197,7 +2524,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV008.jpg"
+    "image": "/products/DAV008.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "coco",
+    "unitPrice": 2080
   },
   {
     "id": 111,
@@ -2217,7 +2547,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV009.jpg"
+    "image": "/products/DAV009.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "frutilla",
+    "unitPrice": 2080
   },
   {
     "id": 112,
@@ -2237,7 +2570,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV010.jpg"
+    "image": "/products/DAV010.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "j.baby",
+    "unitPrice": 2080
   },
   {
     "id": 113,
@@ -2257,7 +2593,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV011.jpg"
+    "image": "/products/DAV011.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "papaya",
+    "unitPrice": 2080
   },
   {
     "id": 114,
@@ -2277,7 +2616,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV012.jpg"
+    "image": "/products/DAV012.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "flores blancas",
+    "unitPrice": 2080
   },
   {
     "id": 115,
@@ -2297,7 +2639,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV013.jpg"
+    "image": "/products/DAV013.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "citrus",
+    "unitPrice": 2080
   },
   {
     "id": 116,
@@ -2317,7 +2662,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV014.jpg"
+    "image": "/products/DAV014.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "jazmin",
+    "unitPrice": 2080
   },
   {
     "id": 117,
@@ -2337,7 +2685,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV015.jpg"
+    "image": "/products/DAV015.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "vainilla",
+    "unitPrice": 2600
   },
   {
     "id": 118,
@@ -2357,7 +2708,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV016.jpg"
+    "image": "/products/DAV016.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "lavanda",
+    "unitPrice": 2600
   },
   {
     "id": 119,
@@ -2377,7 +2731,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV017.jpg"
+    "image": "/products/DAV017.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "limon",
+    "unitPrice": 2600
   },
   {
     "id": 120,
@@ -2397,7 +2754,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV018.jpg"
+    "image": "/products/DAV018.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "vainilla madagascar",
+    "unitPrice": 2600
   },
   {
     "id": 121,
@@ -2417,7 +2777,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV019.jpg"
+    "image": "/products/DAV019.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "floral",
+    "unitPrice": 2600
   },
   {
     "id": 122,
@@ -2437,7 +2800,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV020.jpg"
+    "image": "/products/DAV020.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "chicle",
+    "unitPrice": 2600
   },
   {
     "id": 123,
@@ -2457,7 +2823,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV021.jpg"
+    "image": "/products/DAV021.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "palito de la selva",
+    "unitPrice": 2600
   },
   {
     "id": 124,
@@ -2477,7 +2846,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV022.jpg"
+    "image": "/products/DAV022.jpg",
+    "group": "DAV-SIMPLE-DIFUSOR-SAPHIRUS",
+    "variantLabel": "nag champa",
+    "unitPrice": 2600
   },
   {
     "id": 125,
@@ -2497,7 +2869,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV023.jpg"
+    "image": "/products/DAV023.jpg",
+    "group": "DAV-COMBINADO-DIFUSOR-SAPHIRUS",
+    "variantLabel": "sandia / melon",
+    "unitPrice": 2600
   },
   {
     "id": 126,
@@ -2517,7 +2892,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV024.jpg"
+    "image": "/products/DAV024.jpg",
+    "group": "DAV-COMBINADO-DIFUSOR-SAPHIRUS",
+    "variantLabel": "vainilla / frambruesa",
+    "unitPrice": 2600
   },
   {
     "id": 127,
@@ -2537,7 +2915,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV025.jpg"
+    "image": "/products/DAV025.jpg",
+    "group": "DAV-COMBINADO-DIFUSOR-SAPHIRUS",
+    "variantLabel": "vainilla / chocolate",
+    "unitPrice": 2600
   },
   {
     "id": 128,
@@ -2557,7 +2938,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV026.jpg"
+    "image": "/products/DAV026.jpg",
+    "group": "DAV-COMBINADO-DIFUSOR-SAPHIRUS",
+    "variantLabel": "vaini / coco",
+    "unitPrice": 2600
   },
   {
     "id": 129,
@@ -2577,7 +2961,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DAV027.jpg"
+    "image": "/products/DAV027.jpg",
+    "group": "DAV-COMBINADO-DIFUSOR-SAPHIRUS",
+    "variantLabel": "flores blancas / uvas",
+    "unitPrice": 2600
   },
   {
     "id": 130,
@@ -2597,7 +2984,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PROM001.png"
+    "image": "/products/PROM001.png",
+    "group": "PROM001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 26000
   },
   {
     "id": 131,
@@ -2617,7 +3007,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PROM002.png"
+    "image": "/products/PROM002.png",
+    "group": "PROM002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 8450
   },
   {
     "id": 132,
@@ -2637,7 +3030,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PROM003.png"
+    "image": "/products/PROM003.png",
+    "group": "PROM003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 11700
   },
   {
     "id": 133,
@@ -2657,7 +3053,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/CLO002.png"
+    "image": "/products/CLO002.png",
+    "group": "CLO002",
+    "variantLabel": "1 litro",
+    "unitPrice": 2158
   },
   {
     "id": 134,
@@ -2677,7 +3076,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/CLO003.png"
+    "image": "/products/CLO003.png",
+    "group": "CLO003",
+    "variantLabel": "6 litros",
+    "unitPrice": 12948
   },
   {
     "id": 135,
@@ -2697,7 +3099,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/DET002.png"
+    "image": "/products/DET002.png",
+    "group": "DET002",
+    "variantLabel": "1 litros",
+    "unitPrice": 3640
   },
   {
     "id": 136,
@@ -2717,7 +3122,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/DET003.png"
+    "image": "/products/DET003.png",
+    "group": "DET003",
+    "variantLabel": "6 litros",
+    "unitPrice": 21840
   },
   {
     "id": 137,
@@ -2737,7 +3145,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/LVA003.png"
+    "image": "/products/LVA003.png",
+    "group": "LVA003",
+    "variantLabel": "1 litro",
+    "unitPrice": 2015
   },
   {
     "id": 138,
@@ -2757,7 +3168,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/LVA004.png"
+    "image": "/products/LVA004.png",
+    "group": "LVA004",
+    "variantLabel": "6 litros",
+    "unitPrice": 12090
   },
   {
     "id": 139,
@@ -2777,7 +3191,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/LVA005.png"
+    "image": "/products/LVA005.png",
+    "group": "LVA005",
+    "variantLabel": "1 litro",
+    "unitPrice": 2145
   },
   {
     "id": 140,
@@ -2797,7 +3214,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/LVA006.png"
+    "image": "/products/LVA006.png",
+    "group": "LVA006",
+    "variantLabel": "6 litros",
+    "unitPrice": 12870
   },
   {
     "id": 141,
@@ -2817,7 +3237,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/SUA003.png"
+    "image": "/products/SUA003.png",
+    "group": "SUA003",
+    "variantLabel": "1 litro",
+    "unitPrice": 2600
   },
   {
     "id": 142,
@@ -2837,7 +3260,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/SUA004.png"
+    "image": "/products/SUA004.png",
+    "group": "SUA004",
+    "variantLabel": "6 litros",
+    "unitPrice": 15600
   },
   {
     "id": 143,
@@ -2857,7 +3283,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/SUA005.png"
+    "image": "/products/SUA005.png",
+    "group": "SUA005",
+    "variantLabel": "1 litro",
+    "unitPrice": 2340
   },
   {
     "id": 144,
@@ -2877,7 +3306,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/SUA006.png"
+    "image": "/products/SUA006.png",
+    "group": "SUA006",
+    "variantLabel": "6 litros",
+    "unitPrice": 14040
   },
   {
     "id": 145,
@@ -2896,8 +3328,11 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": true,
-    "image": "/products/DPP001.png"
+    "featured": false,
+    "image": "/products/DPP001.png",
+    "group": "DPP-1056",
+    "variantLabel": "5 L",
+    "unitPrice": 3575
   },
   {
     "id": 146,
@@ -2917,7 +3352,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP002.png"
+    "image": "/products/DPP002.png",
+    "group": "DPP-1056",
+    "variantLabel": "1 L",
+    "unitPrice": 1755
   },
   {
     "id": 147,
@@ -2937,7 +3375,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP003.png"
+    "image": "/products/DPP003.png",
+    "group": "DPP-1056",
+    "variantLabel": "6 L PACK",
+    "unitPrice": 9230
   },
   {
     "id": 148,
@@ -2956,8 +3397,11 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": true,
-    "image": "/products/DPP004.png"
+    "featured": false,
+    "image": "/products/DPP004.png",
+    "group": "DPP-CHERRY",
+    "variantLabel": "5 L",
+    "unitPrice": 3575
   },
   {
     "id": 149,
@@ -2977,7 +3421,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP005.png"
+    "image": "/products/DPP005.png",
+    "group": "DPP-CHERRY",
+    "variantLabel": "1 L",
+    "unitPrice": 1755
   },
   {
     "id": 150,
@@ -2997,7 +3444,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP006.png"
+    "image": "/products/DPP006.png",
+    "group": "DPP-CHERRY",
+    "variantLabel": "6 L PACK",
+    "unitPrice": 9230
   },
   {
     "id": 151,
@@ -3016,8 +3466,11 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": true,
-    "image": "/products/DPP007.png"
+    "featured": false,
+    "image": "/products/DPP007.png",
+    "group": "DPP-PINO",
+    "variantLabel": "5 L",
+    "unitPrice": 3575
   },
   {
     "id": 152,
@@ -3037,7 +3490,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP008.png"
+    "image": "/products/DPP008.png",
+    "group": "DPP-PINO",
+    "variantLabel": "1 L",
+    "unitPrice": 1755
   },
   {
     "id": 153,
@@ -3057,7 +3513,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP009.png"
+    "image": "/products/DPP009.png",
+    "group": "DPP-PINO",
+    "variantLabel": "6 L PACK",
+    "unitPrice": 9230
   },
   {
     "id": 154,
@@ -3076,8 +3535,11 @@ const products = [
     "stock": null,
     "stockMinimo": 0,
     "status": "Activo",
-    "featured": true,
-    "image": "/products/DPP010.png"
+    "featured": false,
+    "image": "/products/DPP010.png",
+    "group": "DPP-LAVANDA",
+    "variantLabel": "5 L",
+    "unitPrice": 3575
   },
   {
     "id": 155,
@@ -3097,7 +3559,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP011.png"
+    "image": "/products/DPP011.png",
+    "group": "DPP-LAVANDA",
+    "variantLabel": "1 L",
+    "unitPrice": 1755
   },
   {
     "id": 156,
@@ -3117,7 +3582,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/DPP012.png"
+    "image": "/products/DPP012.png",
+    "group": "DPP-LAVANDA",
+    "variantLabel": "6 L PACK",
+    "unitPrice": 9230
   },
   {
     "id": 157,
@@ -3137,7 +3605,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CBS001.jpg"
+    "image": "/products/CBS001.jpg",
+    "group": "CBS-CABO-MADERA",
+    "variantLabel": "1.2 MTS",
+    "unitPrice": 1300
   },
   {
     "id": 158,
@@ -3157,7 +3628,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CBS002.jpg"
+    "image": "/products/CBS002.jpg",
+    "group": "CBS-CABO-MADERA",
+    "variantLabel": "1.5 MTS",
+    "unitPrice": 1560
   },
   {
     "id": 159,
@@ -3177,7 +3651,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CBS003.jpg"
+    "image": "/products/CBS003.jpg",
+    "group": "CBS-CABO-MADERA",
+    "variantLabel": "2.0 MTS",
+    "unitPrice": 1820
   },
   {
     "id": 160,
@@ -3197,7 +3674,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CBS004.jpg"
+    "image": "/products/CBS004.jpg",
+    "group": "CBS004",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2600
   },
   {
     "id": 161,
@@ -3217,7 +3697,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CBS005.jpg"
+    "image": "/products/CBS005.jpg",
+    "group": "CBS005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5720
   },
   {
     "id": 162,
@@ -3237,7 +3720,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CBS006.jpg"
+    "image": "/products/CBS006.jpg",
+    "group": "CBS006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 9100
   },
   {
     "id": 163,
@@ -3257,7 +3743,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/CBS007.jpg"
+    "image": "/products/CBS007.jpg",
+    "group": "CBS007",
+    "variantLabel": "1 unidad",
+    "unitPrice": 11440
   },
   {
     "id": 164,
@@ -3277,7 +3766,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/ESP001.jpg"
+    "image": "/products/ESP001.jpg",
+    "group": "ESP001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 390
   },
   {
     "id": 165,
@@ -3297,7 +3789,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/ESP002.jpg"
+    "image": "/products/ESP002.jpg",
+    "group": "ESP002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1820
   },
   {
     "id": 166,
@@ -3317,7 +3812,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/ESP003.jpg"
+    "image": "/products/ESP003.jpg",
+    "group": "ESP003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 520
   },
   {
     "id": 167,
@@ -3337,7 +3835,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/ESP004.jpg"
+    "image": "/products/ESP004.jpg",
+    "group": "ESP004",
+    "variantLabel": "1 pack",
+    "unitPrice": 2964
   },
   {
     "id": 168,
@@ -3357,7 +3858,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/ESP005.jpg"
+    "image": "/products/ESP005.jpg",
+    "group": "ESP005",
+    "variantLabel": "1 pack",
+    "unitPrice": 18200
   },
   {
     "id": 169,
@@ -3377,7 +3881,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/ESP006.jpg"
+    "image": "/products/ESP006.jpg",
+    "group": "ESP006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 845
   },
   {
     "id": 170,
@@ -3397,7 +3904,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/ESP007.jpg"
+    "image": "/products/ESP007.jpg",
+    "group": "ESP007",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2210
   },
   {
     "id": 171,
@@ -3417,7 +3927,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APR001.jpg"
+    "image": "/products/APR001.jpg",
+    "group": "APR001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 30000
   },
   {
     "id": 172,
@@ -3437,7 +3950,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APR002.jpg"
+    "image": "/products/APR002.jpg",
+    "group": "APR002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 6000
   },
   {
     "id": 173,
@@ -3457,7 +3973,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APR003.jpg"
+    "image": "/products/APR003.jpg",
+    "group": "APR003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 40500
   },
   {
     "id": 174,
@@ -3477,7 +3996,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APR004.jpg"
+    "image": "/products/APR004.jpg",
+    "group": "APR004",
+    "variantLabel": "1 pack",
+    "unitPrice": 1050
   },
   {
     "id": 175,
@@ -3497,7 +4019,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APR005.jpg"
+    "image": "/products/APR005.jpg",
+    "group": "APR005",
+    "variantLabel": "1 pack",
+    "unitPrice": 1200
   },
   {
     "id": 176,
@@ -3517,7 +4042,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APB001.jpg"
+    "image": "/products/APB001.jpg",
+    "group": "APB001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2100
   },
   {
     "id": 177,
@@ -3537,7 +4065,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APB002.jpg"
+    "image": "/products/APB002.jpg",
+    "group": "APB002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1050
   },
   {
     "id": 178,
@@ -3557,7 +4088,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APB003.jpg"
+    "image": "/products/APB003.jpg",
+    "group": "APB003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2700
   },
   {
     "id": 179,
@@ -3577,7 +4111,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APB004.jpg"
+    "image": "/products/APB004.jpg",
+    "group": "APB004",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2100
   },
   {
     "id": 180,
@@ -3597,7 +4134,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/APB005.jpg"
+    "image": "/products/APB005.jpg",
+    "group": "APB005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3900
   },
   {
     "id": 181,
@@ -3617,7 +4157,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AER001.jpg"
+    "image": "/products/AER001.jpg",
+    "group": "AER001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3900
   },
   {
     "id": 182,
@@ -3637,7 +4180,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AER002.jpg"
+    "image": "/products/AER002.jpg",
+    "group": "AER002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 4800
   },
   {
     "id": 183,
@@ -3657,7 +4203,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": true,
-    "image": "/products/AER003.jpg"
+    "image": "/products/AER003.jpg",
+    "group": "AER003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 6900
   },
   {
     "id": 184,
@@ -3677,7 +4226,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AER004.jpg"
+    "image": "/products/AER004.jpg",
+    "group": "AER004",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3900
   },
   {
     "id": 185,
@@ -3697,7 +4249,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AER005.jpg"
+    "image": "/products/AER005.jpg",
+    "group": "AER005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 4350
   },
   {
     "id": 186,
@@ -3717,7 +4272,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AER006.jpg"
+    "image": "/products/AER006.jpg",
+    "group": "AER006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 6300
   },
   {
     "id": 187,
@@ -3737,7 +4295,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AER007.jpg"
+    "image": "/products/AER007.jpg",
+    "group": "AER007",
+    "variantLabel": "1 unidad",
+    "unitPrice": 9000
   },
   {
     "id": 188,
@@ -3757,7 +4318,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/AER008.jpg"
+    "image": "/products/AER008.jpg",
+    "group": "AER008",
+    "variantLabel": "1 unidad",
+    "unitPrice": 7500
   },
   {
     "id": 189,
@@ -3777,7 +4341,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG001.jpg"
+    "image": "/products/MYG001.jpg",
+    "group": "MYG-GUANTES",
+    "variantLabel": "TALLE S",
+    "unitPrice": 1950
   },
   {
     "id": 190,
@@ -3797,7 +4364,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG002.jpg"
+    "image": "/products/MYG002.jpg",
+    "group": "MYG-GUANTES",
+    "variantLabel": "TALLE M",
+    "unitPrice": 1950
   },
   {
     "id": 191,
@@ -3817,7 +4387,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG003.jpg"
+    "image": "/products/MYG003.jpg",
+    "group": "MYG-GUANTES",
+    "variantLabel": "TALLE L",
+    "unitPrice": 1950
   },
   {
     "id": 192,
@@ -3837,7 +4410,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG004.jpg"
+    "image": "/products/MYG004.jpg",
+    "group": "MYG-GUANTES",
+    "variantLabel": "TALLE XL",
+    "unitPrice": 1950
   },
   {
     "id": 193,
@@ -3857,7 +4433,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG005.jpg"
+    "image": "/products/MYG005.jpg",
+    "group": "MYG005",
+    "variantLabel": "1 pack",
+    "unitPrice": 10500
   },
   {
     "id": 194,
@@ -3877,7 +4456,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG006.jpg"
+    "image": "/products/MYG006.jpg",
+    "group": "MYG006",
+    "variantLabel": "1 pack",
+    "unitPrice": 12000
   },
   {
     "id": 195,
@@ -3897,7 +4479,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG007.jpg"
+    "image": "/products/MYG007.jpg",
+    "group": "MYG007",
+    "variantLabel": "1 unidad",
+    "unitPrice": 10500
   },
   {
     "id": 196,
@@ -3917,7 +4502,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG008.jpg"
+    "image": "/products/MYG008.jpg",
+    "group": "MYG008",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2600
   },
   {
     "id": 197,
@@ -3937,7 +4525,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG009.jpg"
+    "image": "/products/MYG009.jpg",
+    "group": "MYG009",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3150
   },
   {
     "id": 198,
@@ -3957,7 +4548,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG010.jpg"
+    "image": "/products/MYG010.jpg",
+    "group": "MYG010",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3000
   },
   {
     "id": 199,
@@ -3977,7 +4571,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG011.jpg"
+    "image": "/products/MYG011.jpg",
+    "group": "MYG011",
+    "variantLabel": "1 unidad",
+    "unitPrice": 9900
   },
   {
     "id": 200,
@@ -3997,7 +4594,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG012.jpg"
+    "image": "/products/MYG012.jpg",
+    "group": "MYG012",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2000
   },
   {
     "id": 201,
@@ -4017,7 +4617,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/MYG013.jpg"
+    "image": "/products/MYG013.jpg",
+    "group": "MYG013",
+    "variantLabel": "1 unidad",
+    "unitPrice": 9900
   },
   {
     "id": 202,
@@ -4037,7 +4640,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RPP001.jpg"
+    "image": "/products/RPP001.jpg",
+    "group": "RPP001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 9600
   },
   {
     "id": 203,
@@ -4057,7 +4663,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RPP002.jpg"
+    "image": "/products/RPP002.jpg",
+    "group": "RPP002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 15000
   },
   {
     "id": 204,
@@ -4077,7 +4686,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RPP003.jpg"
+    "image": "/products/RPP003.jpg",
+    "group": "RPP003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3600
   },
   {
     "id": 205,
@@ -4097,7 +4709,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RPP004.jpg"
+    "image": "/products/RPP004.jpg",
+    "group": "RPP004",
+    "variantLabel": "1 unidad",
+    "unitPrice": 4800
   },
   {
     "id": 206,
@@ -4117,7 +4732,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RPP005.jpg"
+    "image": "/products/RPP005.jpg",
+    "group": "RPP005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 17700
   },
   {
     "id": 207,
@@ -4137,7 +4755,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/RPP006.jpg"
+    "image": "/products/RPP006.jpg",
+    "group": "RPP006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 16500
   },
   {
     "id": 208,
@@ -4157,7 +4778,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP001.jpg"
+    "image": "/products/PPP001.jpg",
+    "group": "PPP001",
+    "variantLabel": "1 litro",
+    "unitPrice": 7500
   },
   {
     "id": 209,
@@ -4177,7 +4801,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP002.jpg"
+    "image": "/products/PPP002.jpg",
+    "group": "PPP002",
+    "variantLabel": "1 litro",
+    "unitPrice": 6750
   },
   {
     "id": 210,
@@ -4197,7 +4824,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP003.jpg"
+    "image": "/products/PPP003.jpg",
+    "group": "PPP003",
+    "variantLabel": "5 litros",
+    "unitPrice": 8700
   },
   {
     "id": 211,
@@ -4217,7 +4847,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP004.jpg"
+    "image": "/products/PPP004.jpg",
+    "group": "PPP004",
+    "variantLabel": "50 kilos",
+    "unitPrice": 277500
   },
   {
     "id": 212,
@@ -4237,7 +4870,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP005.jpg"
+    "image": "/products/PPP005.jpg",
+    "group": "PPP005",
+    "variantLabel": "1 kilo",
+    "unitPrice": 7200
   },
   {
     "id": 213,
@@ -4257,7 +4893,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP006.jpg"
+    "image": "/products/PPP006.jpg",
+    "group": "PPP006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 6600
   },
   {
     "id": 214,
@@ -4277,7 +4916,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP007.jpg"
+    "image": "/products/PPP007.jpg",
+    "group": "PPP007",
+    "variantLabel": "1 pack",
+    "unitPrice": 39000
   },
   {
     "id": 215,
@@ -4297,7 +4939,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP008.jpg"
+    "image": "/products/PPP008.jpg",
+    "group": "PPP008",
+    "variantLabel": "1 unidad",
+    "unitPrice": 10500
   },
   {
     "id": 216,
@@ -4317,7 +4962,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP009.jpg"
+    "image": "/products/PPP009.jpg",
+    "group": "PPP009",
+    "variantLabel": "1 unidad",
+    "unitPrice": 19050
   },
   {
     "id": 217,
@@ -4337,7 +4985,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP010.jpg"
+    "image": "/products/PPP010.jpg",
+    "group": "PPP010",
+    "variantLabel": "1 unidad",
+    "unitPrice": 13500
   },
   {
     "id": 218,
@@ -4357,7 +5008,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP011.jpg"
+    "image": "/products/PPP011.jpg",
+    "group": "PPP011",
+    "variantLabel": "1 unidad",
+    "unitPrice": 6750
   },
   {
     "id": 219,
@@ -4377,7 +5031,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP012.jpg"
+    "image": "/products/PPP012.jpg",
+    "group": "PPP012",
+    "variantLabel": "1 unidad",
+    "unitPrice": 28500
   },
   {
     "id": 220,
@@ -4397,7 +5054,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP013.jpg"
+    "image": "/products/PPP013.jpg",
+    "group": "PPP013",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2000
   },
   {
     "id": 221,
@@ -4417,7 +5077,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP014.jpg"
+    "image": "/products/PPP014.jpg",
+    "group": "PPP014",
+    "variantLabel": "1 unidad",
+    "unitPrice": 21000
   },
   {
     "id": 222,
@@ -4437,7 +5100,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP015.jpg"
+    "image": "/products/PPP015.jpg",
+    "group": "PPP015",
+    "variantLabel": "1 unidad",
+    "unitPrice": 16500
   },
   {
     "id": 223,
@@ -4457,7 +5123,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP016.jpg"
+    "image": "/products/PPP016.jpg",
+    "group": "PPP016",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3000
   },
   {
     "id": 224,
@@ -4477,7 +5146,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/PPP017.jpg"
+    "image": "/products/PPP017.jpg",
+    "group": "PPP017",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3600
   },
   {
     "id": 225,
@@ -4497,7 +5169,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR001.jpg"
+    "image": "/products/VAR001.jpg",
+    "group": "VAR001",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2100
   },
   {
     "id": 226,
@@ -4517,7 +5192,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR002.jpg"
+    "image": "/products/VAR002.jpg",
+    "group": "VAR002",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5000
   },
   {
     "id": 227,
@@ -4537,7 +5215,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR003.jpg"
+    "image": "/products/VAR003.jpg",
+    "group": "VAR003",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2500
   },
   {
     "id": 228,
@@ -4557,7 +5238,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR004.jpg"
+    "image": "/products/VAR004.jpg",
+    "group": "VAR004",
+    "variantLabel": "1 unidad",
+    "unitPrice": 2400
   },
   {
     "id": 229,
@@ -4577,7 +5261,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR005.jpg"
+    "image": "/products/VAR005.jpg",
+    "group": "VAR005",
+    "variantLabel": "1 unidad",
+    "unitPrice": 3000
   },
   {
     "id": 230,
@@ -4597,7 +5284,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR006.jpg"
+    "image": "/products/VAR006.jpg",
+    "group": "VAR006",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5600
   },
   {
     "id": 231,
@@ -4617,7 +5307,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR007.jpg"
+    "image": "/products/VAR007.jpg",
+    "group": "VAR007",
+    "variantLabel": "1 unidad",
+    "unitPrice": 5000
   },
   {
     "id": 232,
@@ -4637,7 +5330,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR008.jpg"
+    "image": "/products/VAR008.jpg",
+    "group": "VAR008",
+    "variantLabel": "1 unidad",
+    "unitPrice": 1000
   },
   {
     "id": 233,
@@ -4657,7 +5353,10 @@ const products = [
     "stockMinimo": 0,
     "status": "Activo",
     "featured": false,
-    "image": "/products/VAR009.jpg"
+    "image": "/products/VAR009.jpg",
+    "group": "VAR009",
+    "variantLabel": "1 unidad",
+    "unitPrice": 7500
   }
 ];
 

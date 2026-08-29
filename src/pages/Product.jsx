@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import products from "../data/products";
+import { getVariants } from "../utils/productGroups";
 
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import CartButton from "../components/cart/CartButton";
@@ -52,6 +53,8 @@ function Product() {
         );
 
     }
+
+    const variants = getVariants(products, product);
 
     const unitPrice =
         Number(product.cost) * (Number(product.margin) + 1);
@@ -197,11 +200,44 @@ Quiero pedir:
 
                     </div>
 
-                    <p>
+                                        <p>
 
                         {product.description}
 
                     </p>
+
+                    {
+
+                        variants.length > 1 && (
+
+                            <div className="variant-selector">
+
+                                {variants.map(variant => (
+
+                                    <button
+                                        key={variant.slug}
+                                        type="button"
+                                        className={
+                                            variant.slug === product.slug
+                                                ? "variant-chip variant-chip-active"
+                                                : "variant-chip"
+                                        }
+                                        onClick={() =>
+                                            navigate(`/producto/${variant.slug}`)
+                                        }
+                                    >
+
+                                        {variant.variantLabel}
+
+                                    </button>
+
+                                ))}
+
+                            </div>
+
+                        )
+
+                    }
 
                     <div className="qty-stepper">
 

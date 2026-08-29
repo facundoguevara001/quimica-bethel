@@ -61,6 +61,12 @@ featured:
 
 image: `/products/${row["NOMBRE FOTO"]}`,
 
+group: row.GRUPO ? String(row.GRUPO).trim() : row.CODIGO,
+
+variantLabel: row.VARIANTE ? String(row.VARIANTE).trim() : row.PRESENTACION,
+
+unitPrice: Number(row.COSTO) * (Number(row["% MARGEN"]) + 1),
+
 }));
 
 const content = `const products = ${JSON.stringify(products,null,2)};

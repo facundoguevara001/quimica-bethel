@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 
 import products from "../data/products";
+import { getCatalogProducts } from "../utils/productGroups";
 
 import SearchBar from "../components/catalog/SearchBar";
 import Categories from "../components/catalog/Categories";
@@ -23,7 +24,10 @@ function Catalog({
     const [search, setSearch] = useState(searchParams.get("buscar") || "");
     const [cartOpen, setCartOpen] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState("Todos");
-    const sourceProducts = customProducts || products;
+    const sourceProducts = useMemo(
+    () => getCatalogProducts(customProducts || products),
+    [customProducts]
+    );
     const categories = 
     
     [
