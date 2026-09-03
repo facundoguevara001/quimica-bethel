@@ -1,12 +1,29 @@
 const fs = require("fs");
 const XLSX = require("xlsx");
 
-const workbook = XLSX.readFile("./public/Plantilla_Quimica_Bethel_2.0.xlsx");
-const sheet = workbook.Sheets[workbook.SheetNames[0]];
+const workbook = XLSX.readFile("./public/Plantilla_Quimica_Bethel_3.0.xlsx");
+const sheet = workbook.Sheets["PRODUCTOS"];
+const pricesSheet = workbook.Sheets["PRECIOS"];
+
+if (!sheet || !pricesSheet) {
+    throw new Error("El Excel debe incluir las hojas PRODUCTOS y PRECIOS.");
+}
 
 const rows = XLSX.utils.sheet_to_json(sheet, {
+    range: 3,
     defval: ""
 });
+
+const priceRows = XLSX.utils.sheet_to_json(pricesSheet, {
+    range: 13,
+    defval: ""
+});
+
+const pricesByCode = new Map(
+    priceRows
+        .filter(row => row.CODIGO)
+        .map(row => [String(row.CODIGO).trim(), row])
+);
 
 const formatPrice = price =>
     `$${Number(price).toLocaleString("es-AR")}`;
@@ -14,8 +31,9 @@ const formatPrice = price =>
 const productVariants = rows
     .filter(row => row.CODIGO && row.PRODUCTO)
     .map((row, index) => {
+        const priceData = pricesByCode.get(String(row.CODIGO).trim()) || {};
         const salePrice = Number(
-            row["PRECIO VENTA AJUSTADO"] || row["PRECIO VENTA"]
+            priceData["PRECIO VENTA AJUSTADO"]
         );
 
         return {
@@ -34,7 +52,7 @@ const productVariants = rows
             subcategory: row.SUBCATEGORIA,
             brand: row.MARCA,
             fragrance: row.FRAGANCIA,
-            description: row.PRESENTACION,
+            description: row.DESCRIPCIÓN || row.PRESENTACION,
             characteristics: row.CARACTERISTICAS,
 
             salePrice,
