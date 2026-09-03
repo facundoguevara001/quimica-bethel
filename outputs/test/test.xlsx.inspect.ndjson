@@ -1,4 +1,0 @@
-{"kind":"workbook","id":"wb/afrbqh","sheets":1,"tables":1}
-{"kind":"sheet","id":"ws/snxin0","name":"One","index":0,"range":"A1:A1","address":"A1:A1","tables":1}
-{"kind":"table","sheet":"One","address":"A1:A1","rows":1,"cols":1,"values":[["test"]]}
-{"kind":"computedStyle","sheet":"One","for":"A1","style":{"fill":{"type":3,"gradientStops":[],"pattern":{"patternType":1},"pictureEffects":[]},"font":{"fontSize":11,"typeface":"Carlito"},"border":{},"wrapText":false,"horizontalAlignment":"general","styleId":0}}
