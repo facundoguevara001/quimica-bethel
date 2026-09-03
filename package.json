@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "generate": "node generateProducts.cjs"
+    "generate": "node generateProducts.cjs",
+    "sync-stock": "node scripts/sync-stock.mjs",
+    "test:sync-stock": "node scripts/test-sync-stock.mjs"
   },
   "devDependencies": {
     "typescript": "~6.0.2",

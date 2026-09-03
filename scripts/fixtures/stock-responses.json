@@ -1,0 +1,8 @@
+{
+  "headers": ["Marca temporal", "ID de pedido / WhatsApp", "Cliente / comercio", "Código de producto", "Unidades entregadas", "Unidades devueltas", "Monto cobrado por este producto ($)", "Unidades vendidas reales"],
+  "rows": [
+    ["03/09/2026 10:30:00", "PED-TEST-001", "Comercio de prueba", "CLO001", 10, 2, 12500, 8],
+    ["03/09/2026 10:31:00", "PED-TEST-002", "Comercio de prueba", "DET001", 4, 4, 0, 0],
+    ["03/09/2026 10:32:00", "PED-TEST-003", "Comercio de prueba", "NO-EXISTE", 3, 0, 3000, 3]
+  ]
+}
