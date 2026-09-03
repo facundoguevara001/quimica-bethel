@@ -1,7 +1,7 @@
 const fs = require("fs");
 const XLSX = require("xlsx");
 
-const workbook = XLSX.readFile("./public/Plantilla_Quimica_Bethel_3.0.xlsx");
+const workbook = XLSX.readFile("./public/Plantilla_Quimica_Bethel.xlsx");
 const sheet = workbook.Sheets["PRODUCTOS"];
 const pricesSheet = workbook.Sheets["PRECIOS"];
 
@@ -18,6 +18,16 @@ const priceRows = XLSX.utils.sheet_to_json(pricesSheet, {
     range: 13,
     defval: ""
 });
+
+const field = (row, ...names) => {
+    for (const name of names) {
+        if (row[name] !== undefined && row[name] !== null) {
+            return row[name];
+        }
+    }
+
+    return "";
+};
 
 const pricesByCode = new Map(
     priceRows
@@ -45,25 +55,27 @@ const productVariants = rows
                 : String(row.SLUG).trim(),
             variantLabel: row.VARIANTE
                 ? String(row.VARIANTE).trim()
-                : String(row.PRESENTACION).trim(),
+                : String(field(row, "PRESENTACIÓN", "PRESENTACION")).trim(),
 
             name: row.PRODUCTO,
-            category: row.CATEGORIA,
-            subcategory: row.SUBCATEGORIA,
+            category: field(row, "CATEGORÍA", "CATEGORIA"),
+            subcategory: field(row, "SUBCATEGORÍA", "SUBCATEGORIA"),
             brand: row.MARCA,
             fragrance: row.FRAGANCIA,
-            description: row.DESCRIPCIÓN || row.PRESENTACION,
-            characteristics: row.CARACTERISTICAS,
+            description:
+                field(row, "DESCRIPCIÓN", "DESCRIPCION") ||
+                field(row, "PRESENTACIÓN", "PRESENTACION"),
+            characteristics: field(row, "CARACTERÍSTICAS", "CARACTERISTICAS"),
 
             salePrice,
             price: formatPrice(salePrice),
             stock: Number(row.STOCK),
-            stockMinimo: Number(row["STOCK MINIMO"]),
+            stockMinimo: Number(field(row, "STOCK MÍNIMO", "STOCK MINIMO")),
             status: row.ESTADO,
             featured: String(row.DESTACADO)
                 .trim()
                 .toUpperCase() === "SI",
-            image: `/products/${row["NOMBRE FOTO"]}`
+            image: `/products/${field(row, "NOMBRE FOTO")}`
         };
     });
 

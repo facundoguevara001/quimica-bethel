@@ -10,8 +10,7 @@ function FeaturedCard({ product, openCart }) {
 
     const [quantity, setQuantity] = useState(1);
 
-    const unitPrice =
-        Number(product.cost) * (Number(product.margin) + 1);
+    const unitPrice = Number(product.salePrice);
 
     const subtotal = unitPrice * quantity;
 
