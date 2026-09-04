@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "generate": "node generateProducts.cjs",
+    "alta-producto": "node scripts/alta-producto.mjs",
     "sync-stock": "node scripts/sync-stock.mjs",
     "test:sync-stock": "node scripts/test-sync-stock.mjs"
   },

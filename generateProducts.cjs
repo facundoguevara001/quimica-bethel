@@ -4,9 +4,10 @@ const XLSX = require("xlsx");
 const workbook = XLSX.readFile("./public/Plantilla_Quimica_Bethel.xlsx");
 const sheet = workbook.Sheets["PRODUCTOS"];
 const pricesSheet = workbook.Sheets["PRECIOS"];
+const catalogsSheet = workbook.Sheets["CATÁLOGOS"];
 
-if (!sheet || !pricesSheet) {
-    throw new Error("El Excel debe incluir las hojas PRODUCTOS y PRECIOS.");
+if (!sheet || !pricesSheet || !catalogsSheet) {
+    throw new Error("El Excel debe incluir las hojas PRODUCTOS, PRECIOS y CATÁLOGOS.");
 }
 
 const rows = XLSX.utils.sheet_to_json(sheet, {
@@ -16,6 +17,11 @@ const rows = XLSX.utils.sheet_to_json(sheet, {
 
 const priceRows = XLSX.utils.sheet_to_json(pricesSheet, {
     range: 13,
+    defval: ""
+});
+
+const catalogRows = XLSX.utils.sheet_to_json(catalogsSheet, {
+    range: 4,
     defval: ""
 });
 
@@ -33,6 +39,24 @@ const pricesByCode = new Map(
     priceRows
         .filter(row => row.CODIGO)
         .map(row => [String(row.CODIGO).trim(), row])
+);
+
+const categoryByCode = new Map(
+    catalogRows
+        .filter(row => row["CÓDIGO CATEGORÍA"] && row["CATEGORÍA"])
+        .map(row => [String(row["CÓDIGO CATEGORÍA"]).trim(), row["CATEGORÍA"]])
+);
+
+const subcategoryByCode = new Map(
+    catalogRows
+        .filter(row => row["CÓDIGO SUBCATEGORÍA"] && row["SUBCATEGORÍA"])
+        .map(row => [String(row["CÓDIGO SUBCATEGORÍA"]).trim(), row["SUBCATEGORÍA"]])
+);
+
+const contentByCode = new Map(
+    catalogRows
+        .filter(row => row["CÓDIGO CONTENIDO"])
+        .map(row => [String(row["CÓDIGO CONTENIDO"]).trim(), row])
 );
 
 const formatPrice = price =>
@@ -58,14 +82,15 @@ const productVariants = rows
                 : String(field(row, "PRESENTACIÓN", "PRESENTACION")).trim(),
 
             name: row.PRODUCTO,
-            category: field(row, "CATEGORÍA", "CATEGORIA"),
-            subcategory: field(row, "SUBCATEGORÍA", "SUBCATEGORIA"),
+            category: field(row, "CATEGORÍA", "CATEGORIA") || categoryByCode.get(String(field(row, "CÓDIGO CATEGORÍA", "CODIGO CATEGORIA")).trim()) || "",
+            subcategory: field(row, "SUBCATEGORÍA", "SUBCATEGORIA") || subcategoryByCode.get(String(field(row, "CÓDIGO SUBCATEGORÍA", "CODIGO SUBCATEGORIA")).trim()) || "",
             brand: row.MARCA,
             fragrance: row.FRAGANCIA,
             description:
                 field(row, "DESCRIPCIÓN", "DESCRIPCION") ||
+                field(contentByCode.get(String(field(row, "CÓDIGO CONTENIDO", "CODIGO CONTENIDO")).trim()) || {}, "DESCRIPCIÓN BASE", "DESCRIPCION BASE") ||
                 field(row, "PRESENTACIÓN", "PRESENTACION"),
-            characteristics: field(row, "CARACTERÍSTICAS", "CARACTERISTICAS"),
+            characteristics: field(row, "CARACTERÍSTICAS", "CARACTERISTICAS") || field(contentByCode.get(String(field(row, "CÓDIGO CONTENIDO", "CODIGO CONTENIDO")).trim()) || {}, "CARACTERÍSTICAS BASE", "CARACTERISTICAS BASE"),
 
             salePrice,
             price: formatPrice(salePrice),

@@ -9034,6 +9034,51 @@ const products = [
       }
     ],
     "minPrice": 1240
+  },
+  {
+    "id": "CLO004",
+    "code": "CLO004",
+    "slug": "CLO004",
+    "group": "CLO004",
+    "variantLabel": "1L",
+    "name": "Lavandina 1 L",
+    "category": "🚽 Baño",
+    "subcategory": "Lavandina",
+    "brand": "King",
+    "fragrance": "",
+    "description": "Lavandina al 4%. Presentación: 5 litros.",
+    "characteristics": "Lavandina. Elimina suciedad y gérmenes en inodoros, azulejos y superficies del baño, dejando un aroma agradable.",
+    "salePrice": 1880,
+    "price": "$1.880",
+    "stock": 0,
+    "stockMinimo": 0,
+    "status": "Activo",
+    "featured": false,
+    "image": "/products/CLO004.jpg",
+    "variants": [
+      {
+        "id": 237,
+        "code": "CLO004",
+        "slug": "CLO004",
+        "group": "CLO004",
+        "variantLabel": "1L",
+        "name": "Lavandina 1 L",
+        "category": "🚽 Baño",
+        "subcategory": "Lavandina",
+        "brand": "King",
+        "fragrance": "",
+        "description": "Lavandina al 4%. Presentación: 5 litros.",
+        "characteristics": "Lavandina. Elimina suciedad y gérmenes en inodoros, azulejos y superficies del baño, dejando un aroma agradable.",
+        "salePrice": 1880,
+        "price": "$1.880",
+        "stock": 0,
+        "stockMinimo": 0,
+        "status": "Activo",
+        "featured": false,
+        "image": "/products/CLO004.jpg"
+      }
+    ],
+    "minPrice": 1880
   }
 ];
 
@@ -13993,6 +14038,27 @@ export const productVariants = [
     "status": "Activo",
     "featured": false,
     "image": "/products/ESP008.jpg"
+  },
+  {
+    "id": 237,
+    "code": "CLO004",
+    "slug": "CLO004",
+    "group": "CLO004",
+    "variantLabel": "1L",
+    "name": "Lavandina 1 L",
+    "category": "🚽 Baño",
+    "subcategory": "Lavandina",
+    "brand": "King",
+    "fragrance": "",
+    "description": "Lavandina al 4%. Presentación: 5 litros.",
+    "characteristics": "Lavandina. Elimina suciedad y gérmenes en inodoros, azulejos y superficies del baño, dejando un aroma agradable.",
+    "salePrice": 1880,
+    "price": "$1.880",
+    "stock": 0,
+    "stockMinimo": 0,
+    "status": "Activo",
+    "featured": false,
+    "image": "/products/CLO004.jpg"
   }
 ];
 
