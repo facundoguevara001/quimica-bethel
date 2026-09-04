@@ -8937,8 +8937,8 @@ const products = [
     "fragrance": "",
     "description": "CIF limpiador cremoso",
     "characteristics": "CIF limpiador cremoso",
-    "salePrice": 5430,
-    "price": "$5.430",
+    "salePrice": 3940,
+    "price": "$3.940",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
@@ -8958,8 +8958,8 @@ const products = [
         "fragrance": "",
         "description": "CIF limpiador cremoso",
         "characteristics": "CIF limpiador cremoso",
-        "salePrice": 5430,
-        "price": "$5.430",
+        "salePrice": 3940,
+        "price": "$3.940",
         "stock": 0,
         "stockMinimo": 0,
         "status": "Activo",
@@ -8988,7 +8988,7 @@ const products = [
         "image": "/products/CIF001.jpg"
       }
     ],
-    "minPrice": 5430
+    "minPrice": 3940
   },
   {
     "id": "ESP008",
@@ -13965,8 +13965,8 @@ export const productVariants = [
     "fragrance": "",
     "description": "CIF limpiador cremoso",
     "characteristics": "CIF limpiador cremoso",
-    "salePrice": 5430,
-    "price": "$5.430",
+    "salePrice": 3940,
+    "price": "$3.940",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
