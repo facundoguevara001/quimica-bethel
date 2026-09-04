@@ -12,8 +12,8 @@ const products = [
     "fragrance": "sin frangancia",
     "description": "Lavandina al 4%. Presentación: 5 litros.",
     "characteristics": "Lavandina. Elimina suciedad y gérmenes en inodoros, azulejos y superficies del baño, dejando un aroma agradable.",
-    "salePrice": 2650,
-    "price": "$2.650",
+    "salePrice": 4150,
+    "price": "$4.150",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
@@ -33,8 +33,8 @@ const products = [
         "fragrance": "sin frangancia",
         "description": "Lavandina al 4%. Presentación: 5 litros.",
         "characteristics": "Lavandina. Elimina suciedad y gérmenes en inodoros, azulejos y superficies del baño, dejando un aroma agradable.",
-        "salePrice": 2650,
-        "price": "$2.650",
+        "salePrice": 4150,
+        "price": "$4.150",
         "stock": 0,
         "stockMinimo": 0,
         "status": "Activo",
@@ -42,7 +42,7 @@ const products = [
         "image": "/products/CLO001.jpg"
       }
     ],
-    "minPrice": 2650
+    "minPrice": 4150
   },
   {
     "id": "DET001",
@@ -9051,8 +9051,8 @@ export const productVariants = [
     "fragrance": "sin frangancia",
     "description": "Lavandina al 4%. Presentación: 5 litros.",
     "characteristics": "Lavandina. Elimina suciedad y gérmenes en inodoros, azulejos y superficies del baño, dejando un aroma agradable.",
-    "salePrice": 2650,
-    "price": "$2.650",
+    "salePrice": 4150,
+    "price": "$4.150",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
