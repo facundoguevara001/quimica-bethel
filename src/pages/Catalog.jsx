@@ -2,16 +2,15 @@ import { useMemo, useState } from "react";
 
 import products from "../data/products";
 
-import SearchBar from "../components/catalog/SearchBar";
+import CatalogHeader from "../components/catalog/CatalogHeader";
 import ProductGrid from "../components/catalog/ProductGrid";
-import CartButton from "../components/cart/CartButton";
 import CartDrawer from "../components/cart/CartDrawer";
 import MainLayout from "../layout/MainLayout";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 function Catalog({
     customProducts,
-    title = "🧪 Catálogo"
+    title
 }) {
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();
@@ -21,6 +20,8 @@ function Catalog({
     );
     const [cartOpen, setCartOpen] = useState(false);
     const [filtersOpen, setFiltersOpen] = useState(false);
+    const [filtersCollapsed, setFiltersCollapsed] = useState(false);
+    const [sortOrder, setSortOrder] = useState("default");
 
     const [selectedCategory, setSelectedCategory] =
         useState("Todos");
@@ -62,7 +63,7 @@ function Catalog({
     const filteredProducts = useMemo(() => {
         const normalizedSearch = search.toLowerCase().trim();
 
-        return sourceProducts.filter(product => {
+        const matches = sourceProducts.filter(product => {
             const matchesCategory =
                 selectedCategory === "Todos" ||
                 product.category === selectedCategory;
@@ -90,11 +91,27 @@ function Catalog({
                 matchesSearch
             );
         });
+
+        return [...matches].sort((firstProduct, secondProduct) => {
+            const firstPrice = Number(firstProduct.minPrice ?? firstProduct.salePrice ?? 0);
+            const secondPrice = Number(secondProduct.minPrice ?? secondProduct.salePrice ?? 0);
+
+            if (sortOrder === "price-ascending") {
+                return firstPrice - secondPrice;
+            }
+
+            if (sortOrder === "price-descending") {
+                return secondPrice - firstPrice;
+            }
+
+            return 0;
+        });
     }, [
         search,
         selectedCategory,
         selectedSubcategory,
-        sourceProducts
+        sourceProducts,
+        sortOrder
     ]);
 
     function selectCategory(category) {
@@ -111,19 +128,14 @@ function Catalog({
     return (
         <MainLayout>
             <div className="catalog-page">
-                <button
-                    className="back-button"
-                    onClick={() => navigate("/")}
-                >
-                    ← Volver
-                </button>
-
-                <h1 className="catalog-title">{title}</h1>
-
-                <SearchBar
+                <CatalogHeader
                     search={search}
                     setSearch={setSearch}
+                    onBack={() => navigate("/")}
+                    onOpenCart={() => setCartOpen(true)}
                 />
+
+                {title && <h1 className="catalog-title">{title}</h1>}
 
                 <button
                     className="filters-mobile-button"
@@ -135,25 +147,42 @@ function Catalog({
                     ☰ Filtrar productos
                 </button>
 
-                <div className="catalog-layout">
+                <div className={`catalog-layout ${
+                    filtersCollapsed ? "catalog-layout-filters-collapsed" : ""
+                }`}>
                     <aside
                         className={`catalog-filters ${
                             filtersOpen ? "catalog-filters-open" : ""
-                        }`}
+                        } ${filtersCollapsed ? "catalog-filters-collapsed" : ""}`}
                     >
                         <div className="filters-heading">
-                            <h2>Filtrar por categoría</h2>
+                            <h2 className="filters-title">Filtrar por categoría</h2>
 
-                            {(selectedCategory !== "Todos" ||
-                                selectedSubcategory !== "Todos" ||
-                                search) && (
+                            <div className="filters-actions">
+                                {(selectedCategory !== "Todos" ||
+                                    selectedSubcategory !== "Todos" ||
+                                    search) && (
+                                    <button
+                                        className="clear-filters-button"
+                                        type="button"
+                                        onClick={clearFilters}
+                                    >
+                                        Limpiar
+                                    </button>
+                                )}
+
                                 <button
+                                    className="filters-collapse-button"
                                     type="button"
-                                    onClick={clearFilters}
+                                    aria-expanded={!filtersCollapsed}
+                                    aria-label={filtersCollapsed
+                                        ? "Mostrar filtros por categoría"
+                                        : "Minimizar filtros por categoría"}
+                                    onClick={() => setFiltersCollapsed(collapsed => !collapsed)}
                                 >
-                                    Limpiar
+                                    {filtersCollapsed ? "›" : "‹"}
                                 </button>
-                            )}
+                            </div>
                         </div>
 
                         <div className="filter-group">
@@ -204,12 +233,26 @@ function Catalog({
                     </aside>
 
                     <section className="catalog-results">
-                        <p className="products-counter">
-                            {filteredProducts.length} producto
-                            {filteredProducts.length !== 1 ? "s" : ""}
-                            {" "}encontrado
-                            {filteredProducts.length !== 1 ? "s" : ""}
-                        </p>
+                        <div className="catalog-results-toolbar">
+                            <p className="products-counter">
+                                {filteredProducts.length} producto
+                                {filteredProducts.length !== 1 ? "s" : ""}
+                                {" "}encontrado
+                                {filteredProducts.length !== 1 ? "s" : ""}
+                            </p>
+
+                            <label className="sort-control">
+                                <span>Ordenar por</span>
+                                <select
+                                    value={sortOrder}
+                                    onChange={event => setSortOrder(event.target.value)}
+                                >
+                                    <option value="default">Relevancia</option>
+                                    <option value="price-ascending">Precio: menor a mayor</option>
+                                    <option value="price-descending">Precio: mayor a menor</option>
+                                </select>
+                            </label>
+                        </div>
 
                         <ProductGrid
                             products={filteredProducts}
@@ -217,10 +260,6 @@ function Catalog({
                         />
                     </section>
                 </div>
-
-                <CartButton
-                    onClick={() => setCartOpen(true)}
-                />
 
                 <CartDrawer
                     open={cartOpen}

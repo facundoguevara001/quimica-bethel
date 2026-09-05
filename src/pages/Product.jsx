@@ -5,7 +5,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 import products, { productVariants } from "../data/products";
 
-import FeaturedProducts from "../components/home/FeaturedProducts";
+import RelatedProducts from "../components/home/RelatedProducts";
 import CartButton from "../components/cart/CartButton";
 import CartDrawer from "../components/cart/CartDrawer";
 import { useCart } from "../context/CartContext";
@@ -80,13 +80,6 @@ Quiero pedir:
         p.category === product.category &&
         p.group !== product.group
 );
-
-    const relatedCards = [
-
-        ...relatedProducts,
-        ...relatedProducts
-
-    ];
 
     return (
 
@@ -303,13 +296,13 @@ Quiero pedir:
 
             <div className="related-products">
 
-                <FeaturedProducts
+                <RelatedProducts
 
-                    cards={relatedCards}
+                    key={product.slug}
+
+                    cards={relatedProducts}
 
                     title="🧴 También te puede interesar"
-
-                    openCart={() => setCartOpen(true)}
 
                 />
 
