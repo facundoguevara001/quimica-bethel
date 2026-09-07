@@ -1,6 +1,8 @@
 import "./DeliveryProcess.css";
 import SectionHeader from "../common/SectionHeader";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import { gsap, useGSAP } from "../../utils/animation";
 
 import {
     FaSearch,
@@ -49,10 +51,67 @@ const steps = [
 ];
 
 function DeliveryProcess() {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const media = gsap.matchMedia();
+
+        media.add({
+            desktop: "(min-width: 769px)",
+            mobile: "(max-width: 768px)",
+            reduceMotion: "(prefers-reduced-motion: reduce)"
+        }, (context) => {
+            if (context.conditions.reduceMotion) return;
+
+            const desktop = context.conditions.desktop;
+            const cards = container.current.querySelectorAll(".delivery-step");
+            const desktopTimeline = desktop ? gsap.timeline({
+                scrollTrigger: {
+                    trigger: container.current,
+                    start: "top 82%",
+                    end: "bottom 55%",
+                    scrub: 0.3
+                }
+            }) : null;
+
+            cards.forEach((card, index) => {
+                const timeline = desktopTimeline || gsap.timeline({
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%",
+                        end: "top 45%",
+                        scrub: 0.25
+                    }
+                });
+                const position = desktop ? index : 0;
+
+                // Only decorative accents track scrolling; instructions stay readable.
+                timeline.fromTo(card.querySelector(".delivery-step-icon"), {
+                    backgroundColor: "rgba(198,255,61,0)", color: "#c6ff3d"
+                }, {
+                    backgroundColor: "#c6ff3d", color: "#0b0f2b", duration: 0.6, ease: "none"
+                }, position);
+                timeline.fromTo(card.querySelector(".delivery-step-number"), {
+                    color: "#6b7488"
+                }, { color: "#c6ff3d", duration: 0.6, ease: "none" }, position);
+
+                const progress = card.querySelector(".delivery-step-progress");
+                if (progress) {
+                    timeline.fromTo(progress, desktop ? { scaleX: 0 } : { scaleY: 0 }, {
+                        ...(desktop ? { scaleX: 1 } : { scaleY: 1 }),
+                        duration: 0.4, ease: "none"
+                    }, position + 0.6);
+                }
+            });
+        }, container);
+
+        return () => media.revert();
+    }, { scope: container });
 
     return (
 
         <section
+            ref={container}
             id="pago-contra-entrega"
             className="delivery-process-section"
         >
@@ -110,7 +169,9 @@ function DeliveryProcess() {
 
                             {index < steps.length - 1 && (
 
-                                <span className="delivery-step-connector" />
+                                <span className="delivery-step-connector" aria-hidden="true">
+                                    <span className="delivery-step-progress" />
+                                </span>
 
                             )}
 

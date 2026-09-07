@@ -62,9 +62,7 @@ function Home() {
                     yearsSince={yearsSince}
                 />
 
-                <FadeInSection delay={0.15}>
-    <DeliveryProcess />
-</FadeInSection>
+                <DeliveryProcess />
 
 <FadeInSection delay={0.2}>
     <ReviewsSection />

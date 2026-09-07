@@ -1,16 +1,32 @@
 import "./Hero.css";
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { gsap, useGSAP } from "../../utils/animation";
 import Navbar from "../layout/Navbar";
 
 function Hero() {
+    const container = useRef(null);
+
+    useGSAP(() => {
+        const media = gsap.matchMedia();
+
+        media.add("(prefers-reduced-motion: no-preference)", () => {
+            gsap.timeline({ defaults: { duration: 0.5, ease: "power2.out", clearProps: "transform,opacity,visibility" } })
+                .from(".hero-badge", { autoAlpha: 0, y: 12 }, 0)
+                .from(".hero-title", { autoAlpha: 0, y: 24 }, 0.08)
+                .from(".hero-description", { autoAlpha: 0, y: 16 }, 0.18)
+                .from(".hero-benefits li", { autoAlpha: 0, y: 12, stagger: 0.06 }, 0.25)
+                // Keep the main action available throughout the entrance.
+                .from(".hero-actions", { opacity: 0.6, y: 12 }, 0.38);
+        }, container);
+
+        return () => media.revert();
+    }, { scope: container });
 
     return (
 
-        <motion.section
+        <section
+            ref={container}
             className="hero"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
         >
 
             {/* FOTO DE FONDO */}
@@ -101,7 +117,7 @@ function Hero() {
 
             </div>
 
-        </motion.section>
+        </section>
 
     );
 
