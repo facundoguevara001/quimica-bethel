@@ -33,6 +33,17 @@ html{
 
 }
 
+/* Lenis owns interpolation while active; native anchors remain the fallback. */
+html.lenis{
+    scroll-behavior:auto;
+}
+
+@media(prefers-reduced-motion:reduce){
+    html{
+        scroll-behavior:auto;
+    }
+}
+
 body{
     animation:backgroundMove 20s ease-in-out infinite;
 
