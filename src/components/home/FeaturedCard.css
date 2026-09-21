@@ -39,7 +39,7 @@
 
     border-color:var(--primary);
 
-    box-shadow:0 20px 45px rgba(79,70,229,.20);
+    box-shadow:0 20px 45px rgba(185,56,43,.20);
 
 }
 
@@ -121,7 +121,7 @@
 
     white-space:nowrap;
 
-    background:rgba(11,15,43,.85);
+    background:rgba(24,40,59,.85);
 
     color:white;
 
@@ -133,7 +133,7 @@
 
     background:white;
 
-    color:#0B0F2B;
+    color:#18283B;
 
 }
 
@@ -179,11 +179,11 @@
 
     border-radius:999px;
 
-    background:rgba(79,70,229,.15);
+    background:rgba(185,56,43,.15);
 
-    border:1px solid rgba(79,70,229,.35);
+    border:1px solid rgba(185,56,43,.35);
 
-    color:#9d97ff;
+    color:#F3EDE2;
 
     font-size:16px;
 
@@ -285,7 +285,7 @@
 
 .featured-card-whatsapp:hover{
 
-    background:#5a52f0;
+    background:#962E24;
 
 }
 
@@ -315,6 +315,6 @@
 
     border-color:var(--primary);
 
-    background:rgba(79,70,229,.08);
+    background:rgba(185,56,43,.08);
 
 }

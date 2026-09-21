@@ -20,7 +20,7 @@
 
     text-transform:uppercase;
 
-    color:#C6FF3D;
+    color:#F3EDE2;
 
     max-width:600px;
 
@@ -60,9 +60,9 @@
 
     border-radius:12px;
 
-    background:#C6FF3D;
+    background:#F3EDE2;
 
-    color:#0B0F2B;
+    color:#18283B;
 
     font-weight:800;
 
@@ -80,7 +80,7 @@
 
     transform:translateY(-3px);
 
-    box-shadow:0 15px 35px rgba(198,255,61,.30);
+    box-shadow:0 15px 35px rgba(243,237,226,.30);
 
 }
 
@@ -110,9 +110,9 @@
 
 .contact-facebook:hover{
 
-    border-color:#C6FF3D;
+    border-color:#F3EDE2;
 
-    color:#C6FF3D;
+    color:#F3EDE2;
 
 }
 

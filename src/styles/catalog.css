@@ -1,6 +1,6 @@
 .catalog-page{
     min-height:100vh;
-    background:#0B0F2B;
+    background:#18283B;
     padding:24px;
     max-width:1400px;
     margin:0 auto;
@@ -21,12 +21,12 @@
 
 .back-button:hover{
     transform:translateY(-2px);
-    background:rgba(79,70,229,.15);
-    border-color:rgba(79,70,229,.35);
+    background:rgba(185,56,43,.15);
+    border-color:rgba(185,56,43,.35);
 }
 
 .catalog-banner{
-    background:linear-gradient(135deg,#4F46E5,#4338CA);
+    background:linear-gradient(135deg,#B9382B,#962E24);
     border-radius:24px;
     padding:48px 32px;
     text-align:center;
@@ -151,8 +151,8 @@
 }
 
 .filters-collapse-button:hover{
-    border-color:rgba(79,70,229,.75);
-    background:rgba(79,70,229,.25);
+    border-color:rgba(185,56,43,.75);
+    background:rgba(185,56,43,.25);
 }
 
 .catalog-filters-collapsed .filters-heading{
@@ -204,8 +204,8 @@
 }
 
 .filter-option-active{
-    border-color:rgba(79,70,229,.65);
-    background:rgba(79,70,229,.18);
+    border-color:rgba(185,56,43,.65);
+    background:rgba(185,56,43,.18);
     color:white;
 }
 
@@ -247,7 +247,7 @@
 
 .sort-control select:focus-visible,
 .filters-collapse-button:focus-visible{
-    outline:2px solid #7470ff;
+    outline:2px solid #B9382B;
     outline-offset:2px;
 }
 

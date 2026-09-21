@@ -32,7 +32,7 @@
 
     border-radius:24px;
 
-    background:#0B0F2B;
+    background:#18283B;
 
     border:1px solid var(--border);
 
@@ -56,11 +56,11 @@
 
     border-radius:999px;
 
-    border:1px solid rgba(198,255,61,.4);
+    border:1px solid rgba(243,237,226,.4);
 
-    background:rgba(198,255,61,.08);
+    background:rgba(243,237,226,.08);
 
-    color:#C6FF3D;
+    color:#F3EDE2;
 
     font-size:11px;
 
@@ -84,7 +84,7 @@
 
     align-items:center;
 
-    border:2px solid #C6FF3D;
+    border:2px solid #F3EDE2;
 
     transform:skew(-6deg) rotate(-2deg);
 
@@ -102,7 +102,7 @@
 
     font-style:italic;
 
-    color:#C6FF3D;
+    color:#F3EDE2;
 
 }
 
@@ -142,7 +142,7 @@
 
 .about-copy strong{
 
-    color:#0B0F2B;
+    color:#18283B;
 
 }
 

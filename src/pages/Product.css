@@ -68,7 +68,7 @@
 
         0 30px 80px rgba(0,0,0,.45),
 
-        0 0 45px rgba(0,200,83,.10);
+        0 0 45px rgba(185,56,43,.10);
 
 }.image-wrapper::before{
 
@@ -87,7 +87,7 @@
 
             circle,
 
-            rgba(0,200,83,.22) 0%,
+            rgba(185,56,43,.22) 0%,
 
             rgba(0,132,255,.18) 35%,
 
@@ -119,7 +119,7 @@
 
 .product-category{
 
-    color:#4F46E5;
+    color:#B9382B;
 
     font-weight:700;
 
@@ -139,7 +139,7 @@
 
 .product-info h2{
 
-    color:#00c853;
+    color:#B9382B;
 
     font-size:42px;
 
@@ -257,9 +257,9 @@
 
 .add-to-cart-button:hover{
 
-    border-color:#4F46E5;
+    border-color:#B9382B;
 
-    background:rgba(79,70,229,.10);
+    background:rgba(185,56,43,.10);
 
 }
 
@@ -281,7 +281,7 @@
 
     border-radius:18px;
 
-    background:linear-gradient(135deg,#4F46E5,#4338CA);
+    background:linear-gradient(135deg,#B9382B,#962E24);
 
     color:white;
 
@@ -295,7 +295,7 @@
 
     box-shadow:
 
-        0 15px 40px rgba(79,70,229,.30);
+        0 15px 40px rgba(185,56,43,.30);
 
 }
 
@@ -311,7 +311,7 @@
 
     box-shadow:
 
-        0 25px 60px rgba(79,70,229,.45);
+        0 25px 60px rgba(185,56,43,.45);
 
 }
 .product-benefits{
@@ -352,7 +352,7 @@
 
 .product-benefits svg{
 
-    color:#00c853;
+    color:#B9382B;
 
     font-size:22px;
 
@@ -424,7 +424,7 @@
 
     transform:translateY(-8px);
 
-    border-color:#00c853;
+    border-color:#B9382B;
 
 }
 
@@ -454,7 +454,7 @@
 
     margin-top:10px;
 
-    color:#00c853;
+    color:#B9382B;
 
     font-size:20px;
 
@@ -530,7 +530,7 @@
 
         0 40px 120px rgba(0,0,0,.60),
 
-        0 0 60px rgba(0,200,83,.15);
+        0 0 60px rgba(185,56,43,.15);
 
 }
 
@@ -564,7 +564,7 @@
 
 .image-close:hover{
 
-    background:#4F46E5;
+    background:#B9382B;
 
     transform:rotate(90deg) scale(1.1);
 
@@ -648,8 +648,8 @@
 }
 
 .variant-chip:hover{
-    border-color:#00c853;
-    background:rgba(0,200,83,.08);
+    border-color:#B9382B;
+    background:rgba(185,56,43,.08);
     transform:translateY(-2px);
 }
 
@@ -663,14 +663,14 @@
 }
 
 .variant-chip-active{
-    border-color:#00c853;
-    background:rgba(0,200,83,.12);
-    color:#00c853;
-    box-shadow:0 0 0 1px rgba(0,200,83,.2);
+    border-color:#B9382B;
+    background:rgba(185,56,43,.12);
+    color:#B9382B;
+    box-shadow:0 0 0 1px rgba(185,56,43,.2);
 }
 
 .variant-chip-active img{
-    outline:2px solid #00c853;
+    outline:2px solid #B9382B;
     outline-offset:2px;
 }
 

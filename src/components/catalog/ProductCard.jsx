@@ -65,7 +65,7 @@ function ProductCard({ product }) {
                     to={`/producto/${product.slug}`}
                     className="cart-button"
                 >
-                    Elegir presentación
+                    Agregar al carrito
                 </Link>
             </div>
         </motion.article>

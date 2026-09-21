@@ -24,7 +24,7 @@
 
 .hero{
 
-    --hero-accent:#C6FF3D;
+    --hero-accent:#F3EDE2;
 
     position:relative;
 
@@ -78,18 +78,18 @@
 
         linear-gradient(
             90deg,
-            rgba(11,15,43,.96) 0%,
-            rgba(11,15,43,.88) 35%,
-            rgba(11,15,43,.55) 65%,
-            rgba(11,15,43,.30) 100%
+            rgba(24,40,59,.96) 0%,
+            rgba(24,40,59,.88) 35%,
+            rgba(24,40,59,.55) 65%,
+            rgba(24,40,59,.30) 100%
         ),
 
         linear-gradient(
             180deg,
-            rgba(11,15,43,.65) 0%,
+            rgba(24,40,59,.65) 0%,
             transparent 25%,
             transparent 75%,
-            rgba(11,15,43,.75) 100%
+            rgba(24,40,59,.75) 100%
         );
 
 }
@@ -144,9 +144,9 @@
 
     border-radius:999px;
 
-    border:1px solid rgba(198,255,61,.45);
+    border:1px solid rgba(243,237,226,.45);
 
-    background:rgba(198,255,61,.08);
+    background:rgba(243,237,226,.08);
 
     color:var(--hero-accent);
 
@@ -274,7 +274,7 @@
 
     background:var(--hero-accent);
 
-    color:#0B0F2B;
+    color:#18283B;
 
     font-size:15px;
 
@@ -294,7 +294,7 @@
 
     transform:translateY(-3px);
 
-    box-shadow:0 15px 35px rgba(198,255,61,.30);
+    box-shadow:0 15px 35px rgba(243,237,226,.30);
 
 }
 
@@ -329,61 +329,6 @@
     border-color:var(--hero-accent);
 
     color:var(--hero-accent);
-
-}
-
-/*======================================
-        FOOTER DEL HERO
-        (caption + badge de envío)
-======================================*/
-
-.hero-footer{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    flex-wrap:wrap;
-
-    gap:14px;
-
-    padding:22px 50px 34px;
-
-}
-
-.hero-caption{
-
-    color:#8d97ab;
-
-    font-size:12px;
-
-    font-weight:700;
-
-    letter-spacing:1.5px;
-
-    text-transform:uppercase;
-
-}
-
-.hero-shipping-badge{
-
-    padding:10px 18px;
-
-    border-radius:999px;
-
-    background:rgba(11,15,43,.65);
-
-    border:1px solid rgba(198,255,61,.35);
-
-    backdrop-filter:blur(10px);
-
-    color:white;
-
-    font-size:13px;
-
-    font-weight:700;
 
 }
 
@@ -446,16 +391,6 @@
         gap:10px;
 
         margin-bottom:28px;
-
-    }
-
-    .hero-footer{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        padding:0 24px 26px;
 
     }
 

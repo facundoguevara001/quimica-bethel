@@ -87,13 +87,13 @@ function DeliveryProcess() {
 
                 // Only decorative accents track scrolling; instructions stay readable.
                 timeline.fromTo(card.querySelector(".delivery-step-icon"), {
-                    backgroundColor: "rgba(198,255,61,0)", color: "#c6ff3d"
+                    backgroundColor: "rgba(243,237,226,0)", color: "#F3EDE2"
                 }, {
-                    backgroundColor: "#c6ff3d", color: "#0b0f2b", duration: 0.6, ease: "none"
+                    backgroundColor: "#F3EDE2", color: "#18283B", duration: 0.6, ease: "none"
                 }, position);
                 timeline.fromTo(card.querySelector(".delivery-step-number"), {
                     color: "#6b7488"
-                }, { color: "#c6ff3d", duration: 0.6, ease: "none" }, position);
+                }, { color: "#F3EDE2", duration: 0.6, ease: "none" }, position);
 
                 const progress = card.querySelector(".delivery-step-progress");
                 if (progress) {
@@ -118,7 +118,7 @@ function DeliveryProcess() {
 
             <SectionHeader
                 theme="dark"
-                number="03"
+                number="02"
                 eyebrow="Comprá sin riesgos"
                 titleBold="Pagás"
                 titleAccent="cuando estás conforme."

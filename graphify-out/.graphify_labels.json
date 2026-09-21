@@ -1,1 +1,12 @@
-{"0": "Carrito y compra", "1": "Informacion y contacto", "2": "Catalogo y rutas", "3": "Secciones animadas de inicio", "4": "Cabeceras y navegacion", "5": "Inicio y scroll suave", "6": "Ubicaciones y opiniones", "7": "Agrupacion de productos", "8": "Selector de categorias", "9": "Busqueda de productos"}
+{
+  "0": "useCart",
+  "1": "AboutPage.jsx",
+  "2": "Catalog.jsx",
+  "3": "Home.jsx",
+  "4": "CatalogHeader.jsx",
+  "5": "App.jsx",
+  "6": "ReviewsSection.jsx",
+  "7": "productGroups.js",
+  "8": "Categories.jsx",
+  "9": "SearchBar.jsx"
+}

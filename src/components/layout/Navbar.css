@@ -91,7 +91,7 @@
 
     border-radius:10px;
 
-    background:#4F46E5;
+    background:#B9382B;
 
     transition:.30s;
 
@@ -131,7 +131,7 @@
 
 .navbar-toggle:hover{
 
-    background:#4F46E5;
+    background:#B9382B;
 
     transform:scale(1.05);
 
@@ -281,7 +281,7 @@
 
     .navbar-transparent .navbar-links{
 
-        background:rgba(11,15,43,.98);
+        background:rgba(24,40,59,.98);
 
     }
 

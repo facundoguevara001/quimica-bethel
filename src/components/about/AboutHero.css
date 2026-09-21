@@ -4,7 +4,7 @@
 
 .about-hero{
 
-    --hero-accent:#C6FF3D;
+    --hero-accent:#F3EDE2;
 
     position:relative;
 
@@ -58,16 +58,16 @@
 
         linear-gradient(
             180deg,
-            rgba(11,15,43,.55) 0%,
-            rgba(11,15,43,.75) 55%,
-            rgba(11,15,43,.96) 100%
+            rgba(24,40,59,.55) 0%,
+            rgba(24,40,59,.75) 55%,
+            rgba(24,40,59,.96) 100%
         ),
 
         linear-gradient(
             90deg,
-            rgba(11,15,43,.85) 0%,
-            rgba(11,15,43,.35) 60%,
-            rgba(11,15,43,.15) 100%
+            rgba(24,40,59,.85) 0%,
+            rgba(24,40,59,.35) 60%,
+            rgba(24,40,59,.15) 100%
         );
 
 }
@@ -118,9 +118,9 @@
 
     border-radius:999px;
 
-    border:1px solid rgba(198,255,61,.45);
+    border:1px solid rgba(243,237,226,.45);
 
-    background:rgba(198,255,61,.08);
+    background:rgba(243,237,226,.08);
 
     color:var(--hero-accent);
 

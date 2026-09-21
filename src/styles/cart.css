@@ -165,7 +165,7 @@
 
 .cart-info span{
 
-    color:#8f88ff;
+    color:#F3EDE2;
 
     font-size:18px;
 
@@ -271,7 +271,7 @@
 
     margin:10px 0 18px;
 
-    color:#8f88ff;
+    color:#F3EDE2;
 
     font-size:34px;
 
@@ -288,7 +288,7 @@
 
     border-radius:14px;
 
-    background:linear-gradient(90deg,#4F46E5,#4338CA);
+    background:linear-gradient(90deg,#B9382B,#962E24);
 
     color:white;
 
@@ -314,7 +314,7 @@
 
     transform:translateY(-2px);
 
-    box-shadow:0 12px 25px rgba(79,70,229,.35);
+    box-shadow:0 12px 25px rgba(185,56,43,.35);
 
 }
 

@@ -6,20 +6,20 @@
 
 :root{
 
-    --primary:#4F46E5;
-    --primary-dark:#4338CA;
+    --primary:#B9382B;
+    --primary-dark:#962E24;
 
-    --background:#0B0F2B;
+    --background:#18283B;
 
-    --surface:#141935;
+    --surface:#22354A;
 
-    --surface-light:#1E2450;
+    --surface-light:#2D4258;
 
     --text:#ffffff;
 
     --text-secondary:#a8b0bf;
 
-    --border:#2C3268;
+    --border:#41566A;
 
     --shadow:0 15px 40px rgba(0,0,0,.35);
 
@@ -60,7 +60,7 @@ body{
 
         radial-gradient(
             circle at 85% 15%,
-            rgba(0,200,83,.10),
+            rgba(185,56,43,.10),
             transparent 30%
         ),
 
@@ -70,7 +70,7 @@ body{
             transparent 40%
         ),
 
-       #0B0F2B;
+       #18283B;
 
     background-attachment:fixed;
 

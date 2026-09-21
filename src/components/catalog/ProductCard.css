@@ -29,8 +29,8 @@
 
     background:linear-gradient(
         135deg,
-        #4F46E5,
-        #4338CA
+        #B9382B,
+        #962E24
     );
 
     transform:
@@ -230,13 +230,13 @@
 
     padding:7px 12px;
 
-    border:1px solid rgba(198,255,61,.35);
+    border:1px solid rgba(243,237,226,.35);
 
     border-radius:999px;
 
-    background:rgba(198,255,61,.08);
+    background:rgba(243,237,226,.08);
 
-    color:#d9ff83;
+    color:#F3EDE2;
 
     font-size:12px;
 
@@ -262,17 +262,17 @@
 
     background:linear-gradient(
         135deg,
-        rgba(79,70,229,.20),
-        rgba(79,70,229,.08)
+        rgba(185,56,43,.20),
+        rgba(185,56,43,.08)
     );
 
-    border:1px solid rgba(79,70,229,.35);
+    border:1px solid rgba(185,56,43,.35);
 
     font-size:30px;
 
     font-weight:800;
 
-    color:#9d97ff;
+    color:#F3EDE2;
 
 }
 
@@ -310,11 +310,11 @@
 
     background:linear-gradient(
         135deg,
-        rgba(0,200,83,.20),
-        rgba(0,200,83,.08)
+        rgba(185,56,43,.20),
+        rgba(185,56,43,.08)
     );
 
-    border:1px solid rgba(0,200,83,.35);
+    border:1px solid rgba(185,56,43,.35);
 
     color:#2cff88;
 
@@ -441,7 +441,7 @@
 
 .buy-button:hover{
 
-    background:#5a52f0;
+    background:#962E24;
 
 }
 
@@ -455,7 +455,7 @@
 
 .cart-button:hover{
 
-    background:#5a52f0;
+    background:#962E24;
 
 }@media (max-width: 768px){
     .product-card{

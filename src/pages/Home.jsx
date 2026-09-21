@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import Hero from "../components/home/Hero";
-import CategorySection from "../components/home/Categorysection";
 import FeaturedProducts from "../components/home/FeaturedProducts";
 import DeliveryProcess from "../components/home/DeliveryProcess";
 import MainLayout from "../layout/MainLayout";
@@ -47,13 +46,13 @@ function Home() {
 
                 <Hero />
 
-                <CategorySection />
+                <DeliveryProcess />
 
-                <FadeInSection delay={0.1}>
-                <FeaturedProducts
-    cards={cards}
-    openCart={() => setCartOpen(true)}
-/>
+                <FadeInSection delay={0.1} className="home-section">
+                    <FeaturedProducts
+                        cards={cards}
+                        openCart={() => setCartOpen(true)}
+                    />
                 </FadeInSection>
 
                 <StatsStrip
@@ -62,11 +61,9 @@ function Home() {
                     yearsSince={yearsSince}
                 />
 
-                <DeliveryProcess />
-
-<FadeInSection delay={0.2}>
-    <ReviewsSection />
-</FadeInSection>
+                <FadeInSection delay={0.2} className="home-section">
+                    <ReviewsSection />
+                </FadeInSection>
 
                 <Footer />
 

@@ -12,8 +12,8 @@
 .related-carousel .related-carousel-card:hover img { transform: none; }
 .related-carousel-card .featured-card-info { flex: 1; }
 .related-carousel-card .featured-card-image { width: 100%; box-sizing: border-box; }
-.related-carousel-card.is-active { border-color: #9d97ff; box-shadow: 0 0 0 2px #9d97ff; }
-.related-carousel-actions { box-sizing: border-box; width: 100%; max-width: 560px; padding: 16px; margin-top: 8px; border: 1px solid #9d97ff; border-radius: 20px; background: var(--surface); box-shadow: 0 12px 30px #0003; }
+.related-carousel-card.is-active { border-color: #F3EDE2; box-shadow: 0 0 0 2px #F3EDE2; }
+.related-carousel-actions { box-sizing: border-box; width: 100%; max-width: 560px; padding: 16px; margin-top: 8px; border: 1px solid #F3EDE2; border-radius: 20px; background: var(--surface); box-shadow: 0 12px 30px #0003; }
 .related-carousel-action-heading { display: flex; align-items: center; gap: 12px; justify-content: space-between; margin-bottom: 12px; }
 .related-carousel-actions label { display: grid; gap: 8px; }
 .related-carousel-actions select { width: 100%; min-width: 0; min-height: 48px; background: var(--surface); color: inherit; padding: 8px; border: 1px solid var(--border); border-radius: 10px; }
@@ -22,5 +22,5 @@
 .related-carousel-buttons a { background: transparent; }
 .related-carousel button:disabled { opacity: .55; cursor: default; }
 .related-carousel-confirmation { color: #91efbc; margin: 12px 0 0; line-height: 1.5; }
-.related-carousel :focus-visible { outline: 3px solid #bcb8ff; outline-offset: 3px; }
+.related-carousel :focus-visible { outline: 3px solid #F3EDE2; outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { .related-carousel *, .related-carousel *::before { transition: none !important; scroll-behavior: auto !important; } }

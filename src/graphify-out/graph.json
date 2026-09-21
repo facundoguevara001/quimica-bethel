@@ -397,7 +397,7 @@
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "src/pages/Home.jsx",
-      "source_location": "L17"
+      "source_location": "L16"
     },
     {
       "id": "pages_promotions_promotions",
@@ -422,18 +422,6 @@
       "norm_label": "fadeinsection()",
       "source_file": "src/components/common/FadeInSection.jsx",
       "source_location": "L3"
-    },
-    {
-      "id": "components_home_categorysection_categorysection",
-      "label": "CategorySection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Home.jsx",
-      "file_type": "code",
-      "norm_label": "categorysection()",
-      "source_file": "src/components/home/Categorysection.jsx",
-      "source_location": "L34"
     },
     {
       "id": "components_home_deliveryprocess_deliveryprocess",
@@ -553,7 +541,7 @@
       "file_type": "code",
       "norm_label": "hero()",
       "source_file": "src/components/home/Hero.jsx",
-      "source_location": "L6"
+      "source_location": "L8"
     },
     {
       "id": "components_layout_navbar_navbar",
@@ -993,28 +981,6 @@
       "norm_label": "fadeinsection.jsx",
       "source_file": "src/components/common/FadeInSection.jsx",
       "source_location": "L1"
-    },
-    {
-      "id": "components_home_categorysection",
-      "label": "Categorysection.jsx",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Home.jsx",
-      "file_type": "code",
-      "norm_label": "categorysection.jsx",
-      "source_file": "src/components/home/Categorysection.jsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "components_home_categorysection_categories",
-      "label": "categories",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "Home.jsx",
-      "file_type": "code",
-      "norm_label": "categories",
-      "source_file": "src/components/home/Categorysection.jsx",
-      "source_location": "L5"
     },
     {
       "id": "components_home_deliveryprocess",
@@ -1738,6 +1704,18 @@
     },
     {
       "source": "components_home_hero",
+      "target": "data_products_products",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/home/Hero.jsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "components_home_hero",
       "target": "components_layout_navbar_navbar",
       "relation": "imports",
       "_origin": "ast",
@@ -1745,7 +1723,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/home/Hero.jsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -2002,7 +1980,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_statsstrip_statsstrip",
+      "target": "components_home_footer_footer",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2014,7 +1992,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_footer_footer",
+      "target": "components_cart_cartbutton_cartbutton",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2026,7 +2004,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_cart_cartbutton_cartbutton",
+      "target": "components_cart_cartdrawer_cartdrawer",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2038,18 +2016,6 @@
     },
     {
       "source": "pages_home",
-      "target": "components_cart_cartdrawer_cartdrawer",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/pages/Home.jsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "pages_home",
       "target": "components_common_fadeinsection_fadeinsection",
       "relation": "imports",
       "_origin": "ast",
@@ -2057,7 +2023,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/Home.jsx",
-      "source_location": "L15",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -2074,7 +2040,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_categorysection_categorysection",
+      "target": "components_home_featuredproducts_featuredproducts",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2086,7 +2052,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_featuredproducts_featuredproducts",
+      "target": "components_home_deliveryprocess_deliveryprocess",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2098,7 +2064,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_deliveryprocess_deliveryprocess",
+      "target": "layout_mainlayout_mainlayout",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2110,7 +2076,7 @@
     },
     {
       "source": "pages_home",
-      "target": "layout_mainlayout_mainlayout",
+      "target": "data_products_products",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2122,7 +2088,7 @@
     },
     {
       "source": "pages_home",
-      "target": "data_products_products",
+      "target": "components_home_reviewssection_reviewssection",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2134,7 +2100,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_reviewssection_reviewssection",
+      "target": "components_home_statsstrip_statsstrip",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2566,7 +2532,7 @@
     },
     {
       "source": "components_home_hero",
-      "target": "utils_animation",
+      "target": "data_products",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2578,6 +2544,18 @@
     },
     {
       "source": "components_home_hero",
+      "target": "utils_animation",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/home/Hero.jsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "components_home_hero",
       "target": "components_layout_navbar",
       "relation": "imports_from",
       "_origin": "ast",
@@ -2585,7 +2563,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/components/home/Hero.jsx",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -2866,7 +2844,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_statsstrip",
+      "target": "components_home_footer",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2878,7 +2856,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_footer",
+      "target": "components_cart_cartbutton",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2890,7 +2868,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_cart_cartbutton",
+      "target": "components_cart_cartdrawer",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2902,18 +2880,6 @@
     },
     {
       "source": "pages_home",
-      "target": "components_cart_cartdrawer",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/pages/Home.jsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "pages_home",
       "target": "components_common_fadeinsection",
       "relation": "imports_from",
       "_origin": "ast",
@@ -2921,7 +2887,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/Home.jsx",
-      "source_location": "L15",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -2938,7 +2904,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_categorysection",
+      "target": "components_home_featuredproducts",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2950,7 +2916,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_featuredproducts",
+      "target": "components_home_deliveryprocess",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2962,7 +2928,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_deliveryprocess",
+      "target": "layout_mainlayout",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2974,7 +2940,7 @@
     },
     {
       "source": "pages_home",
-      "target": "layout_mainlayout",
+      "target": "data_products",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2986,7 +2952,7 @@
     },
     {
       "source": "pages_home",
-      "target": "data_products",
+      "target": "components_home_reviewssection",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2998,7 +2964,7 @@
     },
     {
       "source": "pages_home",
-      "target": "components_home_reviewssection",
+      "target": "components_home_statsstrip",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3384,28 +3350,6 @@
       "weight": 1.0
     },
     {
-      "source": "components_home_categorysection",
-      "target": "components_home_categorysection_categorysection",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/home/Categorysection.jsx",
-      "source_location": "L34",
-      "weight": 1.0
-    },
-    {
-      "source": "components_home_categorysection",
-      "target": "components_home_categorysection_categories",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/home/Categorysection.jsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "components_home_contactsection",
       "target": "components_home_contactsection_contactsection",
       "relation": "contains",
@@ -3523,7 +3467,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/home/Hero.jsx",
-      "source_location": "L6",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -3721,7 +3665,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/Home.jsx",
-      "source_location": "L17",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -3865,5 +3809,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "dfe05cfcb8e858b597675293454e5dfdfc40ae62"
+  "built_at_commit": "34547559547abddf6d05386dda0050f3059a459b"
 }

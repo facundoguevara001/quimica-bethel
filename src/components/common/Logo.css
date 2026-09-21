@@ -36,7 +36,7 @@
 
     border-radius:10px;
 
-    background:linear-gradient(135deg,#4F46E5,#4338CA);
+    background:linear-gradient(135deg,#B9382B,#962E24);
 
     color:white;
 
@@ -46,7 +46,7 @@
 
     letter-spacing:.5px;
 
-    box-shadow:0 8px 20px rgba(79,70,229,.35);
+    box-shadow:0 8px 20px rgba(185,56,43,.35);
 
 }
 
@@ -100,7 +100,7 @@
 
 .brand-logo-hero .brand-wordmark span{
 
-    color:#C6FF3D;
+    color:#F3EDE2;
 
 }
 

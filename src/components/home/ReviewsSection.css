@@ -109,7 +109,7 @@
 .dot.active {
     width: 28px;
     border-radius: 20px;
-    background: #4f46e5;
+    background: #B9382B;
 }
 
 @keyframes review-fade {
@@ -181,7 +181,7 @@
 .location-button:hover,
 .location-button:focus-visible,
 .location-button.is-active {
-    border-color: #4f46e5;
+    border-color: #B9382B;
     background: rgba(79, 70, 229, 0.2);
 }
 

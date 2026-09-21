@@ -50,6 +50,8 @@ function Navbar({ transparent = false }) {
     <button
 
         className="navbar-toggle"
+        aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+        aria-expanded={menuOpen}
 
         onClick={() => setMenuOpen(!menuOpen)}
 

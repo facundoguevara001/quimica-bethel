@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useReducedMotion } from "framer-motion";
 
 import FeaturedCard from "./FeaturedCard";
 import "./FeaturedProducts.css";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAnimationFrame } from "framer-motion";
 
 function FeaturedProducts({
@@ -15,28 +15,46 @@ function FeaturedProducts({
 
 }) {
 
-    const [x, setX] = useState(0);
+    const x = useMotionValue(0);
+    const track = useRef(null);
+    const loopWidth = useRef(0);
+    const reduceMotion = useReducedMotion();
     const [isPaused, setIsPaused] = useState(false);
+    const [manualScroll, setManualScroll] = useState(false);
 
-useAnimationFrame(() => {
+    useEffect(() => {
+        const media = window.matchMedia("(max-width: 768px), (pointer: coarse)");
+        const update = () => {
+            setManualScroll(media.matches);
+            x.set(0);
+        };
+        update();
+        media.addEventListener("change", update);
+        return () => media.removeEventListener("change", update);
+    }, [x]);
 
-    if (isPaused) return;
+    useEffect(() => {
+        const element = track.current;
+        if (!element) return;
+        const measure = () => {
+            const first = element.children[0];
+            const repeated = element.children[cards.length / 2];
+            loopWidth.current = first && repeated
+                ? repeated.offsetLeft - first.offsetLeft
+                : 0;
+            x.set(0);
+        };
+        measure();
+        const observer = new ResizeObserver(measure);
+        observer.observe(element);
+        return () => observer.disconnect();
+    }, [cards.length, x]);
 
-    setX(prev => {
-
-        const next = prev - 0.6;
-
-        if (next <= -(cards.length / 2 * 368)) {
-
-            return 0;
-
-        }
-
-        return next;
-
+    useAnimationFrame((_, delta) => {
+        if (isPaused || manualScroll || reduceMotion || !loopWidth.current) return;
+        const next = x.get() - Math.min(delta, 64) * 0.036;
+        x.set(-((-next) % loopWidth.current));
     });
-
-});
 
     return (
 
@@ -60,11 +78,19 @@ useAnimationFrame(() => {
                 className="featured-slider"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
+                onFocusCapture={() => setIsPaused(true)}
+                onBlurCapture={event => {
+                    if (!event.currentTarget.contains(event.relatedTarget)) setIsPaused(false);
+                }}
+                onTouchStart={() => setIsPaused(true)}
+                onTouchEnd={() => setIsPaused(false)}
+                onTouchCancel={() => setIsPaused(false)}
             >
 
                 <motion.div
+                    ref={track}
                     className="featured-track"
-                    style={{ x }}
+                    style={{ x: manualScroll || reduceMotion ? 0 : x }}
                 >
 
                     {cards.map((product, index) => (

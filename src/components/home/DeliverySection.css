@@ -30,7 +30,7 @@
 
     background:white;
 
-    border:1px solid rgba(11,15,43,.06);
+    border:1px solid rgba(24,40,59,.06);
 
 }
 
@@ -50,9 +50,9 @@
 
     border-radius:12px;
 
-    background:#0B0F2B;
+    background:#18283B;
 
-    color:#C6FF3D;
+    color:#F3EDE2;
 
     font-size:18px;
 
@@ -66,7 +66,7 @@
 
     font-weight:800;
 
-    color:#0B0F2B;
+    color:#18283B;
 
 }
 
@@ -100,7 +100,7 @@
 
     border-radius:20px;
 
-    background:#0B0F2B;
+    background:#18283B;
 
 }
 
@@ -116,7 +116,7 @@
 
     text-transform:uppercase;
 
-    color:#C6FF3D;
+    color:#F3EDE2;
 
 }
 
@@ -138,9 +138,9 @@
 
     border-radius:999px;
 
-    background:rgba(198,255,61,.08);
+    background:rgba(243,237,226,.08);
 
-    border:1px solid rgba(198,255,61,.25);
+    border:1px solid rgba(243,237,226,.25);
 
     color:white;
 

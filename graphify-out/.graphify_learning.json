@@ -1,5 +1,175 @@
 {
-  "generated_at": "2026-09-08T16:56:53.080345+00:00",
-  "nodes": {},
+  "generated_at": "2026-09-21T10:52:06.478037+00:00",
+  "nodes": {
+    "components_common_logo_logo": {
+      "code_fingerprint": "5a0e224dfbdd2d5ec4481814df9bdbe72df56487ed6e1d4be4512e5f688092ad",
+      "label": "Logo()",
+      "last": "2026-09-21T01:22:13.263634+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T01:22:13.263634+00:00",
+          "outcome": "useful",
+          "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
+        }
+      ],
+      "score": 0.990897801,
+      "source_file": "src/components/common/Logo.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "components_common_smoothscroll_smoothscroll": {
+      "code_fingerprint": "7ef90bf1d266d7646581e6071d0f2bf30eb4506dbf7a3bb6ce4eb66f80f1812d",
+      "label": "SmoothScroll()",
+      "last": "2026-09-08T17:20:57.255684+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-08T17:20:57.255684+00:00",
+          "outcome": "useful",
+          "q": "bro quiero que utilizes graphify para que resolvamos lo siguiente. Cuando un usuario esta navegando en nuestro catalogo, al momento se seleccionar un producto y bajar hasta el carrusel de recomendados, pausar y cuando selecciona un producto la web carga el producto seleccionado desde ese carrusel pero no recarga la web y tampoco vuelve a subir hacia la parte superior de la web. Entonces, el usuario tiene que subir para enterarse que cambio el contenido que esta viendo. Esto es medio tosco, se deberia seleccionar un producto y la web deberia llevarme a la parte superior para visualizarlo. Quiero que ajustemos esto ahora"
+        }
+      ],
+      "score": 0.745183553,
+      "source_file": "src/components/common/SmoothScroll.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "components_home_deliveryprocess_deliveryprocess": {
+      "code_fingerprint": "632e2f99ce094a96cac4c32cc13dbff94c443f5695d2df89985e4b9cda9bed8c",
+      "label": "DeliveryProcess()",
+      "last": "2026-09-21T10:52:05.861150+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T10:52:05.861150+00:00",
+          "outcome": "useful",
+          "q": "Aplica estos cambios, recuerda seguir utilizando graphify y actualizar su contenido al terminar."
+        },
+        {
+          "date": "2026-09-21T10:48:36.063607+00:00",
+          "outcome": "useful",
+          "q": "Antes de aplicar estos cambios. Decime que entendiste todo y decime lo que vas a hacer ya que utilizaste Graphify para saber donde esta el contenido y cual contenido vas a cambiar"
+        }
+      ],
+      "score": 1.999943568,
+      "source_file": "src/components/home/DeliveryProcess.jsx",
+      "status": "preferred",
+      "uses": 2
+    },
+    "components_home_footer_footer": {
+      "code_fingerprint": "c6ede165c86796cf921dfc905cb23b4ff577183baf2b770c786008c73978d6aa",
+      "label": "Footer()",
+      "last": "2026-09-21T01:22:13.263634+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T01:22:13.263634+00:00",
+          "outcome": "useful",
+          "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
+        }
+      ],
+      "score": 0.990897801,
+      "source_file": "src/components/home/Footer.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "components_home_hero_hero": {
+      "code_fingerprint": "e780476188915c25d3c81d375e3be7aede0d7b681123d5b185cd6d4969b3ee8f",
+      "label": "Hero()",
+      "last": "2026-09-21T10:52:05.861150+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T10:52:05.861150+00:00",
+          "outcome": "useful",
+          "q": "Aplica estos cambios, recuerda seguir utilizando graphify y actualizar su contenido al terminar."
+        },
+        {
+          "date": "2026-09-21T10:48:36.063607+00:00",
+          "outcome": "useful",
+          "q": "Antes de aplicar estos cambios. Decime que entendiste todo y decime lo que vas a hacer ya que utilizaste Graphify para saber donde esta el contenido y cual contenido vas a cambiar"
+        },
+        {
+          "date": "2026-09-21T01:22:13.263634+00:00",
+          "outcome": "useful",
+          "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
+        }
+      ],
+      "score": 2.990841369,
+      "source_file": "src/components/home/Hero.jsx",
+      "status": "preferred",
+      "uses": 3
+    },
+    "components_home_relatedproducts_relatedproducts": {
+      "code_fingerprint": "fe71b2e0bb0d49a65258d325f7cfb0fee738e7d028fc461d48040255c20399f6",
+      "label": "RelatedProducts()",
+      "last": "2026-09-08T17:20:57.255684+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-08T17:20:57.255684+00:00",
+          "outcome": "useful",
+          "q": "bro quiero que utilizes graphify para que resolvamos lo siguiente. Cuando un usuario esta navegando en nuestro catalogo, al momento se seleccionar un producto y bajar hasta el carrusel de recomendados, pausar y cuando selecciona un producto la web carga el producto seleccionado desde ese carrusel pero no recarga la web y tampoco vuelve a subir hacia la parte superior de la web. Entonces, el usuario tiene que subir para enterarse que cambio el contenido que esta viendo. Esto es medio tosco, se deberia seleccionar un producto y la web deberia llevarme a la parte superior para visualizarlo. Quiero que ajustemos esto ahora"
+        }
+      ],
+      "score": 0.745183553,
+      "source_file": "src/components/home/RelatedProducts.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "components_home_reviewssection_reviewssection": {
+      "code_fingerprint": "c15bb7690ee57df0da6257a9c7be847947dbdecd606c1b6df8311a9eddcf617c",
+      "label": "ReviewsSection()",
+      "last": "2026-09-21T01:22:13.263634+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T01:22:13.263634+00:00",
+          "outcome": "useful",
+          "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
+        }
+      ],
+      "score": 0.990897801,
+      "source_file": "src/components/home/ReviewsSection.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "pages_home_home": {
+      "code_fingerprint": "9cafa7317649ec4dd63b8f260a9fc0b5cabeb2ec84a9b4c3304cd7677c650971",
+      "label": "Home()",
+      "last": "2026-09-21T10:52:05.861150+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T10:52:05.861150+00:00",
+          "outcome": "useful",
+          "q": "Aplica estos cambios, recuerda seguir utilizando graphify y actualizar su contenido al terminar."
+        },
+        {
+          "date": "2026-09-21T10:48:36.063607+00:00",
+          "outcome": "useful",
+          "q": "Antes de aplicar estos cambios. Decime que entendiste todo y decime lo que vas a hacer ya que utilizaste Graphify para saber donde esta el contenido y cual contenido vas a cambiar"
+        },
+        {
+          "date": "2026-09-21T01:22:13.263634+00:00",
+          "outcome": "useful",
+          "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
+        }
+      ],
+      "score": 2.990841369,
+      "source_file": "src/pages/Home.jsx",
+      "status": "preferred",
+      "uses": 3
+    },
+    "pages_product_product": {
+      "code_fingerprint": "cd4cbfb2bae7450a054ace55ed9011a677dccdb5b8e8b004b9d450a942893320",
+      "label": "Product()",
+      "last": "2026-09-08T17:20:57.255684+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-08T17:20:57.255684+00:00",
+          "outcome": "useful",
+          "q": "bro quiero que utilizes graphify para que resolvamos lo siguiente. Cuando un usuario esta navegando en nuestro catalogo, al momento se seleccionar un producto y bajar hasta el carrusel de recomendados, pausar y cuando selecciona un producto la web carga el producto seleccionado desde ese carrusel pero no recarga la web y tampoco vuelve a subir hacia la parte superior de la web. Entonces, el usuario tiene que subir para enterarse que cambio el contenido que esta viendo. Esto es medio tosco, se deberia seleccionar un producto y la web deberia llevarme a la parte superior para visualizarlo. Quiero que ajustemos esto ahora"
+        }
+      ],
+      "score": 0.745183553,
+      "source_file": "src/pages/Product.jsx",
+      "status": "tentative",
+      "uses": 1
+    }
+  },
   "version": 1
 }

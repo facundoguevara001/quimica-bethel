@@ -4,7 +4,7 @@
     margin:-24px -24px 32px;
     padding:18px 24px;
     background:linear-gradient(110deg, #151b42 0%, #1a2152 55%, #161c47 100%);
-    border-bottom:1px solid rgba(198,255,61,.2);
+    border-bottom:1px solid rgba(243,237,226,.2);
     box-shadow:0 14px 32px rgba(0,0,0,.2);
 }
 
@@ -44,7 +44,7 @@
 }
 
 .catalog-back-link:hover{
-    color:#d9ff83;
+    color:#F3EDE2;
 }
 
 .catalog-brand-area .brand-logo{
@@ -71,7 +71,7 @@
     display:flex;
     align-items:center;
     gap:7px;
-    color:#d9ff83;
+    color:#F3EDE2;
     font-size:11px;
     font-weight:700;
     line-height:1.35;
@@ -89,8 +89,8 @@
 }
 
 .catalog-header-search:focus-within{
-    border-color:#c6ff3d;
-    box-shadow:0 0 0 3px rgba(198,255,61,.16), 0 10px 24px rgba(0,0,0,.15);
+    border-color:#F3EDE2;
+    box-shadow:0 0 0 3px rgba(243,237,226,.16), 0 10px 24px rgba(0,0,0,.15);
 }
 
 .catalog-header-search input{
@@ -144,7 +144,7 @@
 }
 
 .catalog-first-purchase svg{
-    color:#d9ff83;
+    color:#F3EDE2;
 }
 
 .catalog-cart-button{
@@ -155,9 +155,9 @@
     gap:8px;
     min-height:46px;
     padding:0 14px;
-    border:1px solid rgba(198,255,61,.55);
+    border:1px solid rgba(243,237,226,.55);
     border-radius:13px;
-    background:#c6ff3d;
+    background:#F3EDE2;
     color:#101632;
     font:inherit;
     font-size:13px;
