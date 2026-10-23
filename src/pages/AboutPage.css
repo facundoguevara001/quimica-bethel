@@ -1,0 +1,125 @@
+.about-page {
+    --about-width: 1180px;
+    --about-space: clamp(28px, 4vw, 48px);
+    background: var(--ink);
+}
+
+.about-page .about-hero {
+    min-height: auto;
+    margin-bottom: 0;
+}
+
+.about-page .about-hero-inner { min-height: clamp(300px, 42vw, 440px); }
+.about-page .about-hero-content {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 32px clamp(24px, 4vw, 48px);
+}
+.about-page .about-hero-title { font-size: clamp(28px, 3.6vw, 46px); }
+.about-page .about-hero-title em { color: #E5998C; font-style: normal; }
+
+.about-page .about-section,
+.about-page > .light-band,
+.about-page .contact-banner {
+    width: 100%;
+    max-width: var(--about-width);
+    margin: var(--about-space) auto 0;
+    padding: 0;
+    scroll-margin-top: 24px;
+}
+
+.about-page .light-band {
+    background: var(--ink);
+    color: var(--paper);
+}
+.about-page .about-section > .light-band { width: 100%; margin: 0; padding: 0; }
+.about-page .about-band-inner,
+.about-page .policy-inner,
+.about-page .delivery-info-inner,
+.about-page .review-policy-inner { max-width: none; }
+.about-page > .light-band { border-top: 1px solid var(--border); padding-top: var(--about-space); }
+.about-page .section-header { gap: 16px 32px; margin-bottom: 24px; }
+.about-page .section-header-title {
+    max-width: 640px;
+    color: var(--paper);
+    font-size: clamp(25px, 3vw, 36px);
+    line-height: 1.25;
+}
+.about-page .section-header-title em { color: var(--paper); }
+.about-page .section-header-eyebrow,
+.about-page .section-header-subtitle { color: var(--text-secondary); }
+.about-page .section-header-subtitle { max-width: 380px; font-size: 15px; line-height: 1.6; }
+.about-page .about-copy { max-width: 780px; gap: 12px; }
+.about-page .about-copy p { color: var(--text-secondary); line-height: 1.7; }
+.about-page .about-copy strong { color: var(--paper); }
+
+.about-page .policy-grid,
+.about-page .delivery-info-zones,
+.about-page .review-policy-points { gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.about-page .policy-card,
+.about-page .delivery-info-cost,
+.about-page .delivery-info-zone-card,
+.about-page .review-policy-callout,
+.about-page .review-policy-point {
+    min-width: 0;
+    padding: clamp(20px, 2.5vw, 28px);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+}
+.about-page .policy-card h3,
+.about-page .delivery-info-cost strong,
+.about-page .review-policy-callout strong,
+.about-page .review-policy-point h4 { color: var(--paper); text-transform: none; }
+.about-page .policy-card p,
+.about-page .delivery-info-cost p,
+.about-page .review-policy-callout p,
+.about-page .review-policy-point p { color: var(--text-secondary); font-size: 15px; line-height: 1.65; }
+.about-page .policy-icon,
+.about-page .delivery-info-cost-icon,
+.about-page .review-policy-callout-icon,
+.about-page .review-policy-point-icon { background: var(--surface-light); border-radius: 6px; }
+.about-page .policy-icon { margin-bottom: 16px; }
+.about-page .delivery-info-cost,
+.about-page .review-policy-callout,
+.about-page .delivery-info-zones,
+.about-page .review-policy-points { margin-bottom: 20px; }
+.about-page .delivery-info-zone-card li { padding: 6px 12px; border-radius: 5px; }
+
+.about-page .delivery-info-whatsapp,
+.about-page .review-policy-whatsapp,
+.about-page .contact-whatsapp {
+    background: var(--primary);
+    color: white;
+    border-radius: 5px;
+    padding: 14px 22px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 15px;
+}
+.about-page .delivery-info-whatsapp:hover,
+.about-page .review-policy-whatsapp:hover,
+.about-page .contact-whatsapp:hover { background: var(--primary-dark); box-shadow: none; }
+.about-page .contact-banner { padding-top: var(--about-space); }
+.about-page .contact-banner h2 { font-size: clamp(25px, 3vw, 34px); text-transform: none; }
+.about-page .contact-banner p { max-width: 640px; }
+.about-page .contact-banner-actions { margin-top: 20px; gap: 12px; }
+.about-page .contact-facebook { border-radius: 5px; text-transform: none; letter-spacing: 0; }
+.about-page .site-footer { margin-top: var(--about-space); }
+.about-page .footer-inner { max-width: var(--about-width); }
+
+@media (max-width: 768px) {
+    .about-page .about-hero-inner { min-height: 320px; }
+    .about-page .section-header { flex-direction: column; align-items: flex-start; }
+    .about-page .section-header-subtitle { max-width: none; }
+    .about-page .policy-grid,
+    .about-page .delivery-info-zones,
+    .about-page .review-policy-points { grid-template-columns: 1fr; }
+    .about-page .delivery-info-cost,
+    .about-page .review-policy-callout { flex-direction: row; align-items: flex-start; text-align: left; gap: 14px; }
+    .about-page .delivery-info-cost-icon,
+    .about-page .review-policy-callout-icon { width: 40px; height: 40px; font-size: 18px; }
+    .about-page .delivery-info-whatsapp,
+    .about-page .review-policy-whatsapp { display: flex; justify-content: center; text-align: center; }
+}

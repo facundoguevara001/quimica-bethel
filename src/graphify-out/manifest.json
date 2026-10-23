@@ -54,9 +54,9 @@
     "semantic_hash": ""
   },
   "components/catalog/ProductCard.jsx": {
-    "mtime": 1788011498.6928203,
-    "seen": 1788887151.7929757,
-    "ast_hash": "d7276b56ad646bfb46267a22b2ed4ce7",
+    "mtime": 1789989533.8805857,
+    "seen": 1789990283.2570238,
+    "ast_hash": "7403b9d1bccd01fd64b82e9e95c77407",
     "semantic_hash": ""
   },
   "components/catalog/ProductGrid.jsx": {
@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "components/home/AboutUs.jsx": {
-    "mtime": 1786825451.9465868,
-    "seen": 1788887151.7929847,
-    "ast_hash": "78d362a2bb60c027a811ca10438091cf",
+    "mtime": 1789990264.7777622,
+    "seen": 1789990283.257041,
+    "ast_hash": "4f08bde3420a81442c8c3d0081ca2bd4",
     "semantic_hash": ""
   },
   "components/home/ContactSection.jsx": {
@@ -119,12 +119,6 @@
     "ast_hash": "d50bfdbdd20dab4b8266e3255abafdae",
     "semantic_hash": ""
   },
-  "components/home/FAQ.jsx": {
-    "mtime": 1787865169.392093,
-    "seen": 1788887151.7929914,
-    "ast_hash": "494339a33e7222a624d0408571e1642e",
-    "semantic_hash": ""
-  },
   "components/home/FeaturedCard.jsx": {
     "mtime": 1788440027.5781093,
     "seen": 1788887151.7929933,
@@ -132,9 +126,9 @@
     "semantic_hash": ""
   },
   "components/home/FeaturedProducts.jsx": {
-    "mtime": 1789988842.4047475,
-    "seen": 1789988851.5154002,
-    "ast_hash": "fe827d2f28c2f0e154aba55f274ccd4c",
+    "mtime": 1789988866.7930884,
+    "seen": 1789990283.2570496,
+    "ast_hash": "e4c5a7c2cea8ddc5a8fdd2a0bfc3a224",
     "semantic_hash": ""
   },
   "components/home/Footer.jsx": {
@@ -222,9 +216,9 @@
     "semantic_hash": ""
   },
   "pages/AboutPage.jsx": {
-    "mtime": 1787872647.8629742,
-    "seen": 1788887151.7930136,
-    "ast_hash": "c30c827e39359a3e4a73951b89328cf1",
+    "mtime": 1789990255.704314,
+    "seen": 1789990283.2570765,
+    "ast_hash": "3a7abce776c15d20ff99181a24ec2776",
     "semantic_hash": ""
   },
   "pages/Catalog.jsx": {

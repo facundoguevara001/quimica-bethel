@@ -9,7 +9,6 @@ cart
 catalog
 categories
 category
-categorysection
 clear
 close
 contact
@@ -19,7 +18,6 @@ delivery
 deliveryinfo
 drawer
 fade
-faq
 featured
 filters
 footer
@@ -50,7 +48,6 @@ products
 promotions
 provider
 quantity
-questions
 related
 release
 remove

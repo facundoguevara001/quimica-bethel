@@ -10,41 +10,13 @@ function AboutUs() {
             className="about-section"
         >
 
-            {/* TARJETA DE MARCA */}
-
-            <div className="about-mark-wrap">
-
-                <div className="about-mark-card">
-
-                    <span className="about-since">
-
-                        Desde 2020
-
-                    </span>
-
-                    <div className="about-mark-frame">
-
-                        <span className="about-mark-letters">
-
-                            QK
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            {/* BANDA CLARA */}
-
             <div className="light-band">
 
                 <div className="about-band-inner">
 
                     <SectionHeader
                         theme="light"
-                        number="02"
+                        number="01"
                         eyebrow="Conocé la empresa"
                         titleBold="Productos confiables."
                         titleAccent="Atención directa."

@@ -1,16 +1,16 @@
-# Graph Report - src  (2026-09-08)
+# Graph Report - src  (2026-09-21)
 
 ## Corpus Check
-- 46 files · ~56,662 words
+- 45 files · ~56,582 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 113 nodes · 218 edges · 10 communities
+- 110 nodes · 216 edges · 10 communities
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 7 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `dfe05cfc`
+- Built from commit: `34547559`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -30,7 +30,7 @@
 4. `CartProvider()` - 7 edges
 5. `CartDrawer()` - 6 edges
 6. `CartItem()` - 6 edges
-7. `products` - 5 edges
+7. `products` - 6 edges
 8. `Catalog()` - 5 edges
 9. `CartButton()` - 4 edges
 10. `CatalogHeader()` - 4 edges
@@ -65,8 +65,8 @@ Cohesion: 0.20
 Nodes (8): ProductCard(), ProductGrid(), products, productVariants, AboutPage(), Catalog(), Home(), Promotions()
 
 ### Community 3 - "Home.jsx"
-Cohesion: 0.19
-Nodes (8): FadeInSection(), categories, CategorySection(), DeliveryProcess(), steps, FeaturedProducts(), StatsStrip(), MainLayout()
+Cohesion: 0.24
+Nodes (6): FadeInSection(), DeliveryProcess(), steps, FeaturedProducts(), StatsStrip(), MainLayout()
 
 ### Community 4 - "CatalogHeader.jsx"
 Cohesion: 0.22
@@ -81,8 +81,8 @@ Cohesion: 0.36
 Nodes (4): LocationsMap(), ReviewsSection(), locations, reviews
 
 ## Knowledge Gaps
-- **7 isolated node(s):** `zones`, `SCROLL_SETTINGS`, `categories`, `steps`, `zones` (+2 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 23 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **6 isolated node(s):** `zones`, `SCROLL_SETTINGS`, `steps`, `zones`, `questions` (+1 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 22 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -90,10 +90,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `useCart()` connect `useCart` to `CatalogHeader.jsx`?**
   _High betweenness centrality (0.060) - this node is a cross-community bridge._
 - **Why does `CartProvider()` connect `useCart` to `App.jsx`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
+  _High betweenness centrality (0.042) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `RelatedProducts()` (e.g. with `outside()` and `release()`) actually correct?**
   _`RelatedProducts()` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `CartProvider()` (e.g. with `addToCart()` and `clearCart()`) actually correct?**
   _`CartProvider()` has 5 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `zones`, `SCROLL_SETTINGS`, `categories` to the rest of the system?**
-  _7 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `zones`, `SCROLL_SETTINGS`, `steps` to the rest of the system?**
+  _6 weakly-connected nodes found - possible documentation gaps or missing edges._

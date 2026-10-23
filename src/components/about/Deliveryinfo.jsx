@@ -61,7 +61,7 @@ function DeliveryInfo() {
                     </span>
 
                     <div>
-                        <strong>Costo de envío: $8.500</strong>
+                        <strong>Costo de envío: </strong>
 
                         <p>
                             Bonificado en compras mayores a $50.000.

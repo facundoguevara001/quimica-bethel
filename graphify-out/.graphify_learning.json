@@ -1,6 +1,22 @@
 {
-  "generated_at": "2026-09-21T10:52:06.478037+00:00",
+  "generated_at": "2026-10-22T13:43:51.309717+00:00",
   "nodes": {
+    "components_common_fadeinsection_fadeinsection": {
+      "code_fingerprint": "3a36a899637a168cf9764f5bf8bb8b790de2b04a15a09c2a887538f7fbd9b4d6",
+      "label": "FadeInSection()",
+      "last": "2026-09-21T11:07:52.464154+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T11:07:52.464154+00:00",
+          "outcome": "useful",
+          "q": "Ajustar espacios y tamaños del home para PC y móvil; el fondo claro a cambiar es la franja de estadísticas, no el carrusel."
+        }
+      ],
+      "score": 0.487358733,
+      "source_file": "src/components/common/FadeInSection.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
     "components_common_logo_logo": {
       "code_fingerprint": "5a0e224dfbdd2d5ec4481814df9bdbe72df56487ed6e1d4be4512e5f688092ad",
       "label": "Logo()",
@@ -12,7 +28,7 @@
           "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
         }
       ],
-      "score": 0.990897801,
+      "score": 0.482800545,
       "source_file": "src/components/common/Logo.jsx",
       "status": "tentative",
       "uses": 1
@@ -28,8 +44,24 @@
           "q": "bro quiero que utilizes graphify para que resolvamos lo siguiente. Cuando un usuario esta navegando en nuestro catalogo, al momento se seleccionar un producto y bajar hasta el carrusel de recomendados, pausar y cuando selecciona un producto la web carga el producto seleccionado desde ese carrusel pero no recarga la web y tampoco vuelve a subir hacia la parte superior de la web. Entonces, el usuario tiene que subir para enterarse que cambio el contenido que esta viendo. Esto es medio tosco, se deberia seleccionar un producto y la web deberia llevarme a la parte superior para visualizarlo. Quiero que ajustemos esto ahora"
         }
       ],
-      "score": 0.745183553,
+      "score": 0.363079851,
       "source_file": "src/components/common/SmoothScroll.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "components_home_aboutus_aboutus": {
+      "code_fingerprint": "d5735a790ccb52acdc81d254bdd9bd34728d0c855fd6e97614763a1ec6d513a4",
+      "label": "AboutUs()",
+      "last": "2026-09-21T11:31:23.896627+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T11:31:23.896627+00:00",
+          "outcome": "useful",
+          "q": "Eliminar preguntas frecuentes y tarjeta Desde 2020 QK de Nosotros y ajustar solo esa pagina en espacios y fondos."
+        }
+      ],
+      "score": 0.487542717,
+      "source_file": "src/components/home/AboutUs.jsx",
       "status": "tentative",
       "uses": 1
     },
@@ -49,13 +81,34 @@
           "q": "Antes de aplicar estos cambios. Decime que entendiste todo y decime lo que vas a hacer ya que utilizaste Graphify para saber donde esta el contenido y cual contenido vas a cambiar"
         }
       ],
-      "score": 1.999943568,
+      "score": 0.974443423,
       "source_file": "src/components/home/DeliveryProcess.jsx",
       "status": "preferred",
       "uses": 2
     },
+    "components_home_featuredproducts_featuredproducts": {
+      "code_fingerprint": "38d073d44524dd39784e75e289d6971b726d7960d6376ede42a90508007dc1ec",
+      "label": "FeaturedProducts()",
+      "last": "2026-09-21T11:07:52.464154+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T11:07:52.464154+00:00",
+          "outcome": "useful",
+          "q": "Ajustar espacios y tamaños del home para PC y móvil; el fondo claro a cambiar es la franja de estadísticas, no el carrusel."
+        },
+        {
+          "date": "2026-09-21T11:01:32.940748+00:00",
+          "outcome": "useful",
+          "q": "El contenedor del carrusel debe usar el fondo elegido y las cards de productos deben quedar iguales."
+        }
+      ],
+      "score": 0.974668005,
+      "source_file": "src/components/home/FeaturedProducts.jsx",
+      "status": "preferred",
+      "uses": 2
+    },
     "components_home_footer_footer": {
-      "code_fingerprint": "c6ede165c86796cf921dfc905cb23b4ff577183baf2b770c786008c73978d6aa",
+      "code_fingerprint": "b079d0ae6ebb94b1928f65e8033b382f47fb18331fcb1476ead3e15003290dca",
       "label": "Footer()",
       "last": "2026-09-21T01:22:13.263634+00:00",
       "provenance": [
@@ -65,7 +118,7 @@
           "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
         }
       ],
-      "score": 0.990897801,
+      "score": 0.482800545,
       "source_file": "src/components/home/Footer.jsx",
       "status": "tentative",
       "uses": 1
@@ -91,7 +144,7 @@
           "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
         }
       ],
-      "score": 2.990841369,
+      "score": 1.457243969,
       "source_file": "src/components/home/Hero.jsx",
       "status": "preferred",
       "uses": 3
@@ -107,7 +160,7 @@
           "q": "bro quiero que utilizes graphify para que resolvamos lo siguiente. Cuando un usuario esta navegando en nuestro catalogo, al momento se seleccionar un producto y bajar hasta el carrusel de recomendados, pausar y cuando selecciona un producto la web carga el producto seleccionado desde ese carrusel pero no recarga la web y tampoco vuelve a subir hacia la parte superior de la web. Entonces, el usuario tiene que subir para enterarse que cambio el contenido que esta viendo. Esto es medio tosco, se deberia seleccionar un producto y la web deberia llevarme a la parte superior para visualizarlo. Quiero que ajustemos esto ahora"
         }
       ],
-      "score": 0.745183553,
+      "score": 0.363079851,
       "source_file": "src/components/home/RelatedProducts.jsx",
       "status": "tentative",
       "uses": 1
@@ -123,16 +176,58 @@
           "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
         }
       ],
-      "score": 0.990897801,
+      "score": 0.482800545,
       "source_file": "src/components/home/ReviewsSection.jsx",
       "status": "tentative",
       "uses": 1
     },
-    "pages_home_home": {
-      "code_fingerprint": "9cafa7317649ec4dd63b8f260a9fc0b5cabeb2ec84a9b4c3304cd7677c650971",
-      "label": "Home()",
-      "last": "2026-09-21T10:52:05.861150+00:00",
+    "components_home_statsstrip_statsstrip": {
+      "code_fingerprint": "a08968a0e65adcc4869cb78b318c482b7de0a752e303e2805ea7f5d9ec809f05",
+      "label": "StatsStrip()",
+      "last": "2026-09-21T11:07:52.464154+00:00",
       "provenance": [
+        {
+          "date": "2026-09-21T11:07:52.464154+00:00",
+          "outcome": "useful",
+          "q": "Ajustar espacios y tamaños del home para PC y móvil; el fondo claro a cambiar es la franja de estadísticas, no el carrusel."
+        }
+      ],
+      "score": 0.487358733,
+      "source_file": "src/components/home/StatsStrip.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "pages_aboutpage_aboutpage": {
+      "code_fingerprint": "f600c333c982b9175d993c294dc9029d0199540679e03ac45faeb8ac0ebc7279",
+      "label": "AboutPage()",
+      "last": "2026-09-21T11:31:23.896627+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T11:31:23.896627+00:00",
+          "outcome": "useful",
+          "q": "Eliminar preguntas frecuentes y tarjeta Desde 2020 QK de Nosotros y ajustar solo esa pagina en espacios y fondos."
+        }
+      ],
+      "score": 0.487542717,
+      "source_file": "src/pages/AboutPage.jsx",
+      "status": "tentative",
+      "uses": 1
+    },
+    "pages_home_home": {
+      "code_fingerprint": "92506be2a397e8c55385aeafe8b3447061fb5c55a59000c7b988b59c534dbfec",
+      "label": "Home()",
+      "last": "2026-09-21T11:07:52.464154+00:00",
+      "provenance": [
+        {
+          "date": "2026-09-21T11:07:52.464154+00:00",
+          "outcome": "useful",
+          "q": "Ajustar espacios y tamaños del home para PC y móvil; el fondo claro a cambiar es la franja de estadísticas, no el carrusel."
+        },
+        {
+          "date": "2026-09-21T11:01:32.940748+00:00",
+          "outcome": "useful",
+          "q": "El contenedor del carrusel debe usar el fondo elegido y las cards de productos deben quedar iguales."
+        },
         {
           "date": "2026-09-21T10:52:05.861150+00:00",
           "outcome": "useful",
@@ -149,10 +244,10 @@
           "q": "Utiliza graphify antes de responderme o plantear algun plan. Siento que actualmente nuestra colorimetria no nos representa. Las fotos y el fondo no transmiten confianza para comprar. Que nos estaria fallando?"
         }
       ],
-      "score": 2.990841369,
+      "score": 2.431911974,
       "source_file": "src/pages/Home.jsx",
       "status": "preferred",
-      "uses": 3
+      "uses": 5
     },
     "pages_product_product": {
       "code_fingerprint": "cd4cbfb2bae7450a054ace55ed9011a677dccdb5b8e8b004b9d450a942893320",
@@ -165,7 +260,7 @@
           "q": "bro quiero que utilizes graphify para que resolvamos lo siguiente. Cuando un usuario esta navegando en nuestro catalogo, al momento se seleccionar un producto y bajar hasta el carrusel de recomendados, pausar y cuando selecciona un producto la web carga el producto seleccionado desde ese carrusel pero no recarga la web y tampoco vuelve a subir hacia la parte superior de la web. Entonces, el usuario tiene que subir para enterarse que cambio el contenido que esta viendo. Esto es medio tosco, se deberia seleccionar un producto y la web deberia llevarme a la parte superior para visualizarlo. Quiero que ajustemos esto ahora"
         }
       ],
-      "score": 0.745183553,
+      "score": 0.363079851,
       "source_file": "src/pages/Product.jsx",
       "status": "tentative",
       "uses": 1

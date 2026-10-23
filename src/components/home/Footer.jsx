@@ -97,7 +97,7 @@ function Footer() {
 
                     <span>
 
-                        © {year} Químicas King. Todos los derechos
+                        © {year} Químicos.com.ar Todos los derechos
                         reservados.
 
                     </span>
@@ -106,11 +106,11 @@ function Footer() {
 
                         Sitio desarrollado por{" "}
                         <a
-                            href="#"
+                            href="https://www.instagram.com/facur.01/"
                             target="_blank"
                             rel="noreferrer"
                         >
-                            [ tu nombre / marca ]
+                            [ Facundo Guevara ]
                         </a>
 
                     </span>
