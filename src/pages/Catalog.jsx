@@ -8,6 +8,26 @@ import CartDrawer from "../components/cart/CartDrawer";
 import MainLayout from "../layout/MainLayout";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
+const CATEGORY_ORDER = ["Nuestros productos", "Todo para tu ropa"];
+const SUBCATEGORY_ORDER = {
+    "Nuestros productos": [
+        "Desodorantes para piso",
+        "Lavandinas y Cloros",
+        "Jabones y Suavizantes",
+        "Detergentes y Lavavajillas",
+        "Desengrasantes",
+        "Shampoos"
+    ],
+    "Todo para tu ropa": [
+        "Líquidos",
+        "Perfumes para ropa",
+        "Difusores aromáticos",
+        "Accesorios"
+    ],
+    "🧰 Accesorios y equipamiento": ["Aerosoles"],
+    "🏠 Hogar y varios": ["Accesorios de baño"]
+};
+
 function Catalog({
     customProducts,
     title
@@ -28,37 +48,55 @@ function Catalog({
 
     const [selectedSubcategory, setSelectedSubcategory] =
         useState("Todos");
+    const [expandedCategory, setExpandedCategory] = useState(null);
 
     const sourceProducts = customProducts || products;
 
     const categories = useMemo(
-        () => [
-            "Todos",
-            ...new Set(
+        () => {
+            const availableCategories = new Set(
                 sourceProducts.map(product => product.category)
-            )
-        ],
+            );
+            const orderedCategories = [
+                ...CATEGORY_ORDER.filter(category => availableCategories.has(category)),
+                ...[...availableCategories].filter(
+                    category => !CATEGORY_ORDER.includes(category)
+                )
+            ];
+
+            return ["Todos", ...orderedCategories];
+        },
         [sourceProducts]
     );
 
-    const subcategories = useMemo(() => {
-        const productsInCategory =
-            selectedCategory === "Todos"
-                ? sourceProducts
-                : sourceProducts.filter(
-                    product =>
-                        product.category === selectedCategory
-                );
+    const subcategoriesByCategory = useMemo(() => {
+        const groupedSubcategories = new Map();
 
-        return [
-            "Todos",
-            ...new Set(
-                productsInCategory.map(
-                    product => product.subcategory
+        categories.forEach(category => {
+            if (category === "Todos") return;
+
+            const availableSubcategories = new Set(
+                sourceProducts
+                    .filter(product => product.category === category)
+                    .map(product => product.subcategory)
+                    .filter(Boolean)
+            );
+            const preferredSubcategories = SUBCATEGORY_ORDER[category] || [];
+            const orderedSubcategories = [
+                ...preferredSubcategories.filter(
+                    subcategory => availableSubcategories.has(subcategory) ||
+                        (category === "Todo para tu ropa" && subcategory === "Accesorios")
+                ),
+                ...[...availableSubcategories].filter(
+                    subcategory => !preferredSubcategories.includes(subcategory)
                 )
-            )
-        ];
-    }, [selectedCategory, sourceProducts]);
+            ];
+
+            groupedSubcategories.set(category, orderedSubcategories);
+        });
+
+        return groupedSubcategories;
+    }, [categories, sourceProducts]);
 
     const filteredProducts = useMemo(() => {
         const normalizedSearch = search.toLowerCase().trim();
@@ -115,14 +153,17 @@ function Catalog({
     ]);
 
     function selectCategory(category) {
+        const isAlreadyExpanded = expandedCategory === category;
         setSelectedCategory(category);
         setSelectedSubcategory("Todos");
+        setExpandedCategory(category === "Todos" || isAlreadyExpanded ? null : category);
     }
 
     function clearFilters() {
         setSearch("");
         setSelectedCategory("Todos");
         setSelectedSubcategory("Todos");
+        setExpandedCategory(null);
     }
 
     return (
@@ -187,52 +228,59 @@ function Catalog({
 
                         <div className="filter-group">
                             <span>Categorías</span>
+                            <div className="filter-category-list">
+                                {categories.map((category, index) => {
+                                    const subcategories = subcategoriesByCategory.get(category) || [];
+                                    const isExpanded = expandedCategory === category;
+                                    const subcategoryListId = `filter-subcategories-${index}`;
 
-                            {categories.map(category => (
-                                <button
-                                    key={category}
-                                    type="button"
-                                    className={
-                                        selectedCategory === category
-                                            ? "filter-option filter-option-active"
-                                            : "filter-option"
-                                    }
-                                    onClick={() =>
-                                        selectCategory(category)
-                                    }
-                                >
-                                    {category}
-                                </button>
-                            ))}
-                        </div>
+                                    return (
+                                        <div className="filter-category-item" key={category}>
+                                            <button
+                                                type="button"
+                                                className={`filter-option filter-category-option${selectedCategory === category ? " filter-option-active" : ""}`}
+                                                aria-expanded={isExpanded}
+                                                aria-controls={subcategories.length > 0 ? subcategoryListId : undefined}
+                                                onClick={() => selectCategory(category)}
+                                            >
+                                                <span>{category}</span>
+                                                {category !== "Todos" && subcategories.length > 0 && (
+                                                    <span className={`filter-category-chevron${isExpanded ? " is-expanded" : ""}`} aria-hidden="true">⌄</span>
+                                                )}
+                                            </button>
 
-                        {subcategories.length > 1 && (
-                            <div className="filter-group">
-                                <span>Subcategorías</span>
-
-                                {subcategories.map(subcategory => (
-                                    <button
-                                        key={subcategory}
-                                        type="button"
-                                        className={
-                                            selectedSubcategory === subcategory
-                                                ? "filter-option filter-option-active"
-                                                : "filter-option"
-                                        }
-                                        onClick={() =>
-                                            setSelectedSubcategory(
-                                                subcategory
-                                            )
-                                        }
-                                    >
-                                        {subcategory}
-                                    </button>
-                                ))}
+                                            {isExpanded && subcategories.length > 0 && (
+                                                <div className="filter-subcategory-list" id={subcategoryListId}>
+                                                    <button
+                                                        type="button"
+                                                        className={`filter-option filter-subcategory-option${selectedSubcategory === "Todos" ? " filter-option-active" : ""}`}
+                                                        onClick={() => setSelectedSubcategory("Todos")}
+                                                    >
+                                                        Todos
+                                                    </button>
+                                                    {subcategories.map(subcategory => (
+                                                        <button
+                                                            key={subcategory}
+                                                            type="button"
+                                                            className={`filter-option filter-subcategory-option${selectedSubcategory === subcategory ? " filter-option-active" : ""}`}
+                                                            onClick={() => setSelectedSubcategory(subcategory)}
+                                                        >
+                                                            {subcategory}
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
                             </div>
-                        )}
+                        </div>
                     </aside>
 
                     <section className="catalog-results">
+                        {selectedSubcategory === "Desodorantes para piso" && (
+                            <h2 className="catalog-results-title">Nuestras Fragancias</h2>
+                        )}
                         <div className="catalog-results-toolbar">
                             <p className="products-counter">
                                 {filteredProducts.length} producto

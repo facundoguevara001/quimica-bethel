@@ -79,7 +79,7 @@ h1,h2,h3 { line-height:1.25; }
 .site-footer a:hover { color:#E5998C; }
 .catalog-page,.product-page { background:var(--mist); color:var(--ink); --surface:var(--card); --surface-light:#D9E1E7; --border:#C5CFD7; --text-secondary:#536575; }
 .catalog-page .catalog-title,.catalog-page .filters-heading h2,.catalog-page .filter-option,.catalog-page .filters-collapse-button,.catalog-page .filters-mobile-button,.catalog-page .sort-control select { color:var(--ink); }
-.catalog-page .products-counter,.catalog-page .sort-control,.catalog-page .filter-group span,.catalog-page .clear-filters-button { color:#536575; }
+.catalog-page .products-counter,.catalog-page .sort-control,.catalog-page .filter-group > span,.catalog-page .clear-filters-button { color:#536575; }
 .catalog-filters { border-radius:6px; }
 .filter-option-active { background:#E9DCD8; border-color:var(--primary); }
 .catalog-banner { background:var(--ink); color:var(--paper); box-shadow:none; border-radius:6px; }

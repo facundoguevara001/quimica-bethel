@@ -93,6 +93,175 @@ def create_print():
     w,h=A4; c.drawImage(ImageReader(page),0,0,width=w,height=h,preserveAspectRatio=False,mask='auto'); c.showPage(); c.save()
     return png,pdf
 
+def create_combo_social():
+    W,H=1080,1350
+    im=Image.new('RGB',(W,H),NAVY); d=ImageDraw.Draw(im)
+    d.rectangle((0,0,W,14),fill=RED)
+    rounded(d,(58,42,108,92),13,CREAM)
+    d.text((83,67),'K',font=font(29,True),fill=NAVY,anchor='mm')
+    d.text((126,45),'QUÍMICAS KING',font=font(22,True),fill=CREAM)
+    d.text((126,72),'LIMPIEZA PARA TU HOGAR',font=font(12,True),fill='#BCC8D2')
+    d.text((58,132),'COMBO',font=font(56,True),fill=CREAM)
+    d.text((58,194),'12 LITROS',font=font(59,True),fill=CREAM)
+    d.text((61,268),'CON GATILLO',font=font(27,True),fill='#E5998C')
+    rounded(d,(60,323,350,407),15,RED)
+    d.text((205,365),'$15.400',font=font(43,True),fill=WHITE,anchor='mm')
+    # product hero
+    hero=fit_crop('PROM008.jpg',(405,440))
+    mask=Image.new('L',hero.size,0); ImageDraw.Draw(mask).rounded_rectangle((0,0,*hero.size),20,fill=255)
+    im.paste(hero,(600,110),mask)
+    d=ImageDraw.Draw(im)
+    rounded(d,(619,469,985,519),12,CREAM)
+    d.text((802,494),'5 + 5 + 1 + 1 LITROS',font=font(19,True),fill=NAVY,anchor='mm')
+    # content panel
+    top=555
+    rounded(d,(48,top,1032,1193),22,'#F7F7F4')
+    d.text((82,top+29),'¿QUÉ TRAE?',font=font(27,True),fill=NAVY)
+    rows=[
+        ('5 L','DESODORANTE 1056','El más elegido por nuestros clientes'),
+        ('5 L','LAVANDINA',''),
+        ('1 L','LIMPIADOR MULTIUSOS CIF CREMA','Con envase a gatillo'),
+        ('1 L','DETERGENTE PARA TODOS LOS USOS','Con envase a gatillo de resorte'),
+    ]
+    y=top+84
+    for idx,(qty,name,desc) in enumerate(rows):
+        yy=y+idx*127
+        rounded(d,(78,yy,1002,yy+108),14,WHITE,outline='#D8DEE2',width=2)
+        rounded(d,(94,yy+20,183,yy+87),12,NAVY)
+        d.text((138,yy+53),qty,font=font(24,True),fill=CREAM,anchor='mm')
+        d.text((207,yy+21),name,font=font(20,True),fill=NAVY)
+        if desc:
+            d.text((207,yy+58),desc,font=font(17),fill=MUTED)
+            if idx==0:
+                # customer favorite seal
+                rounded(d,(718,yy+57,976,yy+91),10,'#F8E8E2')
+                d.text((847,yy+74),'EL MÁS ELEGIDO',font=font(13,True),fill=RED,anchor='mm')
+    d.rectangle((0,1220,W,H),fill=RED)
+    d.text((58,1255),'TODO LO QUE NECESITÁS, EN UN SOLO COMBO',font=font(20,True),fill=WHITE)
+    d.text((58,1290),'Químicas King  ·  Packs y ofertas',font=font(16),fill=WHITE)
+    path=OUT/'combo-12-litros-con-gatillo-redes-1080x1350.png'
+    im.save(path,optimize=True); return path
+
+def create_combo_print():
+    src=Image.open(create_combo_social()).convert('RGB')
+    target=(2480,3508)
+    page=Image.new('RGB',target,CREAM)
+    scale=min(target[0]/src.width,target[1]/src.height)
+    resized=src.resize((int(src.width*scale),int(src.height*scale)),Image.Resampling.LANCZOS)
+    page.paste(resized,((target[0]-resized.width)//2,(target[1]-resized.height)//2))
+    png=OUT/'combo-12-litros-con-gatillo-imprimir-A4-300dpi.png'; page.save(png,dpi=(300,300),optimize=True)
+    pdf=OUT/'combo-12-litros-con-gatillo-imprimir-A4.pdf'
+    c=canvas.Canvas(str(pdf),pagesize=A4); w,h=A4
+    c.drawImage(ImageReader(page),0,0,width=w,height=h,preserveAspectRatio=False,mask='auto'); c.showPage(); c.save()
+    return png,pdf
+
+def create_combo_mobile():
+    # Tall 9:16 mobile creative: large type, generous spacing, concise product details.
+    W,H=1080,1920
+    im=Image.new('RGB',(W,H),CREAM); d=ImageDraw.Draw(im)
+    d.rectangle((0,0,W,18),fill=RED)
+    # Brand and headline
+    rounded(d,(56,48,116,108),16,NAVY)
+    d.text((86,78),'K',font=font(35,True),fill=CREAM,anchor='mm')
+    d.text((138,51),'QUÍMICAS KING',font=font(25,True),fill=NAVY)
+    d.text((139,83),'LIMPIEZA PARA TU HOGAR',font=font(13,True),fill=MUTED)
+    rounded(d,(58,145,350,192),13,'#F5D8D1')
+    d.text((204,169),'PACK ESPECIAL',font=font(17,True),fill=RED,anchor='mm')
+    d.text((56,220),'EL COMBO QUE',font=font(57,True),fill=NAVY)
+    d.text((56,281),'TE RESUELVE TODO',font=font(57,True),fill=NAVY)
+    d.text((60,351),'12 litros para dejar tu casa impecable',font=font(23),fill=MUTED)
+    # Hero panel and authentic product photograph
+    rounded(d,(50,410,1030,1000),28,NAVY)
+    photo=fit_crop('PROM008.jpg',(540,540))
+    mask=Image.new('L',photo.size,0); ImageDraw.Draw(mask).rounded_rectangle((0,0,*photo.size),20,fill=255)
+    im.paste(photo,(270,430),mask)
+    d=ImageDraw.Draw(im)
+    # small overlaid volume chip and price block
+    rounded(d,(75,447,293,503),16,CREAM)
+    d.text((184,475),'5 + 5 + 1 + 1 L',font=font(19,True),fill=NAVY,anchor='mm')
+    rounded(d,(611,828,1003,960),23,RED)
+    d.text((651,850),'PRECIO PROMO',font=font(15,True),fill='#F8D9D1')
+    d.text((651,886),'$15.400',font=font(45,True),fill=WHITE)
+    # Content list
+    d.text((60,1040),'¿QUÉ INCLUYE?',font=font(30,True),fill=NAVY)
+    d.rectangle((60,1085,1020,1089),fill='#D3D9DD')
+    entries=[
+        ('5 L','DESODORANTE 1056','El más elegido por nuestros clientes'),
+        ('5 L','LAVANDINA',''),
+        ('1 L','CIF CREMA MULTIUSOS','Limpiador · envase a gatillo'),
+        ('1 L','DETERGENTE','Para todos los usos · gatillo de resorte'),
+    ]
+    y=1110
+    for i,(vol,title,sub) in enumerate(entries):
+        yy=y+i*139
+        rounded(d,(56,yy,1024,yy+121),17,WHITE,outline='#D7DEE3',width=2)
+        rounded(d,(75,yy+23,177,yy+98),16,NAVY)
+        d.text((126,yy+61),vol,font=font(25,True),fill=CREAM,anchor='mm')
+        d.text((204,yy+23),title,font=font(22,True),fill=NAVY)
+        if sub:
+            d.text((204,yy+62),sub,font=font(17),fill=MUTED)
+        if i==0:
+            rounded(d,(727,yy+68,987,yy+102),10,'#F5D8D1')
+            d.text((857,yy+85),'FAVORITO',font=font(13,True),fill=RED,anchor='mm')
+    # Compact brand footer
+    d.rectangle((0,1700,W,H),fill=NAVY)
+    d.rectangle((0,1700,W,1710),fill=RED)
+    d.text((58,1750),'TODO EN UN SOLO COMBO.',font=font(29,True),fill=CREAM)
+    d.text((60,1801),'Pedilo hoy en Químicas King',font=font(23),fill='#D5DEE4')
+    rounded(d,(60,1850,1020,1901),13,RED)
+    d.text((540,1876),'PACKS Y OFERTAS',font=font(18,True),fill=WHITE,anchor='mm')
+    path=OUT/'combo-12-litros-gatillo-celular-1080x1920.png'
+    im.save(path,optimize=True); return path
+
+def create_screw_mobile():
+    W,H=1080,1920
+    im=Image.new('RGB',(W,H),CREAM); d=ImageDraw.Draw(im)
+    d.rectangle((0,0,W,18),fill=RED)
+    rounded(d,(56,48,116,108),16,NAVY)
+    d.text((86,78),'K',font=font(35,True),fill=CREAM,anchor='mm')
+    d.text((138,51),'QUÍMICAS KING',font=font(25,True),fill=NAVY)
+    d.text((139,83),'LIMPIEZA PARA TU HOGAR',font=font(13,True),fill=MUTED)
+    rounded(d,(58,145,405,192),13,'#F5D8D1')
+    d.text((231,169),'PRESENTACIÓN A ROSCA',font=font(16,True),fill=RED,anchor='mm')
+    d.text((56,220),'COMBO 12 LITROS',font=font(58,True),fill=NAVY)
+    d.text((60,294),'Los mismos productos, en envases a rosca',font=font(22),fill=MUTED)
+    rounded(d,(50,365,1030,955),28,NAVY)
+    photo=fit_crop('PROM006.jpg',(540,540))
+    mask=Image.new('L',photo.size,0); ImageDraw.Draw(mask).rounded_rectangle((0,0,*photo.size),20,fill=255)
+    im.paste(photo,(270,385),mask)
+    d=ImageDraw.Draw(im)
+    rounded(d,(75,402,293,458),16,CREAM)
+    d.text((184,430),'5 + 5 + 1 + 1 L',font=font(19,True),fill=NAVY,anchor='mm')
+    rounded(d,(611,783,1003,915),23,RED)
+    d.text((651,805),'PRECIO PROMO',font=font(15,True),fill='#F8D9D1')
+    d.text((651,841),'$16.900',font=font(45,True),fill=WHITE)
+    d.text((60,995),'¿QUÉ INCLUYE?',font=font(30,True),fill=NAVY)
+    d.rectangle((60,1040,1020,1044),fill='#D3D9DD')
+    entries=[
+        ('5 L','DESODORANTE 1056','El más elegido por nuestros clientes'),
+        ('5 L','LAVANDINA',''),
+        ('1 L','CIF CREMA MULTIUSOS','Limpiador · tapa a rosca'),
+        ('1 L','DETERGENTE','Para todos los usos · tapa a rosca'),
+    ]
+    y=1065
+    for i,(vol,title,sub) in enumerate(entries):
+        yy=y+i*139
+        rounded(d,(56,yy,1024,yy+121),17,WHITE,outline='#D7DEE3',width=2)
+        rounded(d,(75,yy+23,177,yy+98),16,NAVY)
+        d.text((126,yy+61),vol,font=font(25,True),fill=CREAM,anchor='mm')
+        d.text((204,yy+23),title,font=font(22,True),fill=NAVY)
+        if sub: d.text((204,yy+62),sub,font=font(17),fill=MUTED)
+        if i==0:
+            rounded(d,(727,yy+68,987,yy+102),10,'#F5D8D1')
+            d.text((857,yy+85),'FAVORITO',font=font(13,True),fill=RED,anchor='mm')
+    d.rectangle((0,1655,W,H),fill=NAVY)
+    d.rectangle((0,1655,W,1665),fill=RED)
+    d.text((58,1705),'TODO EN UN SOLO COMBO.',font=font(29,True),fill=CREAM)
+    d.text((60,1756),'Pedilo hoy en Químicas King',font=font(23),fill='#D5DEE4')
+    rounded(d,(60,1805,1020,1856),13,RED)
+    d.text((540,1831),'PACKS Y OFERTAS',font=font(18,True),fill=WHITE,anchor='mm')
+    path=OUT/'combo-12-litros-rosca-celular-1080x1920.png'
+    im.save(path,optimize=True); return path
+
 if __name__=='__main__':
-    social=create_social(); png,pdf=create_print()
-    print(social); print(png); print(pdf)
+    print(create_screw_mobile())

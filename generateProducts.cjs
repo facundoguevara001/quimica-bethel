@@ -1,7 +1,8 @@
 const fs = require("fs");
 const XLSX = require("xlsx");
 
-const workbook = XLSX.readFile("./public/Plantilla_Quimica_Bethel.xlsx");
+const workbookPath = process.argv[2] || "./public/Plantilla_Quimica_Bethel.xlsx";
+const workbook = XLSX.readFile(workbookPath);
 const sheet = workbook.Sheets["PRODUCTOS"];
 const pricesSheet = workbook.Sheets["PRECIOS"];
 const catalogsSheet = workbook.Sheets["CATÁLOGOS"];
