@@ -58,13 +58,13 @@ function ProductCard({ product }) {
                     </section>
                 )}
 
+                <span className="product-order-note">
+                    🛡️ Recibís, revisás y pagás
+                </span>
+
                 <span className="price">
                     {variantsCount > 1 ? "Desde " : ""}
                     {product.price}
-                </span>
-
-                <span className="product-order-note">
-                    🛡️ Recibís, revisás y pagás
                 </span>
 
                 <Link

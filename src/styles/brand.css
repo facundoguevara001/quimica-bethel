@@ -92,6 +92,8 @@ h1,h2,h3 { line-height:1.25; }
 .catalog-header-search input { color:var(--ink); }
 .product-card .product-info p,.product-card .product-order-note { color:#536575; font-size:14px; }
 .product-card .product-order-note { background:#E3E8EC; border:0; border-radius:3px; width:fit-content; }
+.product-card .product-order-note { box-sizing:border-box; display:flex; align-items:center; width:100%; min-height:38px; margin-top:auto; padding:7px 10px; }
+.product-card .price { width:100%; margin-top:0; padding:0; color:var(--ink); font-size:30px; font-weight:900; line-height:1.15; }
 .product-page .product-container { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:48px; }
 .product-page .product-info { background:none; border:0; padding:0; backdrop-filter:none; }
 .product-page .product-info h1 { font-family:var(--font-body); color:var(--ink); font-size:clamp(28px,3vw,42px); line-height:1.2; }

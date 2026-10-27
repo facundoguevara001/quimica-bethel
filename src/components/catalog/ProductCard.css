@@ -211,6 +211,7 @@
     border-radius:8px;
     background:rgba(227,232,236,.55);
     color:#536575;
+    min-height:104px;
 }
 
 .product-characteristics h4{
@@ -275,7 +276,7 @@
 
     width:max-content;
 
-    margin-top:auto;
+    margin-top:0;
 
     padding:8px 16px;
 
