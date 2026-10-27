@@ -9813,8 +9813,8 @@ const products = [
     "fragrance": "",
     "description": "12 litros de diferentes productos. Todo para tu hogar",
     "characteristics": "Promo 11 litros\r\r\nIncluye 5 Litros de Lavandina, 5 Litros de desodorante de piso a elección, 1 Litro de CIF crema y 1 Litro de Detergente",
-    "salePrice": 16900,
-    "price": "$16.900",
+    "salePrice": 15400,
+    "price": "$15.400",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
@@ -9834,8 +9834,8 @@ const products = [
         "fragrance": "",
         "description": "12 litros de diferentes productos. Todo para tu hogar",
         "characteristics": "Promo 11 litros\r\r\nIncluye 5 Litros de Lavandina, 5 Litros de desodorante de piso a elección, 1 Litro de CIF crema y 1 Litro de Detergente",
-        "salePrice": 16900,
-        "price": "$16.900",
+        "salePrice": 15400,
+        "price": "$15.400",
         "stock": 0,
         "stockMinimo": 0,
         "status": "Activo",
@@ -9843,7 +9843,7 @@ const products = [
         "image": "/products/PROM006.jpg"
       }
     ],
-    "minPrice": 16900
+    "minPrice": 15400
   },
   {
     "id": "DET004",
@@ -9993,8 +9993,8 @@ const products = [
     "fragrance": "",
     "description": "Combo 12 litros con gatillo",
     "characteristics": "Esta promo trae: 1 Litro de CIF premium y un 1 litro de Detergente con envase a gatillo ideal para tu cocina y/o baño. 5 litros de desodorante de piso a elección y 5 litros de lavandina",
-    "salePrice": 15400,
-    "price": "$15.400",
+    "salePrice": 18100,
+    "price": "$18.100",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
@@ -10014,8 +10014,8 @@ const products = [
         "fragrance": "",
         "description": "Combo 12 litros con gatillo",
         "characteristics": "Esta promo trae: 1 Litro de CIF premium y un 1 litro de Detergente con envase a gatillo ideal para tu cocina y/o baño. 5 litros de desodorante de piso a elección y 5 litros de lavandina",
-        "salePrice": 15400,
-        "price": "$15.400",
+        "salePrice": 18100,
+        "price": "$18.100",
         "stock": 0,
         "stockMinimo": 0,
         "status": "Activo",
@@ -10023,7 +10023,7 @@ const products = [
         "image": "/products/PROM008.jpg"
       }
     ],
-    "minPrice": 15400
+    "minPrice": 18100
   }
 ];
 
@@ -15354,8 +15354,8 @@ export const productVariants = [
     "fragrance": "",
     "description": "12 litros de diferentes productos. Todo para tu hogar",
     "characteristics": "Promo 11 litros\r\r\nIncluye 5 Litros de Lavandina, 5 Litros de desodorante de piso a elección, 1 Litro de CIF crema y 1 Litro de Detergente",
-    "salePrice": 16900,
-    "price": "$16.900",
+    "salePrice": 15400,
+    "price": "$15.400",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
@@ -15438,8 +15438,8 @@ export const productVariants = [
     "fragrance": "",
     "description": "Combo 12 litros con gatillo",
     "characteristics": "Esta promo trae: 1 Litro de CIF premium y un 1 litro de Detergente con envase a gatillo ideal para tu cocina y/o baño. 5 litros de desodorante de piso a elección y 5 litros de lavandina",
-    "salePrice": 15400,
-    "price": "$15.400",
+    "salePrice": 18100,
+    "price": "$18.100",
     "stock": 0,
     "stockMinimo": 0,
     "status": "Activo",
