@@ -8,7 +8,12 @@ import CartDrawer from "../components/cart/CartDrawer";
 import MainLayout from "../layout/MainLayout";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-const CATEGORY_ORDER = ["Nuestros productos", "Todo para tu ropa"];
+const FEATURED_CATEGORIES = [
+    "📦 Packs y ofertas",
+    "Nuestros productos",
+    "Todo para tu ropa"
+];
+const CATEGORY_ORDER = FEATURED_CATEGORIES;
 const SUBCATEGORY_ORDER = {
     "Nuestros productos": [
         "Desodorantes para piso",
@@ -34,6 +39,10 @@ function Catalog({
 }) {
     const navigate = useNavigate();
     const [searchParams] = useSearchParams();
+    const sourceProducts = customProducts || products;
+    const defaultCategory = sourceProducts.some(
+        product => product.category === FEATURED_CATEGORIES[0]
+    ) ? FEATURED_CATEGORIES[0] : "Todos";
 
     const [search, setSearch] = useState(
         searchParams.get("buscar") || ""
@@ -44,13 +53,11 @@ function Catalog({
     const [sortOrder, setSortOrder] = useState("default");
 
     const [selectedCategory, setSelectedCategory] =
-        useState("Todos");
+        useState(defaultCategory);
 
     const [selectedSubcategory, setSelectedSubcategory] =
         useState("Todos");
-    const [expandedCategory, setExpandedCategory] = useState(null);
-
-    const sourceProducts = customProducts || products;
+    const [expandedCategory, setExpandedCategory] = useState(defaultCategory);
 
     const categories = useMemo(
         () => {
@@ -238,7 +245,7 @@ function Catalog({
                                         <div className="filter-category-item" key={category}>
                                             <button
                                                 type="button"
-                                                className={`filter-option filter-category-option${selectedCategory === category ? " filter-option-active" : ""}`}
+                                                className={`filter-option filter-category-option${selectedCategory === category ? " filter-option-active" : ""}${FEATURED_CATEGORIES.includes(category) ? ` category-priority-${FEATURED_CATEGORIES.indexOf(category) + 1}` : ""}`}
                                                 aria-expanded={isExpanded}
                                                 aria-controls={subcategories.length > 0 ? subcategoryListId : undefined}
                                                 onClick={() => selectCategory(category)}

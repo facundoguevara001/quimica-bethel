@@ -36,6 +36,11 @@ function Product() {
         String(slug).trim().toLowerCase()
 );
 
+    const descriptionItems = String(product?.description || "")
+        .split(/\r?\n|(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÜÑ0-9])/u)
+        .map((item) => item.trim())
+        .filter(Boolean);
+
     if (!product) {
 
         return (
@@ -185,11 +190,28 @@ Quiero pedir:
 
                     </div>
 
-                                        <p>
+                    {descriptionItems.length > 0 && (
+                        <section className="product-description" aria-label="Detalles del producto">
+                            <h2>Detalles del producto</h2>
+                            <ul>
+                                {descriptionItems.map((item, index) => {
+                                    const separator = item.indexOf(":");
+                                    const hasLabel = separator > 0 && separator < 32;
 
-                        {product.description}
-
-                    </p>
+                                    return (
+                                        <li key={`${index}-${item}`}>
+                                            {hasLabel ? (
+                                                <>
+                                                    <strong>{item.slice(0, separator)}:</strong>
+                                                    <span>{item.slice(separator + 1).trim()}</span>
+                                                </>
+                                            ) : item}
+                                        </li>
+                                    );
+                                })}
+                            </ul>
+                        </section>
+                    )}
 
                     {
     variants.length > 1 && (
@@ -204,6 +226,7 @@ Quiero pedir:
                     <button
                         key={variant.slug}
                         type="button"
+                        aria-pressed={variant.slug === product.slug}
                         className={
                             variant.slug === product.slug
                                 ? "variant-chip variant-chip-active"

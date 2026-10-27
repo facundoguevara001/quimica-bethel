@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
-    const characteristics = String(
-        product.characteristics || ""
-    ).trim();
+    const characteristics = String(product.characteristics || "")
+        .split(/\r?\n|[•●▪]\s*|;|(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÜÑ0-9])/u)
+        .map((item) => item.trim().replace(/^[-*]\s*/, ""))
+        .filter(Boolean);
 
     const variantsCount = product.variants?.length || 1;
 
@@ -46,10 +47,15 @@ function ProductCard({ product }) {
                         : product.variantLabel}
                 </p>
 
-                {characteristics && (
-                    <p className="product-characteristics">
-                        {characteristics}
-                    </p>
+                {characteristics.length > 0 && (
+                    <section className="product-characteristics" aria-label="Características">
+                        <h4>Características</h4>
+                        <ul>
+                            {characteristics.map((item, index) => (
+                                <li key={`${index}-${item}`}>{item}</li>
+                            ))}
+                        </ul>
+                    </section>
                 )}
 
                 <span className="price">
